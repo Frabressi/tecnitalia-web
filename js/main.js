@@ -99,13 +99,13 @@ function renderNews() {
         
         newsDaMostrare.forEach(news => {
             targetGrid.innerHTML += `
-                <div class="project-card" style="min-width: unset; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    <img src="${news.immagine}" style="width:100%; height:200px; object-fit:cover;" onerror="this.src='https://via.placeholder.com/400x250?text=Immagine+Non+Disponibile'" alt="${news.titolo}">
+                <div class="project-card" style="min-width: unset; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
+                    <img src="${news.immagine}" style="width:100%; height:200px; object-fit:cover;" onerror="this.style.display='none'" alt="${news.titolo}">
                     <div class="p-content">
                         <span style="font-size: 0.8rem; color: #888; font-weight: 600;">${news.data}</span>
                         <h4 style="color:var(--blue); margin: 10px 0 15px 0; font-size: 1.3rem;">${news.titolo}</h4>
-                        <p style="font-size:0.95rem">${news.riassunto}</p>
-                        <a href="news-singola.html?id=${news.id}" style="color: var(--blue); font-weight: bold; text-decoration: none; font-size: 0.9rem; margin-top: 15px; display: block;">Leggi l'articolo ➔</a>
+                        <p style="font-size:0.95rem; margin-bottom: 0;">${news.riassunto}</p>
+                        <a href="news-singola.html?id=${news.id}" class="news-link-stretched">Leggi l'articolo ➔</a>
                     </div>
                 </div>`;
         });

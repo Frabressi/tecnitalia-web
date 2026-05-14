@@ -214,3 +214,34 @@ nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
     .slider-btn.prev { left: 5px; } 
     .slider-btn.next { right: 5px; }
 }
+
+/* --- HOVER E CLICK SU INTERA CARD NEWS --- */
+.news-link-stretched {
+    color: var(--blue); 
+    font-weight: bold; 
+    text-decoration: none; 
+    font-size: 0.9rem; 
+    margin-top: 15px; 
+    display: block;
+    transition: color 0.3s ease;
+}
+
+/* Il trucco ingegneristico: crea un pseudo-elemento che si espande a tutta la card */
+.news-link-stretched::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+}
+
+/* Feedback visivo quando l'utente passa il mouse su un punto qualsiasi della card */
+.project-card:hover .news-link-stretched {
+    color: #002d54;
+}
+
+.project-card:hover h4 {
+    color: #002d54 !important;
+}
