@@ -2,6 +2,7 @@ let newsDati = [];
 let projectsData = [];
 
 document.addEventListener("DOMContentLoaded", () => {
+    // Pipeline asincrona parallela per il caricamento delle risorse
     Promise.all([
         fetch('./header.html').then(res => {
             if (!res.ok) throw new Error(`HTTP error header! status: ${res.status}`);
@@ -17,8 +18,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const navPlaceholder = document.getElementById('nav-placeholder');
         const footerPlaceholder = document.getElementById('footer-placeholder');
         
+        // Iniezione componenti strutturali nel DOM
         if (navPlaceholder) navPlaceholder.innerHTML = headerData;
         if (footerPlaceholder) footerPlaceholder.innerHTML = footerData;
+        
+        // --- INTEGRAZIONE EMAILJS ---
+        // Deve essere eseguita qui, altrimenti il form non esiste ancora nel DOM
+        inizializzaEmailJS();
+        // -----------------------------
         
         newsDati = newsJson;
         projectsData = projectsJson;
@@ -33,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         initNavbar();
 
+        // Ricalcolo layout per GSAP dopo il rendering dinamico
         setTimeout(() => {
             if (typeof ScrollTrigger !== 'undefined') {
                 ScrollTrigger.refresh();
@@ -256,4 +264,48 @@ if (typeof Lenis !== 'undefined') {
     const lenis = new Lenis({ smooth: true, duration: 1.2 });
     function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
     requestAnimationFrame(raf);
+}
+
+// Funzione dedicata alla gestione dell'API SMTP di EmailJS
+function inizializzaEmailJS() {
+    if (typeof emailjs === 'undefined') {
+        console.error('SDK EmailJS non rilevato. Controllare CDN in footer.html');
+        return;
+    }
+
+    emailjs.init({
+        publicKey: "IxQp4s1e-bTQOqX3J",
+    });
+
+    const form = document.getElementById('contact-form');
+    if (!form) return;
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+        const btn = document.getElementById('submit-btn');
+        const statusDiv = document.getElementById('form-status');
+
+        btn.textContent = 'Invio in corso...';
+        btn.disabled = true;
+
+        emailjs.sendForm('service_x33x9c9', 'template_6u6e1jo', form)
+            .then(() => {
+                btn.textContent = 'Invia Messaggio';
+                btn.disabled = false;
+                statusDiv.style.color = '#4CAF50';
+                statusDiv.textContent = 'Messaggio inviato con successo!';
+                statusDiv.style.display = 'block';
+                form.reset(); 
+                
+                setTimeout(() => { statusDiv.style.display = 'none'; }, 5000);
+            }, (error) => {
+                btn.textContent = 'Invia Messaggio';
+                btn.disabled = false;
+                statusDiv.style.color = '#F44336';
+                statusDiv.textContent = "Errore durante l'invio. Riprova più tardi.";
+                statusDiv.style.display = 'block';
+                console.error('EmailJS Error:', error);
+            });
+    });
 }
