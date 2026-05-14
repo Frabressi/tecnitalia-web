@@ -205,8 +205,17 @@ nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
     .div-img-wrapper { height: 300px; position: relative; top: 0; margin-top: 30px;}
     .hero h1 { font-size: 3rem; }
     .projects-grid { padding: 0 10px 20px 10px; gap: 15px; }
-    .project-card { min-width: 160px; width: 160px; scroll-snap-align: start; }
-    .p-img-box { height: 130px; }
+    
+    /* MODIFICA 1: Vincola la dimensione fissa SOLO allo slider dei progetti. 
+       Portata a 220px per migliorare la leggibilità del testo interno su mobile */
+    .projects-grid .project-card { min-width: 220px; width: 220px; scroll-snap-align: start; }
+    
+    /* MODIFICA 2: Forza le card dentro la griglia News ad occupare il 100% dello spazio disponibile */
+    .news-grid .project-card { min-width: unset; width: 100%; }
+
+    /* Modifica 3: Adattamento dell'altezza immagine per proporzioni corrette su mobile */
+    .p-img-box { height: 180px; } 
+    
     .p-content { padding: 12px; }
     .p-content h4 { font-size: 0.95rem; line-height: 1.2; }
     .p-content p { font-size: 0.75rem; line-height: 1.4; }
@@ -226,7 +235,6 @@ nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
     transition: color 0.3s ease;
 }
 
-/* Il trucco ingegneristico: crea un pseudo-elemento che si espande a tutta la card */
 .news-link-stretched::after {
     position: absolute;
     top: 0;
@@ -237,7 +245,6 @@ nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
     content: "";
 }
 
-/* Feedback visivo quando l'utente passa il mouse su un punto qualsiasi della card */
 .project-card:hover .news-link-stretched {
     color: #002d54;
 }
