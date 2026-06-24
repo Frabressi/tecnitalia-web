@@ -9,10 +9,28 @@
             <form id="contact-form">
                 <input type="text" name="name" placeholder="Nome" required>
                 <input type="email" name="email" placeholder="Email" required>
-                <textarea name="message" rows="3" placeholder="Messaggio" required></textarea>
+                <textarea name="message" rows="3" placeholder="Mensaggio" required></textarea>
                 <button type="submit" class="submit-btn" id="submit-btn">Invia Messaggio</button>
             </form>
             <div id="form-status" style="display:none; color:white; margin-top:15px; text-align:center; font-weight:bold; font-size:0.9rem;"></div>
+        </div>
+        <!-- Terzo slot: Mappa di localizzazione geo-referenziata -->
+        <div class="footer-map-box">
+            <h3 style="color:white; margin-bottom:20px;">La Nostra Sede</h3>
+            <div class="map-container" style="width:100%; border-radius:6px; overflow:hidden; background:#222;">
+                <iframe 
+                    src="https://maps.google.com/maps?q=Via%20Pastorelli%204E,%2020143%20Milano&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="140" 
+                    style="border:0; display:block;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <a href="https://maps.google.com/maps?q=Via%20Pastorelli%204E,%2020143%20Milano" target="_blank" class="map-link" style="color:#aaa; text-decoration:none; font-size:0.85rem; margin-top:10px; display:inline-block; font-weight:600;">
+                Apri in Google Maps ➔
+            </a>
         </div>
     </div>
     <div style="text-align:center; margin-top:50px; border-top:1px solid #333; padding-top:20px;">

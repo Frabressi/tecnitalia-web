@@ -172,12 +172,23 @@ nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
 .member img { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid var(--blue); margin-bottom: 15px; }
 .member h4 { color: var(--blue); margin-bottom: 5px; }
 
-/* --- 10. FOOTER --- */
+/* --- 10. FOOTER (Aggiornato a 3 colonne responsive con mappa) --- */
 .footer-sec { background: #111; color: #888; padding: 60px 10%; }
 .footer-sec p, .footer-sec strong { color: #cccccc; }
-.footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+
+.footer-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 50px; 
+    align-items: start;
+}
+
 .form-box input, .form-box textarea { width: 100%; padding: 12px; margin-bottom: 10px; background: #222; border: 1px solid #333; color: white; border-radius: 6px; box-sizing: border-box;}
 .submit-btn { background: var(--blue); color: white; border: none; padding: 12px 25px; border-radius: 25px; cursor: pointer; width: 100%; font-weight: bold; text-transform: uppercase;}
+
+.footer-map-box { display: flex; flex-direction: column; }
+.map-link { transition: color 0.2s ease-in-out; }
+.map-link:hover { color: #ffffff !important; }
 
 /* --- 11. MEDIA QUERIES (Mobile) --- */
 @media(max-width: 900px) {
@@ -206,14 +217,8 @@ nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
     .hero h1 { font-size: 3rem; }
     .projects-grid { padding: 0 10px 20px 10px; gap: 15px; }
     
-    /* MODIFICA 1: Vincola la dimensione fissa SOLO allo slider dei progetti. 
-       Portata a 220px per migliorare la leggibilità del testo interno su mobile */
     .projects-grid .project-card { min-width: 220px; width: 220px; scroll-snap-align: start; }
-    
-    /* MODIFICA 2: Forza le card dentro la griglia News ad occupare il 100% dello spazio disponibile */
     .news-grid .project-card { min-width: unset; width: 100%; }
-
-    /* Modifica 3: Adattamento dell'altezza immagine per proporzioni corrette su mobile */
     .p-img-box { height: 180px; } 
     
     .p-content { padding: 12px; }
