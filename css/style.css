@@ -277,3 +277,11 @@ nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
 .eyebrow { display: block; color: var(--blue); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 12px; }
 .text-link { color: var(--ink); font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; border-bottom: 2px solid transparent; padding-bottom: 4px; transition: border-color 0.3s ease, color 0.3s ease; }
 .text-link:hover { border-color: var(--blue); color: var(--blue); }
+
+/* --- 14. TIMELINE CHI SIAMO --- */
+.timeline { position: relative; max-width: 800px; margin: 50px auto 0; padding-left: 40px; border-left: 2px solid #e5e5e0; }
+.timeline-item { position: relative; padding-bottom: 50px; }
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-item::before { content: ''; position: absolute; left: -46px; top: 4px; width: 12px; height: 12px; border-radius: 50%; background: var(--blue); border: 3px solid var(--paper); box-shadow: 0 0 0 2px var(--blue); }
+.timeline-year { display: block; color: var(--blue); font-family: 'Bricolage Grotesque', 'Manrope', sans-serif; font-weight: 800; font-size: 1.5rem; margin-bottom: 8px; }
+.timeline-item h3 { margin-top: 0; margin-bottom: 15px; }
