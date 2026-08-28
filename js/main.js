@@ -198,7 +198,7 @@ function renderProjects(filterTag = 'tutti') {
                         </div>
                         <div class="p-content">
                             <span style="font-size: 0.8rem; color: #888; font-weight: 600;">Anno: ${p.endYear}</span>
-                            <h4 style="color:var(--blue); margin: 5px 0 5px 0;">${p.title}</h4>
+                            <h4 style="margin: 5px 0 5px 0;">${p.title}</h4>
                             <p style="margin:0; font-size:0.9rem">${p.cardSubtitle}</p>
                         </div>
                     </div>`;
@@ -411,4 +411,3 @@ function initScrollReveals() {
             scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
         });
     }
-}
