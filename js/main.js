@@ -161,16 +161,16 @@ function renderNews() {
 }
 
 function renderProjects(filterTag = 'tutti') {
-    const sliderContainer = document.getElementById('projects-slider');
+    const editorialGrid = document.getElementById('projects-editorial-grid');
     const gridContainer = document.getElementById('projects-grid-full');
-    
-    if (sliderContainer) {
-        sliderContainer.innerHTML = ''; 
-        const recentProjects = projectsData.slice(0, 6); 
-        
-        recentProjects.forEach(p => {
+
+    if (editorialGrid) {
+        editorialGrid.innerHTML = '';
+        const featured = projectsData.slice(0, 5);
+
+        featured.forEach(p => {
             const originalIndex = projectsData.indexOf(p);
-            sliderContainer.innerHTML += `
+            editorialGrid.innerHTML += `
                 <div class="project-card" onclick="openProject(${originalIndex})">
                     <div class="p-img-box">
                         <img src="${p.images[0]}" alt="${p.title}" loading="lazy" decoding="async" onerror="this.style.display='none'">
@@ -178,7 +178,7 @@ function renderProjects(filterTag = 'tutti') {
                     </div>
                     <div class="p-content">
                         <span style="font-size: 0.8rem; color: #888; font-weight: 600;">Anno: ${p.endYear}</span>
-                        <h4 style="color:var(--blue); margin: 5px 0 5px 0;">${p.title}</h4>
+                        <h4 style="margin: 5px 0 5px 0;">${p.title}</h4>
                         <p style="margin:0; font-size:0.9rem">${p.cardSubtitle}</p>
                     </div>
                 </div>`;
@@ -210,11 +210,6 @@ window.filterProjects = function(tag, btnElement) {
     document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
     if(btnElement) btnElement.classList.add('active');
     renderProjects(tag);
-};
-
-window.scrollSlider = function(direction) {
-    const slider = document.getElementById('projects-slider');
-    if(slider) slider.scrollBy({ left: direction * 380, behavior: 'smooth' });
 };
 
 let currentProjectIndex = 0;
