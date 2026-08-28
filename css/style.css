@@ -172,9 +172,10 @@ nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
 
 /* --- 9. TEAM --- */
 .team-container { display: flex; gap: 30px; flex-wrap: wrap; justify-content: center; }
-.member { text-align: center; width: 240px; background: #ffffff; padding: 30px 20px; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.06); transition: transform 0.3s ease, box-shadow 0.3s ease; }
-.member:hover { transform: translateY(-8px); box-shadow: 0 12px 35px rgba(0,0,0,0.12); }
-.member img { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid var(--blue); margin-bottom: 15px; }
+.member { text-align: center; width: 240px; background: #ffffff; padding: 30px 20px; border-radius: 8px; border: 1px solid #e5e5e0; transition: transform 0.3s ease, border-color 0.3s ease; }
+.member:hover { transform: translateY(-6px); border-color: var(--blue); }
+.member img { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid var(--blue); margin-bottom: 15px; filter: grayscale(1); transition: filter 0.4s ease; }
+.member:hover img { filter: grayscale(0); }
 .member h4 { margin-bottom: 5px; }
 
 /* --- 10. FOOTER (Aggiornato a 3 colonne responsive con mappa) --- */
@@ -189,7 +190,7 @@ nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
 }
 
 .form-box input, .form-box textarea { width: 100%; padding: 12px; margin-bottom: 10px; background: #222; border: 1px solid #333; color: white; border-radius: 6px; box-sizing: border-box;}
-.hp-field { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+.hp-field { position: absolute !important; width: 1px !important; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
 .submit-btn { background: var(--blue); color: white; border: none; padding: 12px 25px; border-radius: 25px; cursor: pointer; width: 100%; font-weight: bold; text-transform: uppercase;}
 
 .footer-map-box { display: flex; flex-direction: column; }
@@ -271,3 +272,8 @@ nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
 @media(max-width: 900px) {
     .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 30px 20px; }
 }
+
+/* --- 13. EYEBROW LABEL E TEXT-LINK --- */
+.eyebrow { display: block; color: var(--blue); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 12px; }
+.text-link { color: var(--ink); font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; border-bottom: 2px solid transparent; padding-bottom: 4px; transition: border-color 0.3s ease, color 0.3s ease; }
+.text-link:hover { border-color: var(--blue); color: var(--blue); }
