@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnitalia Group | Ingegneria e Servizi Ambientali</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <meta name="description" content="Tecnitalia Group: ingegneria ambientale e servizi tecnici dal 1986. Bonifiche, caratterizzazioni, gestione rifiuti e consulenza per aziende a Milano.">
+    <link rel="canonical" href="https://www.tecnitaliagroup.it/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:title" content="Tecnitalia Group | Ingegneria e Servizi Ambientali">
+    <meta property="og:description" content="Dal 1986, ingegneria ambientale e servizi tecnici: bonifiche, caratterizzazioni, gestione rifiuti e consulenza per le imprese.">
+    <meta property="og:url" content="https://www.tecnitaliagroup.it/index.html">
+    <meta property="og:image" content="https://www.tecnitaliagroup.it/assets/img/scavo.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" href="./assets/img/favicon-32.png">
+    <link rel="icon" href="./assets/img/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png">
+    <link rel="preload" as="image" href="./assets/img/scavo.jpg" fetchpriority="high">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -172,9 +185,9 @@
 
     <div id="footer-placeholder"></div>
 
-    <div class="modal" id="projectModal">
+    <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="m-title">
         <div class="modal-box">
-            <button class="close-modal" onclick="closeProject()">×</button>
+            <button class="close-modal" onclick="closeProject()" aria-label="Chiudi scheda progetto">×</button>
             <div class="m-header">
                 <div class="m-slides-wrapper" id="m-slides-wrapper"></div>
                 <button class="m-img-btn prev" onclick="changeModalImg(-1)" id="m-btn-prev">&#10094;</button>
@@ -193,6 +206,6 @@
         </div>
     </div>
 
-    <script src="./js/main.js"></script>
+    <script defer src="./js/main.js"></script>
 </body>
 </html>

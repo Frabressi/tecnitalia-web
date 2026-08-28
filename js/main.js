@@ -72,9 +72,12 @@ function initNavbar() {
     if(hamburger && navLinks) {
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            if(navLinks.classList.contains('active')) {
+            const isOpen = navLinks.classList.contains('active');
+            hamburger.setAttribute('aria-expanded', String(isOpen));
+            hamburger.setAttribute('aria-label', isOpen ? 'Chiudi menu di navigazione' : 'Apri menu di navigazione');
+            if(isOpen) {
                 hamburger.innerHTML = "×";
-                hamburger.style.color = "#1d1d1f"; 
+                hamburger.style.color = "#1d1d1f";
             } else {
                 hamburger.innerHTML = "☰";
                 hamburger.style.color = (window.scrollY > 50) ? "#1d1d1f" : "white";
@@ -87,12 +90,26 @@ function initNavbar() {
             l.addEventListener('click', () => {
                 navLinks.classList.remove('active');
                 if(hamburger) {
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    hamburger.setAttribute('aria-label', 'Apri menu di navigazione');
                     hamburger.innerHTML = "☰";
                     hamburger.style.color = (window.scrollY > 50) ? "#1d1d1f" : "white";
                 }
             });
         });
     }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navLinks && navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+            if(hamburger) {
+                hamburger.setAttribute('aria-expanded', 'false');
+                hamburger.setAttribute('aria-label', 'Apri menu di navigazione');
+                hamburger.innerHTML = "☰";
+                hamburger.style.color = (window.scrollY > 50) ? "#1d1d1f" : "white";
+            }
+        }
+    });
 }
 
 function renderNews() {
@@ -108,7 +125,7 @@ function renderNews() {
         newsDaMostrare.forEach(news => {
             targetGrid.innerHTML += `
                 <div class="project-card" style="min-width: unset; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
-                    <img src="${news.immagine}" style="width:100%; height:200px; object-fit:cover;" onerror="this.style.display='none'" alt="${news.titolo}">
+                    <img src="${news.immagine}" style="width:100%; height:200px; object-fit:cover;" loading="lazy" decoding="async" onerror="this.style.display='none'" alt="${news.titolo}">
                     <div class="p-content">
                         <span style="font-size: 0.8rem; color: #888; font-weight: 600;">${news.data}</span>
                         <h4 style="color:var(--blue); margin: 10px 0 15px 0; font-size: 1.3rem;">${news.titolo}</h4>
@@ -125,6 +142,9 @@ function renderNews() {
         const articolo = newsDati.find(n => n.id === newsId);
 
         if (articolo) {
+            document.title = `${articolo.titolo} | Tecnitalia Group`;
+            const metaDesc = document.querySelector('meta[name="description"]');
+            if (metaDesc) metaDesc.setAttribute('content', articolo.riassunto);
             document.getElementById('n-titolo').innerText = articolo.titolo;
             document.getElementById('n-data').innerText = articolo.data;
             document.getElementById('n-contenuto').innerHTML = articolo.contenuto;
@@ -152,7 +172,7 @@ function renderProjects(filterTag = 'tutti') {
             sliderContainer.innerHTML += `
                 <div class="project-card" onclick="openProject(${originalIndex})">
                     <div class="p-img-box">
-                        <img src="${p.images[0]}" alt="${p.title}" onerror="this.style.display='none'">
+                        <img src="${p.images[0]}" alt="${p.title}" loading="lazy" decoding="async" onerror="this.style.display='none'">
                         <div class="hover-reveal">APRI SCHEDA</div>
                     </div>
                     <div class="p-content">
@@ -171,7 +191,7 @@ function renderProjects(filterTag = 'tutti') {
                 gridContainer.innerHTML += `
                     <div class="project-card" onclick="openProject(${index})">
                         <div class="p-img-box">
-                            <img src="${p.images[0]}" alt="${p.title}" onerror="this.style.display='none'">
+                            <img src="${p.images[0]}" alt="${p.title}" loading="lazy" decoding="async" onerror="this.style.display='none'">
                             <div class="hover-reveal">APRI SCHEDA</div>
                         </div>
                         <div class="p-content">
@@ -230,7 +250,9 @@ window.openProject = function(index) {
     if(btnNext) btnNext.style.display = showArrows;
 
     modal.classList.add('active');
-    if (typeof lenis !== 'undefined') lenis.stop(); 
+    if (typeof lenis !== 'undefined') lenis.stop();
+    const closeBtn = modal.querySelector('.close-modal');
+    if (closeBtn) closeBtn.focus();
 };
 
 window.changeModalImg = function(direction) {
@@ -253,11 +275,14 @@ window.closeProject = function() {
 
 document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById('projectModal');
-    if (modal) { 
-        modal.addEventListener('click', (e) => { 
-            if(e.target === modal) closeProject(); 
-        }); 
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if(e.target === modal) closeProject();
+        });
     }
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal && modal.classList.contains('active')) closeProject();
+    });
 });
 
 if (typeof Lenis !== 'undefined') {
@@ -281,7 +306,12 @@ function inizializzaEmailJS() {
     if (!form) return;
 
     form.addEventListener('submit', function(event) {
-        event.preventDefault(); 
+        event.preventDefault();
+
+        if (form.website && form.website.value.trim() !== '') {
+            form.reset();
+            return;
+        }
 
         const btn = document.getElementById('submit-btn');
         const statusDiv = document.getElementById('form-status');
