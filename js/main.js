@@ -126,7 +126,7 @@ function renderNews() {
         
         newsDaMostrare.forEach(news => {
             targetGrid.innerHTML += `
-                <div class="project-card" style="min-width: unset; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
+                <div class="project-card" style="min-width: unset; position: relative;">
                     <img src="${news.immagine}" style="width:100%; height:200px; object-fit:cover;" loading="lazy" decoding="async" onerror="this.style.display='none'" alt="${news.titolo}">
                     <div class="p-content">
                         <span style="font-size: 0.8rem; color: #888; font-weight: 600;">${news.data}</span>
@@ -382,7 +382,10 @@ function initScrollReveals() {
             { opacity: 0, y: 30 },
             {
                 opacity: 1, y: 0, duration: 0.8, ease: 'power2.out',
-                scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' }
+                scrollTrigger: {
+                    trigger: el, start: 'top 85%', toggleActions: 'play none none none',
+                    onRefresh: (self) => { if (self.progress > 0) self.animation.progress(1); }
+                }
             }
         );
     });
@@ -392,7 +395,10 @@ function initScrollReveals() {
             { opacity: 0, scale: 0.96 },
             {
                 opacity: 1, scale: 1, duration: 1, ease: 'power2.out',
-                scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' }
+                scrollTrigger: {
+                    trigger: el, start: 'top 85%', toggleActions: 'play none none none',
+                    onRefresh: (self) => { if (self.progress > 0) self.animation.progress(1); }
+                }
             }
         );
     });
