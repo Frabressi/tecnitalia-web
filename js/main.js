@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         initNavbar();
         initStatsCounters();
+        initScrollReveals();
 
         // Ricalcolo layout per GSAP dopo il rendering dinamico
         setTimeout(() => {
@@ -370,4 +371,38 @@ function initStatsCounters() {
     }, { threshold: 0.3 });
 
     observer.observe(statsSection);
+}
+
+function initScrollReveals() {
+    if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray('.fade-element').forEach((el) => {
+        gsap.fromTo(el,
+            { opacity: 0, y: 30 },
+            {
+                opacity: 1, y: 0, duration: 0.8, ease: 'power2.out',
+                scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' }
+            }
+        );
+    });
+
+    gsap.utils.toArray('.reveal-img').forEach((el) => {
+        gsap.fromTo(el,
+            { opacity: 0, scale: 0.96 },
+            {
+                opacity: 1, scale: 1, duration: 1, ease: 'power2.out',
+                scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' }
+            }
+        );
+    });
+
+    const heroBg = document.querySelector('.hero-bg');
+    if (heroBg) {
+        gsap.to(heroBg, {
+            yPercent: 15,
+            ease: 'none',
+            scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
+        });
+    }
 }
