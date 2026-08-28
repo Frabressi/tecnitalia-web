@@ -286,5 +286,53 @@
         "images": ["./assets/img/prysmian1.jpg", "./assets/img/prysmian2.jpg"],
         "tags": ["demolizione"],
         "desc": "<p>L’area è oggetto di dismissione per compravendita. Poiché molte macchine per la filatura della fibra ottica sono coperte da brevetto è necessario distruggerle e allontanarle dall’area. Altri macchinari verranno smontati e trasportati in altro stabilimento della Prysmian.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di redigere un progetto di decommissioning, gestire pratiche amministrative, e ricoprire i ruoli di:</strong></p><ul><li>Responsabile dei Lavori</li><li>Direttore dei Lavori</li><li>Coordinatore della Sicurezza (CSP & CSE)</li></ul>"
+    },
+    {
+        "title": "Ex Sofer",
+        "client": "Prysmian Power Link",
+        "period": "2024-2025",
+        "endYear": 2025,
+        "val": "ca. 20.000.000 €",
+        "type": "Direzione Lavori di bonifica suoli contenenti amianto",
+        "cardSubtitle": "Direzione Lavori di bonifica suoli contenenti amianto.",
+        "images": ["./assets/img/sofer1.jpg", "./assets/img/sofer2.jpg"],
+        "tags": ["amianto", "bonifica"],
+        "desc": "<p>L’area è oggetto di un progetto di allargamento dello stabilimento esistente, ad essa adiacente. Nel corso dei lavori il ritrovamento di MCA compatto e friabile ha costretto l’impresa a bloccare i lavori e ad avviare una complessa attività di bonifica.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di riorganizzare e gestire le attività per limitarne il costo, ricoprendo il ruolo di:</strong></p><ul><li>Direttore dei Lavori</li></ul>"
+    },
+    {
+        "title": "Nuova Scuola Politecnica",
+        "client": "Università di Genova",
+        "period": "2025-2026 (in corso)",
+        "endYear": 2026,
+        "val": "ca. 260.000.000 €",
+        "type": "Direzione Lavori di bonifica suoli contenenti amianto",
+        "cardSubtitle": "Bonifica di amianto naturale (Tremolite) e capping.",
+        "images": ["./assets/img/genova1.jpg", "./assets/img/genova2.jpg"],
+        "tags": ["amianto", "bonifica"],
+        "desc": "<p>Nel sito è prevista la realizzazione della nuova sede del Politecnico di Genova. Sono state attivate particolari modalità di scavo per fronteggiare la presenza di MCA e, soprattutto, di amianto naturale (Tremolite). È prevista la posa in opera di un capping e la valutazione della recuperabilità in sito dei terreni scavati (procedimento ex DPR 120/17).</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di riorganizzare e gestire le attività di scavo, scrivere nuove procedure e affiancare il DL delle opere edili, ricoprendo il ruolo di:</strong></p><ul><li>Responsabile Ambientale</li><li>Direttore dei Lavori specialistico ambientale</li></ul>"
+    },
+    {
+        "title": "Area ex IBM",
+        "client": "Lombardini 22 - CAP DC Italia Srl",
+        "period": "2024-2026 (in corso)",
+        "endYear": 2026,
+        "val": "ca. 10.000.000 €",
+        "type": "Due Diligence e Direzione Lavori di decommissioning",
+        "cardSubtitle": "Due Diligence ambientale e bonifica in vista della demolizione.",
+        "images": ["./assets/img/ibm1.jpg", "./assets/img/ibm2.jpg"],
+        "tags": ["amianto", "demolizione"],
+        "desc": "<p>Il sito, già sede della IBM, è stato oggetto di una mappatura dei manufatti contenenti amianto e delle Fibre Artificiali Vetrose e sarà totalmente demolito previa bonifica dell’amianto.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Due Diligence ambientale in fase di compravendita</li><li>Direzione Lavori di bonifica MCA e FAV</li><li>Direzione Lavori di demolizione</li></ul>"
+    },
+    {
+        "title": "Area Via San Gottardo",
+        "client": "Lombardini 22 - CAP DC Italia Srl",
+        "period": "2025-2026 (in corso)",
+        "endYear": 2026,
+        "val": "ca. 2.500.000 €",
+        "type": "Due Diligence e Direzione Lavori di decommissioning",
+        "cardSubtitle": "Mappatura e bonifica amianto in vista della demolizione.",
+        "images": ["./assets/img/cornaredo1.jpg", "./assets/img/cornaredo2.jpg"],
+        "tags": ["amianto", "demolizione"],
+        "desc": "<p>Il sito è stato oggetto di una mappatura dei manufatti contenenti amianto e delle Fibre Artificiali Vetrose e sarà totalmente demolito previa bonifica dell’amianto. È presente nel suolo a cielo aperto una notevole quantità di frammenti di MCA che verranno rimossi tramite cernita manuale meccanizzata.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Due Diligence ambientale in fase di compravendita</li><li>Direzione Lavori di bonifica MCA e FAV</li><li>Direzione Lavori di demolizione</li></ul>"
     }
 ]
