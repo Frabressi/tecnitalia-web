@@ -128,7 +128,7 @@ function renderNews() {
                     <img src="${news.immagine}" style="width:100%; height:200px; object-fit:cover;" loading="lazy" decoding="async" onerror="this.style.display='none'" alt="${news.titolo}">
                     <div class="p-content">
                         <span style="font-size: 0.8rem; color: #888; font-weight: 600;">${news.data}</span>
-                        <h4 style="color:var(--blue); margin: 10px 0 15px 0; font-size: 1.3rem;">${news.titolo}</h4>
+                        <h4 style="margin: 10px 0 15px 0; font-size: 1.3rem;">${news.titolo}</h4>
                         <p style="font-size:0.95rem; margin-bottom: 0;">${news.riassunto}</p>
                         <a href="news-singola.html?id=${news.id}" class="news-link-stretched">Leggi l'articolo ➔</a>
                     </div>
