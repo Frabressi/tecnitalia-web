@@ -190,7 +190,7 @@ nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
 }
 
 .form-box input, .form-box textarea { width: 100%; padding: 12px; margin-bottom: 10px; background: #222; border: 1px solid #333; color: white; border-radius: 6px; box-sizing: border-box;}
-.hp-field { position: absolute !important; width: 1px !important; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+.hp-field { position: absolute !important; width: 1px !important; height: 1px; padding: 0 !important; border: 0 !important; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
 .submit-btn { background: var(--blue); color: white; border: none; padding: 12px 25px; border-radius: 25px; cursor: pointer; width: 100%; font-weight: bold; text-transform: uppercase;}
 
 .footer-map-box { display: flex; flex-direction: column; }
