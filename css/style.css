@@ -262,3 +262,14 @@ nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
 .project-card:hover h4 {
     color: #002d54 !important;
 }
+
+/* --- 12. FASCIA STATISTICHE --- */
+.stats-band { background: var(--navy-deep); padding: 80px 10%; width: 100vw; margin-left: calc(-50vw + 50%); box-sizing: border-box; }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; max-width: 1200px; margin: 0 auto; text-align: center; }
+.stat-item { display: flex; flex-direction: column; gap: 8px; align-items: center; }
+.stat-number, .stat-suffix { font-family: 'Bricolage Grotesque', 'Manrope', sans-serif; font-weight: 800; font-size: clamp(2.5rem, 5vw, 4rem); color: #ffffff; line-height: 1; letter-spacing: -0.02em; }
+.stat-label { color: rgba(255,255,255,0.7); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; }
+
+@media(max-width: 900px) {
+    .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 30px 20px; }
+}

@@ -37,8 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
         
         renderNews();
         renderProjects('tutti');
-        
+
         initNavbar();
+        initStatsCounters();
 
         // Ricalcolo layout per GSAP dopo il rendering dinamico
         setTimeout(() => {
@@ -338,4 +339,40 @@ function inizializzaEmailJS() {
                 console.error('EmailJS Error:', error);
             });
     });
+}
+
+function initStatsCounters() {
+    const statsSection = document.querySelector('.stats-band');
+    if (!statsSection) return;
+
+    const projectCountEl = statsSection.querySelector('[data-count-projects]');
+    if (projectCountEl) projectCountEl.setAttribute('data-count', String(projectsData.length));
+
+    const counters = statsSection.querySelectorAll('.stat-number[data-count]');
+
+    const animateCounter = (el) => {
+        if (el.getAttribute('data-format') === 'year') return;
+        const target = parseInt(el.getAttribute('data-count'), 10);
+        if (isNaN(target)) return;
+        const duration = 1200;
+        const start = performance.now();
+        const step = (now) => {
+            const progress = Math.min((now - start) / duration, 1);
+            el.textContent = Math.floor(progress * target);
+            if (progress < 1) requestAnimationFrame(step);
+            else el.textContent = String(target);
+        };
+        requestAnimationFrame(step);
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                counters.forEach(animateCounter);
+                observer.disconnect();
+            }
+        });
+    }, { threshold: 0.3 });
+
+    observer.observe(statsSection);
 }
