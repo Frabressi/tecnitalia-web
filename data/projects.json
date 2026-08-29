@@ -1,305 +1,5 @@
 [
     {
-        "title": "Cascina Merlata",
-        "client": "Cascina Merlata S.p.A., Milano",
-        "period": "2012-2013",
-        "endYear": 2013,
-        "val": "ca. 2.000.000 €",
-        "type": "Progetto Operativo di Bonifica e Direzione Lavori",
-        "cardSubtitle": "Progetto Operativo di Bonifica e Direzione Lavori.",
-        "images": ["./assets/img/merlata1.jpg", "./assets/img/merlata2.jpg"],
-        "tags": ["bonifica"],
-        "desc": "<p>Il sito era totalmente dismesso e presentava contaminazioni da idrocarburi e metalli. L’area verrà trasformata in un sistema di viabilità e urbanizzazioni necessarie per il collegamento tra il quartiere di Cascina Merlata e la zona EXPO2015.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione del Progetto Operativo di Bonifica</li><li>Direzione Lavori</li></ul>"
-    },
-    {
-        "title": "Ex Industrie Chimiche Baslini",
-        "client": "Habita S.r.l., Trezzo d’Adda (Bg)",
-        "period": "2008-2023 (in corso)",
-        "endYear": 2023,
-        "val": "ca. 20.000.000 €",
-        "type": "Progetto Operativo di Bonifica e Direzione Lavori",
-        "cardSubtitle": "Progetto Operativo di Bonifica e Direzione Lavori.",
-        "images": ["./assets/img/blaslini1.jpg", "./assets/img/baslini2.jpg"],
-        "tags": ["bonifica", "acque", "demolizione"],
-        "desc": "<p>Il sito è totalmente dismesso e presenta contaminazioni da metalli, idrocarburi, solventi e pesticidi.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Direzione Lavori interventi di bonifica e demolizione</li><li>Direzione Lavori sbarramento idraulico</li><li>Redazione della Variante del Progetto Operativo di Bonifica con Analisi di Rischio</li><li>Implementazione di un modello matematico per la rimodulazione dello sbarramento idraulico</li></ul>"
-    },
-    {
-        "title": "Ex Cartiere Binda",
-        "client": "Euromilano S.p.A., Milano",
-        "period": "2004-2007",
-        "endYear": 2007,
-        "val": "ca. 2.700.000 €",
-        "type": "Progetto Definitivo di Bonifica e Direzione Lavori",
-        "cardSubtitle": "Progetto Definitivo di Bonifica e Direzione Lavori.",
-        "images": ["./assets/img/binda1.jpg", "./assets/img/binda2.jpg"],
-        "tags": ["bonifica", "amianto", "demolizione"],
-        "desc": "<p>Il sito era totalmente dismesso e presentava contaminazioni da PCB, metalli e idrocarburi. L’area ha cambiato destinazione ed è stata trasformata in un quartiere residenziale.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione del Piano di Caratterizzazione</li><li>Realizzazione dell’Indagine Ambientale</li><li>Redazione del Progetto Definitivo di Bonifica</li><li>Direzione Lavori interventi di bonifica, rimozione MCA (materiale contenente amianto) e demolizione</li></ul>"
-    },
-    {
-        "title": "Officina del Gas – Bovisa Gasometri",
-        "client": "Metropolitana Milanese S.p.A. per il Comune di Milano",
-        "period": "2002-2006",
-        "endYear": 2006,
-        "val": "ca. 45.000.000 €",
-        "type": "Progetto Definitivo di Bonifica",
-        "cardSubtitle": "Progetto Definitivo di Bonifica Sito Interesse Nazionale.",
-        "images": ["./assets/img/gasometri1.jpg", "./assets/img/gasometri2.jpg"],
-        "tags": ["bonifica", "acque", "rifiuti"],
-        "desc": "<p>L’area all’epoca della redazione del progetto era inserita tra i Siti d’Interesse Nazionale previsti dal Decreto Ministeriale 18 settembre 2001, n. 468. Il sito è totalmente dismesso e presenta contaminazioni da idrocarburi e metalli.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di redigere un progetto di bonifica dell’intera area con utilizzo di diverse tecnologie:</strong></p><ul><li>Soil washing</li><li>Soil vapor extraction</li><li>Discarica di servizio</li><li>Sbarramento idraulico</li></ul><p>Per verificare la validità della scelta della tecnologie di bonifica ha anche effettuato delle prove pilota di laboratorio di soil washing.</p>"
-    },
-    {
-        "title": "Ex Officine Metallurgiche Broggi",
-        "client": "Euromilano S.p.A., Milano",
-        "period": "2004-2007",
-        "endYear": 2007,
-        "val": "ca. 600.000 €",
-        "type": "Progetto Definitivo di Bonifica e Direzione Lavori",
-        "cardSubtitle": "Progetto Definitivo di Bonifica e Direzione Lavori.",
-        "images": ["./assets/img/broggi1.jpg", "./assets/img/broggi2.jpg"],
-        "tags": ["bonifica", "acque", "demolizione"],
-        "desc": "<p>Il sito era totalmente dismesso e presentava contaminazioni da metalli e idrocarburi. L’area è stata trasformata nella nuova sede del Politecnico di Milano.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione del Piano di Caratterizzazione</li><li>Realizzazione indagine ambientale</li><li>Redazione del Progetto Definitivo di Bonifica</li><li>Direzione Lavori interventi di bonifica e demolizione</li><li>Direzione Lavori sbarramento idraulico</li></ul>"
-    },
-    {
-        "title": "Ex Broggi – Politecnico di Milano",
-        "client": "Euromilano S.p.A. e Politecnico di Milano",
-        "period": "2008-2013",
-        "endYear": 2013,
-        "val": "ca. 1.300.000 €",
-        "type": "Progetto Operativo di Bonifica con Analisi di Rischio",
-        "cardSubtitle": "Analisi di Rischio, Capping e Soil Vapor Extraction.",
-        "images": ["./assets/img/broggipoli1.jpg", "./assets/img/broggipoli2.jpg", "./assets/img/broggipoli3.jpg"],
-        "tags": ["bonifica", "acque"],
-        "desc": "<p>Il sito, già sede del Politecnico di Milano, è risultato contaminato in profondità da idrocarburi, IPA e solventi clorurati.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione dell’Integrazione del Piano di Caratterizzazione</li><li>Realizzazione indagine ambientale e monitoraggi soil gas</li><li>Redazione del Progetto di Sbarramento Idraulico</li><li>Realizzazione Messa in Sicurezza d’Emergenza/Permanente</li><li>Redazione della Variante Progetto Definitivo di Bonifica con Analisi di Rischio</li><li>Progettazione impianto Soil Vapor Extraction (SVE)</li><li>Direzione Lavori interventi di bonifica e sbarramento idraulico</li></ul>"
-    },
-    {
-        "title": "Cascina Basmetto",
-        "client": "Uniabita, già Corcab (MI) – CMB, Milano",
-        "period": "2009-2013",
-        "endYear": 2013,
-        "val": "ca. 60.000 €",
-        "type": "Piano di caratterizzazione ed indagine ambientale",
-        "cardSubtitle": "Piano di caratterizzazione ed indagine ambientale.",
-        "images": ["./assets/img/basmetto1.jpg", "./assets/img/basmetto2.jpg"],
-        "tags": ["bonifica"],
-        "desc": "<p>Il sito è stato impiegato originariamente in usi agricoli e successivamente come area di deposito di automezzi da demolire. L’area deve cambiare destinazione d’uso e necessita di una bonifica dei suoli propedeutica alla integrale demolizione della vecchia cascina ed alla nuova urbanizzazione.</p><p>Tecnitalia Ingegneria è stata individuata come partner nel pool di progettazione sia per determinare i costi della futura bonifica sia per svolgere l’attività di caratterizzazione iniziale del sito.</p>"
-    },
-    {
-        "title": "Ceramica Ligure",
-        "client": "Lasselsberger GmbH, Pöchlarn",
-        "period": "2010-2013",
-        "endYear": 2013,
-        "val": "ca. 500.000 €",
-        "type": "Progetto di bonifica con Analisi di Rischio",
-        "cardSubtitle": "Progetto di bonifica con Analisi di Rischio.",
-        "images": ["./assets/img/ceramica1.jpg", "./assets/img/ceramica2.jpg"],
-        "tags": ["bonifica"],
-        "desc": "<p>L’area è totalmente dismessa e presenta contaminazioni da idrocarburi e metalli, sia all’interno dell’ex stabilimento sia all’esterno.</p><p>Tecnitalia Ingegneria ha ricevuto l’incarico di redigere un progetto di bonifica dell’intera area con Analisi di rischio e di Direzione Lavori della prima fase (Area esterna) di bonifica.</p>"
-    },
-    {
-        "title": "CF Gomma – Pirelli Tyres",
-        "client": "Euromilano S.p.A.",
-        "period": "2009-2013",
-        "endYear": 2013,
-        "val": "ca. 600.000 €",
-        "type": "Caratterizzazione e Bonifica Amianto",
-        "cardSubtitle": "Caratterizzazione ambientale e Bonifica MCA e FAV.",
-        "images": ["./assets/img/pirelli1.jpg", "./assets/img/pirelli2.jpg"],
-        "tags": ["amianto", "bonifica"],
-        "desc": "<p>L’area deve cambiare destinazione d’uso e sarà totalmente demolita. È stata avviata dalla ex proprietà un’attività di caratterizzazione che è stata ripresa da Tecnitalia Ingegneria per giungere ad una progettazione con analisi di rischio degli interventi di bonifica.</p><p>Poiché l’area presentava un’ingente quantità di MCA, sia in forma friabile sia compatta, è stato necessario dapprima redigere una mappatura ed in seguito procedere alla bonifica anche delle fibre artificiali vetrose (FAV).</p>"
-    },
-    {
-        "title": "Ex Teatro Smeraldo",
-        "client": "Eataly Real Estate",
-        "period": "2012",
-        "endYear": 2012,
-        "val": "ca. 430.000 €",
-        "type": "Bonifica materiali contenenti amianto",
-        "cardSubtitle": "Bonifica materiali contenenti amianto (MCA) e FAV.",
-        "images": ["./assets/img/smeraldo1.jpg", "./assets/img/smeraldo2.jpg"],
-        "tags": ["amianto"],
-        "desc": "<p>L’area ha cambiato destinazione ed è stata totalmente ristrutturata per essere adibita a negozio/ristorante. Presentava occultamente un’ingente quantità di MCA soprattutto in forma friabile. È stato necessario intervenire con diverse aree confinate.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redigere una mappatura dei MCA e delle FAV propedeutica alla loro bonifica</li><li>Direzione Lavori</li></ul>"
-    },
-    {
-        "title": "Ex Exide Technologies",
-        "client": "Exide Technologies S.r.l.",
-        "period": "2007-2013",
-        "endYear": 2013,
-        "val": "ca. 1.500.000 €",
-        "type": "Progetto Operativo di Bonifica e Direzione Lavori",
-        "cardSubtitle": "Progetto Operativo di Bonifica e Direzione Lavori.",
-        "images": ["./assets/img/exide1.jpg", "./assets/img/exide2.jpg"],
-        "tags": ["bonifica", "acque"],
-        "desc": "<p>Il sito è totalmente dismesso e presenta contaminazioni da metalli, idrocarburi e pesticidi.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione del Progetto Operativo di Bonifica con Analisi di Rischio</li><li>Direzione Lavori interventi di bonifica</li><li>Direzione Lavori sbarramento idraulico e impianto Trattamento Acque di Falda (TAF)</li><li>Implementazione di un modello matematico per la rimodulazione dello sbarramento idraulico</li></ul>"
-    },
-    {
-        "title": "Stabilimento Industrie Chimiche Ingegner Bonelli",
-        "client": "Industrie chimiche ICIB S.P.A.",
-        "period": "2008-2013",
-        "endYear": 2013,
-        "val": "ca. 250.000 €",
-        "type": "Progetto Operativo di Bonifica e Direzione Lavori",
-        "cardSubtitle": "Progetto Operativo di Bonifica e Direzione Lavori.",
-        "images": ["./assets/img/bonelli1.jpg", "./assets/img/bonelli2.jpg"],
-        "tags": ["bonifica", "acque"],
-        "desc": "<p>Il sito industriale è in attività e presenta contaminazioni da metalli, idrocarburi e fluoruri.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione del Piano di Caratterizzazione</li><li>Realizzazione dell’indagine ambientale</li><li>Progettazione e realizzazione della Messa in Sicurezza d’Emergenza (MISE) della falda mediante sbarramento idraulico</li><li>Direzione Lavori sbarramento idraulico</li><li>Redazione del Progetto Operativo di Bonifica con Analisi di Rischio</li></ul>"
-    },
-    {
-        "title": "Ex Nivea",
-        "client": "Uniabita, già Corcab (MI)",
-        "period": "2006-2013",
-        "endYear": 2013,
-        "val": "ca. 1.000.000 €",
-        "type": "Progetto Definitivo di Bonifica e Direzione Lavori",
-        "cardSubtitle": "Progetto Definitivo di Bonifica e Direzione Lavori.",
-        "images": ["./assets/img/nivea1.jpg", "./assets/img/nivea2.jpg"],
-        "tags": ["bonifica", "amianto", "acque", "demolizione"],
-        "desc": "<p>L’area deve cambiare destinazione d’uso ed è stata totalmente demolita. È stata avviata dalla ex proprietà un’attività di caratterizzazione che è stata ripresa da Tecnitalia Ingegneria per giungere alla progettazione definitiva.</p><p>Poiché l’area presentava un’ingente quantità di MCA, sia in forma friabile sia compatta, è stato necessario dapprima redigere una mappatura ed in seguito procedere alla bonifica.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione del Progetto Definitivo di Bonifica</li><li>Direzione Lavori interventi di bonifica e demolizione</li><li>Progettazione di un sistema di aggottamento della falda</li></ul>"
-    },
-    {
-        "title": "Ex Zincheria Origoni",
-        "client": "Euromilano S.p.A., Milano",
-        "period": "2004-2021",
-        "endYear": 2021,
-        "val": "ca. 500.000 €",
-        "type": "Progetto Definitivo di Bonifica con MISE",
-        "cardSubtitle": "MISE, Sbarramento Idraulico e Impianto TAF.",
-        "images": ["./assets/img/origoni1.jpg", "./assets/img/origoni2.jpg"],
-        "tags": ["bonifica", "acque"],
-        "desc": "<p>Il sito era totalmente dismesso e presentava contaminazioni da metalli e idrocarburi. L’area è stata trasformata nella nuova sede del Politecnico di Milano.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione del Progetto Definitivo di Bonifica con Analisi di Rischio e Messa in Sicurezza Permanente (capping)</li><li>Direzione Lavori interventi di bonifica e demolizione</li><li>Progettazione Sbarramento Idraulico e impianto Trattamento Acque di Falda (TAF)</li><li>Direzione Lavori TAF</li></ul>"
-    },
-    {
-        "title": "Ex Deposito Carburanti Finalube",
-        "client": "Euromilano S.p.A., Milano",
-        "period": "1999-2002",
-        "endYear": 2002,
-        "val": "ca. 6.000.000 €",
-        "type": "Discarica di servizio e Direzione Lavori",
-        "cardSubtitle": "Progettazione discarica di servizio e Direzione Lavori.",
-        "images": ["./assets/img/finalube1.jpg", "./assets/img/finalube2.jpg"],
-        "tags": ["bonifica", "acque", "rifiuti"],
-        "desc": "<p>Il sito era totalmente dismesso e presentava contaminazioni da idrocarburi, IPA, BTEX e metalli. L’area è stata trasformata in un quartiere residenziale con la creazione di un vastissimo parco pubblico.</p><p><strong>Gli interventi di bonifica si sono svolti sotto il controllo di Tecnitalia Ingegneria:</strong></p><ul><li>Demolizione degli edifici e dei serbatoi interrati e fuori terra</li><li>Sbarramento idraulico della falda e sbancamento di terreni contaminati</li><li>Trattamento on-site dei terreni mediante soil venting e biorisanamento (biopile)</li><li>Realizzazione di una discarica di servizio per i terreni non idonei al biorisanamento</li></ul>"
-    },
-    {
-        "title": "Fondazione Prada",
-        "client": "Prada S.p.A., Milano",
-        "period": "2010-2013",
-        "endYear": 2013,
-        "val": "ca. 4.500.000 €",
-        "type": "Progetto Operativo di Bonifica e Direzione Lavori",
-        "cardSubtitle": "Progetto Operativo di Bonifica e Direzione Lavori.",
-        "images": ["./assets/img/prada1.jpg", "./assets/img/prada2.jpg"],
-        "tags": ["bonifica"],
-        "desc": "<p>Le attività produttive sul sito erano completamente dismesse e l’area veniva utilizzata come deposito di opere d’arte e showroom. L’area presentava contaminazioni da metalli e idrocarburi e sarà sede di un Museo di Arte Contemporanea.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione del Piano di Caratterizzazione</li><li>Realizzazione indagine ambientale</li><li>Redazione del Progetto Operativo di Bonifica con Analisi di Rischio</li><li>Direzione Lavori</li></ul>"
-    },
-    {
-        "title": "Ex Saffa Fabbriche Fiammiferi e Affini",
-        "client": "Red.Im. S.r.l.",
-        "period": "2006-2011",
-        "endYear": 2011,
-        "val": "ca. 110.000 €",
-        "type": "Caratterizzazione ambientale",
-        "cardSubtitle": "Caratterizzazione ambientale area dismessa.",
-        "images": ["./assets/img/saffa1.jpg", "./assets/img/saffa2.jpg"],
-        "tags": ["bonifica"],
-        "desc": "<p>L’area deve cambiare destinazione d’uso e sarà totalmente demolita.</p><p>Tecnitalia Ingegneria è stata individuata come partner nel pool di progettazione sia per determinare i costi della futura bonifica sia per svolgere l’attività di caratterizzazione iniziale del sito.</p>"
-    },
-    {
-        "title": "Ex Saponificio Sirio",
-        "client": "Euromilano S.p.A., Milano",
-        "period": "2003, 2013, 2020-2022",
-        "endYear": 2022,
-        "val": "ca. 500.000 €",
-        "type": "Piano di Caratterizzazione e Bonifica",
-        "cardSubtitle": "Progetto Operativo di Bonifica, Analisi Rischio e DL.",
-        "images": ["./assets/img/sirio1.jpg", "./assets/img/sirio2.jpg"],
-        "tags": ["bonifica", "demolizione"],
-        "desc": "<p>Il sito era totalmente dismesso e presentava contaminazioni da metalli e idrocarburi.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Direzione Lavori interventi di demolizione</li><li>Redazione del Piano di Caratterizzazione e indagine Ambientale</li><li>Redazione del Progetto Operativo di Bonifica</li><li>Direzione Lavori di bonifica</li></ul>"
-    },
-    {
-        "title": "Ex Fratelli Feltrinelli",
-        "client": "Euromilano S.p.A., Milano",
-        "period": "2009-2013 e 2021-2022",
-        "endYear": 2022,
-        "val": "ca. 1.000.000 €",
-        "type": "Progetto Operativo di Bonifica e Piano Rimozione",
-        "cardSubtitle": "Bonifica con Analisi di Rischio e Piano Rimozione Rifiuti.",
-        "images": ["./assets/img/feltrinelli1.jpg", "./assets/img/feltrinelli2.jpg"],
-        "tags": ["bonifica", "rifiuti"],
-        "desc": "<p>Il sito era totalmente dismesso e presentava contaminazioni da metalli e idrocarburi oltre a grandi quantità di rifiuti interrati. Nell’area è stata dapprima ubicata la sede temporanea della Triennale di Milano in Bovisa (TBVS) e successivamente uno studentato universitario.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione del Piano di Caratterizzazione e indagine Ambientale</li><li>Redazione del Progetto Operativo di Bonifica con Analisi di Rischio</li><li>Redazione del Piano di Rimozione Rifiuti</li><li>Direzione Lavori di rimozione dei rifiuti e di bonifica</li></ul>"
-    },
-    {
-        "title": "Ex Termoraggi",
-        "client": "Sidis S.p.A., Milano",
-        "period": "2005-2011",
-        "endYear": 2011,
-        "val": "ca. 600.000 €",
-        "type": "Progetto Definitivo di Bonifica e Direzione Lavori",
-        "cardSubtitle": "Progetto Definitivo di Bonifica e Direzione Lavori.",
-        "images": ["./assets/img/termoraggi1.jpg", "./assets/img/termoraggi2.jpg"],
-        "tags": ["bonifica", "demolizione"],
-        "desc": "<p>Il sito, già sede di un deposito di carburanti, deve cambiare destinazione d’uso ed è stato totalmente demolito. L’area era già in fase di caratterizzazione quando è stata coinvolta Tecnitalia Ingegneria per giungere alla progettazione definitiva degli interventi di bonifica.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione dell’integrazione del Progetto Definitivo di Bonifica</li><li>Direzione Lavori interventi di bonifica e demolizione</li></ul>"
-    },
-    {
-        "title": "Ex Novaceta",
-        "client": "Namira SGRpA, Milano",
-        "period": "2021-2025 (in corso)",
-        "endYear": 2025,
-        "val": "ca. 12.000.000 €",
-        "type": "Progetti Operativi di Bonifica e Direzione Lavori",
-        "cardSubtitle": "Bonifica da MCA/FAV e Demolizione edifici.",
-        "images": ["./assets/img/novaceta1.jpg", "./assets/img/novaceta2.jpg"],
-        "tags": ["bonifica", "amianto", "demolizione"],
-        "desc": "<p>Il sito, già sede della società Novaceta, SNIA e Enercel, è stato caratterizzato, bonificato dall’amianto e dalle FAV e totalmente demolito. Sono stati redatti 3 progetti di bonifica per i diversi lotti (Area Sporting, Area Parking e Area di sviluppo).</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Due Diligence ambientale in fase di compravendita</li><li>Direzione Lavori di bonifica MCA e FAV e demolizione</li><li>Progettazione degli interventi di bonifica su tre aree separate</li><li>Direzione Lavori interventi di bonifica</li></ul>"
-    },
-    {
-        "title": "Oasi Bovisa",
-        "client": "A2a Milano",
-        "period": "2022-2023 (in corso)",
-        "endYear": 2023,
-        "val": "ca. 5.000.000 €",
-        "type": "Progetto Operativo di Bonifica con Analisi di Rischio",
-        "cardSubtitle": "Progetto Operativo di Bonifica con Analisi di Rischio.",
-        "images": ["./assets/img/bovisa1.jpg", "./assets/img/bovisa2.jpg"],
-        "tags": ["bonifica", "acque"],
-        "desc": "<p>L’area è oggetto di interventi di riqualificazione per integrarsi con quella adiacente di proprietà del Politecnico di Milano e del Comune di Milano.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di redigere un progetto di bonifica che si integrasse con quello architettonico, mediante:</strong></p><ul><li>Applicazione dell’Analisi di Rischio</li><li>Impiego di tecniche sperimentali di biocapping</li><li>Barrieramento idraulico con sfruttamento delle acque emunte a scopi paesaggistici e ricreativi</li><li>Minimizzazione della rimozione dei terreni contaminati</li></ul>"
-    },
-    {
-        "title": "Area Ex Reggiani",
-        "client": "Pessina Costruzioni SpA Milano",
-        "period": "2023",
-        "endYear": 2023,
-        "val": "ca. 3.000.000 €",
-        "type": "Caratterizzazione e Progetto Operativo di Bonifica",
-        "cardSubtitle": "Caratterizzazione e Progetto Operativo di Bonifica.",
-        "images": ["./assets/img/reggiani1.jpg", "./assets/img/reggiani2.jpg"],
-        "tags": ["bonifica"],
-        "desc": "<p>L’area è oggetto di interventi di riqualificazione per lo sviluppo di un nuovo polo universitario e altre funzioni.</p><p>Tecnitalia Ingegneria ha ricevuto l’incarico di caratterizzare l’area e redigere il progetto di bonifica. Si è conclusa la fase di caratterizzazione e le attività sono sospese per il fallimento della Committente.</p>"
-    },
-    {
-        "title": "Ex Stabilimento Prysmian Group",
-        "client": "FIBRE OTTICHE SUD - F.O.S. srl",
-        "period": "2024-2025 (in corso)",
-        "endYear": 2025,
-        "val": "ca. 1.500.000 €",
-        "type": "Decommissioning area industriale",
-        "cardSubtitle": "Decommissioning area industriale Fibre Ottiche.",
-        "images": ["./assets/img/prysmian1.jpg", "./assets/img/prysmian2.jpg"],
-        "tags": ["demolizione"],
-        "desc": "<p>L’area è oggetto di dismissione per compravendita. Poiché molte macchine per la filatura della fibra ottica sono coperte da brevetto è necessario distruggerle e allontanarle dall’area. Altri macchinari verranno smontati e trasportati in altro stabilimento della Prysmian.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di redigere un progetto di decommissioning, gestire pratiche amministrative, e ricoprire i ruoli di:</strong></p><ul><li>Responsabile dei Lavori</li><li>Direttore dei Lavori</li><li>Coordinatore della Sicurezza (CSP & CSE)</li></ul>"
-    },
-    {
-        "title": "Ex Sofer",
-        "client": "Prysmian Power Link",
-        "period": "2024-2025",
-        "endYear": 2025,
-        "val": "ca. 20.000.000 €",
-        "type": "Direzione Lavori di bonifica suoli contenenti amianto",
-        "cardSubtitle": "Direzione Lavori di bonifica suoli contenenti amianto.",
-        "images": ["./assets/img/sofer1.jpg", "./assets/img/sofer2.jpg"],
-        "tags": ["amianto", "bonifica"],
-        "desc": "<p>L’area è oggetto di un progetto di allargamento dello stabilimento esistente, ad essa adiacente. Nel corso dei lavori il ritrovamento di MCA compatto e friabile ha costretto l’impresa a bloccare i lavori e ad avviare una complessa attività di bonifica.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di riorganizzare e gestire le attività per limitarne il costo, ricoprendo il ruolo di:</strong></p><ul><li>Direttore dei Lavori</li></ul>"
-    },
-    {
         "title": "Nuova Scuola Politecnica",
         "client": "Università di Genova",
         "period": "2025-2026 (in corso)",
@@ -307,8 +7,14 @@
         "val": "ca. 260.000.000 €",
         "type": "Direzione Lavori di bonifica suoli contenenti amianto",
         "cardSubtitle": "Bonifica di amianto naturale (Tremolite) e capping.",
-        "images": ["./assets/img/genova1.jpg", "./assets/img/genova2.jpg"],
-        "tags": ["amianto", "bonifica"],
+        "images": [
+            "./assets/img/genova1.jpg",
+            "./assets/img/genova2.jpg"
+        ],
+        "tags": [
+            "amianto",
+            "bonifica"
+        ],
         "desc": "<p>Nel sito è prevista la realizzazione della nuova sede del Politecnico di Genova. Sono state attivate particolari modalità di scavo per fronteggiare la presenza di MCA e, soprattutto, di amianto naturale (Tremolite). È prevista la posa in opera di un capping e la valutazione della recuperabilità in sito dei terreni scavati (procedimento ex DPR 120/17).</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di riorganizzare e gestire le attività di scavo, scrivere nuove procedure e affiancare il DL delle opere edili, ricoprendo il ruolo di:</strong></p><ul><li>Responsabile Ambientale</li><li>Direttore dei Lavori specialistico ambientale</li></ul>"
     },
     {
@@ -319,8 +25,14 @@
         "val": "ca. 10.000.000 €",
         "type": "Due Diligence e Direzione Lavori di decommissioning",
         "cardSubtitle": "Due Diligence ambientale e bonifica in vista della demolizione.",
-        "images": ["./assets/img/ibm1.jpg", "./assets/img/ibm2.jpg"],
-        "tags": ["amianto", "demolizione"],
+        "images": [
+            "./assets/img/ibm1.jpg",
+            "./assets/img/ibm2.jpg"
+        ],
+        "tags": [
+            "amianto",
+            "demolizione"
+        ],
         "desc": "<p>Il sito, già sede della IBM, è stato oggetto di una mappatura dei manufatti contenenti amianto e delle Fibre Artificiali Vetrose e sarà totalmente demolito previa bonifica dell’amianto.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Due Diligence ambientale in fase di compravendita</li><li>Direzione Lavori di bonifica MCA e FAV</li><li>Direzione Lavori di demolizione</li></ul>"
     },
     {
@@ -331,8 +43,1019 @@
         "val": "ca. 2.500.000 €",
         "type": "Due Diligence e Direzione Lavori di decommissioning",
         "cardSubtitle": "Mappatura e bonifica amianto in vista della demolizione.",
-        "images": ["./assets/img/cornaredo1.jpg", "./assets/img/cornaredo2.jpg"],
-        "tags": ["amianto", "demolizione"],
+        "images": [
+            "./assets/img/cornaredo1.jpg",
+            "./assets/img/cornaredo2.jpg"
+        ],
+        "tags": [
+            "amianto",
+            "demolizione"
+        ],
         "desc": "<p>Il sito è stato oggetto di una mappatura dei manufatti contenenti amianto e delle Fibre Artificiali Vetrose e sarà totalmente demolito previa bonifica dell’amianto. È presente nel suolo a cielo aperto una notevole quantità di frammenti di MCA che verranno rimossi tramite cernita manuale meccanizzata.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Due Diligence ambientale in fase di compravendita</li><li>Direzione Lavori di bonifica MCA e FAV</li><li>Direzione Lavori di demolizione</li></ul>"
+    },
+    {
+        "title": "Ex Novaceta",
+        "client": "Namira SGRpA, Milano",
+        "period": "2021-2025 (in corso)",
+        "endYear": 2025,
+        "val": "ca. 12.000.000 €",
+        "type": "Progetti Operativi di Bonifica e Direzione Lavori",
+        "cardSubtitle": "Bonifica da MCA/FAV e Demolizione edifici.",
+        "images": [
+            "./assets/img/novaceta1.jpg",
+            "./assets/img/novaceta2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "amianto",
+            "demolizione"
+        ],
+        "desc": "<p>Il sito, già sede della società Novaceta, SNIA e Enercel, è stato caratterizzato, bonificato dall’amianto e dalle FAV e totalmente demolito. Sono stati redatti 3 progetti di bonifica per i diversi lotti (Area Sporting, Area Parking e Area di sviluppo).</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Due Diligence ambientale in fase di compravendita</li><li>Direzione Lavori di bonifica MCA e FAV e demolizione</li><li>Progettazione degli interventi di bonifica su tre aree separate</li><li>Direzione Lavori interventi di bonifica</li></ul>"
+    },
+    {
+        "title": "Ex Stabilimento Prysmian Group",
+        "client": "FIBRE OTTICHE SUD - F.O.S. srl",
+        "period": "2024-2025 (in corso)",
+        "endYear": 2025,
+        "val": "ca. 1.500.000 €",
+        "type": "Decommissioning area industriale",
+        "cardSubtitle": "Decommissioning area industriale Fibre Ottiche.",
+        "images": [
+            "./assets/img/prysmian1.jpg",
+            "./assets/img/prysmian2.jpg"
+        ],
+        "tags": [
+            "demolizione"
+        ],
+        "desc": "<p>L’area è oggetto di dismissione per compravendita. Poiché molte macchine per la filatura della fibra ottica sono coperte da brevetto è necessario distruggerle e allontanarle dall’area. Altri macchinari verranno smontati e trasportati in altro stabilimento della Prysmian.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di redigere un progetto di decommissioning, gestire pratiche amministrative, e ricoprire i ruoli di:</strong></p><ul><li>Responsabile dei Lavori</li><li>Direttore dei Lavori</li><li>Coordinatore della Sicurezza (CSP & CSE)</li></ul>"
+    },
+    {
+        "title": "Ex Sofer",
+        "client": "Prysmian Power Link",
+        "period": "2024-2025",
+        "endYear": 2025,
+        "val": "ca. 20.000.000 €",
+        "type": "Direzione Lavori di bonifica suoli contenenti amianto",
+        "cardSubtitle": "Direzione Lavori di bonifica suoli contenenti amianto.",
+        "images": [
+            "./assets/img/sofer1.jpg",
+            "./assets/img/sofer2.jpg"
+        ],
+        "tags": [
+            "amianto",
+            "bonifica"
+        ],
+        "desc": "<p>L’area è oggetto di un progetto di allargamento dello stabilimento esistente, ad essa adiacente. Nel corso dei lavori il ritrovamento di MCA compatto e friabile ha costretto l’impresa a bloccare i lavori e ad avviare una complessa attività di bonifica.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di riorganizzare e gestire le attività per limitarne il costo, ricoprendo il ruolo di:</strong></p><ul><li>Direttore dei Lavori</li></ul>"
+    },
+    {
+        "title": "Ex Stabilimento Bunge — Ancona",
+        "client": "ECO:LOGICA S.r.l.",
+        "period": "2016-2025",
+        "endYear": 2025,
+        "val": "",
+        "type": "Progetto Operativo di Bonifica della matrice acque sotterranee",
+        "cardSubtitle": "Monitoraggio e Progetto Operativo di Bonifica delle acque sotterranee dell'ex stabilimento",
+        "images": [
+            "./assets/img/bungeancona1.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "acque",
+            "caratterizzazione",
+            "monitoraggio"
+        ],
+        "desc": "<p>Il sito è l'area dell'ex stabilimento Bunge in via Einaudi 8 ad Ancona. Il monitoraggio delle acque sotterranee, condotto tra novembre 2023 e febbraio 2024 su un'ampia rete di piezometri, ha rilevato in diversi pozzi concentrazioni di composti organoalogenati (cloruro di vinile, 1,2-dicloroetilene, tricloroetilene, tetracloroetilene) e di metalli (ferro, manganese) superiori alle CSC per le acque sotterranee stabilite dalla Tab. 2, Allegato V, Parte IV del D.Lgs. 152/06.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Redazione del Progetto Operativo di Bonifica della matrice acque sotterranee</li><li>Gestione della rete di monitoraggio piezometrico e programmazione delle campagne</li><li>Elaborazione e interpretazione delle analisi chimiche di laboratorio</li><li>Individuazione dei punti con superamenti delle CSC e restituzione cartografica</li></ul>"
+    },
+    {
+        "title": "Ex SGL Carbon — Ascoli Piceno",
+        "client": "Gruppo Iren / RTI BSA – HEXA GREEN",
+        "period": "2000-2025",
+        "endYear": 2025,
+        "val": "",
+        "type": "Progetto Operativo di Bonifica, demolizione e riqualificazione",
+        "cardSubtitle": "Progetto Operativo di Bonifica, demolizione e riqualificazione dell'ex stabilimento industriale",
+        "images": [
+            "./assets/img/ascolisglcarbon1.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "amianto",
+            "demolizione",
+            "analisi di rischio",
+            "monitoraggio"
+        ],
+        "desc": "<p>Il sito è l'area dell'ex stabilimento SGL Carbon in via Piemonte 10 ad Ascoli Piceno, un impianto industriale dismesso di grandi dimensioni, oggetto di un progetto di riqualificazione che prevede la demolizione dei fabbricati e degli impianti e la realizzazione di un parco su gran parte della superficie. Il Progetto Operativo di Bonifica con misure di mitigazione del rischio è stato aggiornato a seguito delle Conferenze di Servizi del 17 aprile e del 20 ottobre 2025, anche per una variante relativa alla riqualificazione dell'edificio ex mensa a sede di un hub tecnologico.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Redazione del Progetto Operativo di Bonifica ex art. 242 del D.Lgs. 152/06</li><li>Predisposizione del Piano di Lavoro Amianto e della bonifica industriale degli impianti</li><li>Progettazione del piano di demolizione e delle fasi di decommissioning</li><li>Sviluppo del modello concettuale definitivo e dell'Analisi di Rischio sito-specifica</li><li>Indagini ambientali integrative in contraddittorio con ARPAM sull'edificio ex mensa</li></ul>"
+    },
+    {
+        "title": "Ex Ospedali Riuniti — UMI 3, Bergamo",
+        "client": "Covedil",
+        "period": "2019-2025",
+        "endYear": 2025,
+        "val": "",
+        "type": "Progetto Operativo di Bonifica ex art. 242bis D.Lgs. 152/06",
+        "cardSubtitle": "Progetto Operativo di Bonifica ex art. 242bis nell'area dell'ex Ospedali Riuniti",
+        "images": [
+            "./assets/img/ferretticasa1.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "caratterizzazione"
+        ],
+        "desc": "<p>L'Unità Minima di Intervento UMI 3, all'interno del comparto dell'ex Ospedali Riuniti di Bergamo in via XXIV Maggio 26, è oggetto dell'Accordo di Programma Ambito Largo Barozzi tra Comune di Bergamo, Università degli Studi di Bergamo e CdP Investimenti SGR, finalizzato alla riqualificazione dell'area con cambio di destinazione da commerciale e industriale a verde e residenziale. Un'indagine ambientale preliminare del 2016, integrata nel 2018 e svolta in contraddittorio con ARPA Lombardia, ha rilevato superamenti dei limiti per la destinazione verde/residenziale. Il primo progetto di bonifica del 2018 non è stato approvato dalla Conferenza dei Servizi per insufficiente caratterizzazione, ragione per cui nel 2023 è stata condotta una nuova campagna di indagini integrativa.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Caratterizzazione ambientale integrativa dei terreni dell'UMI 3</li><li>Definizione del modello concettuale definitivo del sito</li><li>Redazione del Progetto Operativo di Bonifica ex art. 242bis del D.Lgs. 152/06</li><li>Stima dei volumi di terreno da rimuovere e classificazione dei rifiuti da bonifica</li><li>Predisposizione del cronoprogramma degli interventi di bonifica</li><li>Gestione dei rapporti con ARPA nell'ambito della Conferenza dei Servizi</li></ul>"
+    },
+    {
+        "title": "Centro Parco Lotto 5 — Segrate (MI)",
+        "client": "East Park S.r.l.",
+        "period": "2008-2025",
+        "endYear": 2025,
+        "val": "",
+        "type": "Progetto Operativo di Bonifica dei terreni",
+        "cardSubtitle": "Progetto Operativo di Bonifica di rifiuti bituminosi interrati in un'area a verde pubblico",
+        "images": [
+            "./assets/img/gehomes1.jpg",
+            "./assets/img/gehomes2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "rifiuti",
+            "direzione lavori"
+        ],
+        "desc": "<p>L'area, corrispondente al mappale 73 del foglio 20 del Comune di Segrate (MI), è inserita nel Programma Integrato di Intervento Centro Parco Lotto 5, su un lotto destinato a verde pubblico di proprietà comunale lungo via Cassanese. Durante i lavori di urbanizzazione sono stati rinvenuti, a livello del piano campagna, rifiuti bituminosi interrati, con superamenti dei limiti di legge per la destinazione d'uso verde/residenziale. È stato quindi avviato un procedimento di bonifica ai sensi dell'art. 242 del D.Lgs. 152/06.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Predisposizione del Progetto Operativo di Bonifica dei terreni</li><li>Definizione dell'estensione del corpo di rifiuti bituminosi e del relativo piano di gestione</li><li>Progettazione delle attività di scavo, rimozione e smaltimento dei rifiuti e dei terreni contaminati</li><li>Definizione del piano di collaudo e del cronoprogramma degli interventi</li></ul>"
+    },
+    {
+        "title": "Via Molossi — Casalmaggiore (CR)",
+        "client": "Consorzio Agrario Cremona S.c.r.l.",
+        "period": "2014-2025",
+        "endYear": 2025,
+        "val": "",
+        "type": "Progetto Operativo di Bonifica dei terreni e Direzione Lavori",
+        "cardSubtitle": "Progetto Operativo di Bonifica dei terreni e Direzione Lavori degli interventi",
+        "images": [
+            "./assets/img/consorzioagrarioca1.jpg",
+            "./assets/img/consorzioagrarioca2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "acque",
+            "rifiuti",
+            "caratterizzazione",
+            "direzione lavori",
+            "collaudo"
+        ],
+        "desc": "<p>L'area di via Molossi a Casalmaggiore, frazione di Vicobellignano (CR), è stata oggetto di un Progetto Operativo di Bonifica dei terreni predisposto per il Consorzio Agrario Cremona. Il progetto, basato sull'inquadramento idrogeologico del sito e sui risultati della caratterizzazione ambientale, ha definito il modello concettuale della contaminazione e le relative ipotesi di intervento, comprensive delle opere propedeutiche di demolizione e delle attività di aspirazione delle acque accumulate negli scavi.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Caratterizzazione ambientale e definizione del modello concettuale del sito</li><li>Redazione del Progetto Operativo di Bonifica dei terreni</li><li>Stima dei volumi di terreno da rimuovere e classificazione dei rifiuti da bonifica</li><li>Gestione delle acque accumulate negli scavi e delle demolizioni propedeutiche</li><li>Direzione dei lavori di scavo, smaltimento e ripristino dell'area</li><li>Collaudo finale degli scavi con analisi chimiche di laboratorio</li></ul>"
+    },
+    {
+        "title": "Ex Stabilimento Aromi — Gessate (MI)",
+        "client": "Nactarome S.r.l.",
+        "period": "2013-2025",
+        "endYear": 2025,
+        "val": "",
+        "type": "Progetto Operativo di Bonifica ex art. 242bis D.Lgs. 152/06",
+        "cardSubtitle": "Progetto Operativo di Bonifica dei terreni contaminati da idrocarburi",
+        "images": [
+            "./assets/img/aromatagessate1.jpg",
+            "./assets/img/aromatagessate2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "caratterizzazione"
+        ],
+        "desc": "<p>Il sito è un ex stabilimento per la produzione di aromi e prodotti alimentari (essiccatoi, mulini, laboratori, magazzini e serbatoi di processo) in via Italia 28 a Gessate (MI). Le indagini condotte nei punti dell'area di stabilimento, tra cui i sondaggi TI16 e TI26, hanno rilevato concentrazioni di idrocarburi (frazione C&gt;12) superiori ai limiti di colonna B della Tab. 1B del D.Lgs. 152/06 nei primi metri di sottosuolo.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Redazione del Progetto Operativo di Bonifica ex art. 242bis del D.Lgs. 152/06</li><li>Ubicazione dei punti di indagine e restituzione cartografica delle contaminazioni</li><li>Elaborazione delle analisi chimiche di caratterizzazione dei terreni</li><li>Predisposizione degli allegati tecnici e cartografici a supporto del progetto</li></ul>"
+    },
+    {
+        "title": "Parete rocciosa — Belgirate (VB)",
+        "client": "",
+        "period": "2021-2025",
+        "endYear": 2025,
+        "val": "",
+        "type": "Bonifica delle acque mediante infusione di prodotto biodegradante",
+        "cardSubtitle": "Bonifica delle acque di stillicidio da parete rocciosa mediante infusione di biodegradante",
+        "images": [
+            "./assets/img/belgiratezan1.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "acque",
+            "monitoraggio"
+        ],
+        "desc": "<p>Nell'ambito di un intervento di bonifica delle acque, il 10 e 11 febbraio 2026 sono state condotte le attività di infusione del prodotto Akka2o ContraSolv, finalizzate alla decontaminazione da idrocarburi delle acque di stillicidio provenienti da una parete rocciosa. L'intervento ha previsto la realizzazione di quattro trincee poste in linea sopra la parete e l'utilizzo di due pozzetti di infusione, per un volume complessivo di prodotto infuso pari a circa 10.200 litri.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Realizzazione delle trincee e dei pozzetti di infusione del prodotto decontaminante</li><li>Preparazione della soluzione operativa e supervisione delle attività di infusione</li><li>Verifica della permeabilità delle trincee e dei pozzetti durante le lavorazioni</li><li>Programmazione della successiva infusione batterica di completamento del trattamento</li></ul>"
+    },
+    {
+        "title": "Via Antonini 20 — Milano",
+        "client": "",
+        "period": "2006-2025",
+        "endYear": 2025,
+        "val": "",
+        "type": "Indagine ambientale integrativa e Analisi di Rischio",
+        "cardSubtitle": "Indagine ambientale integrativa e analisi di rischio delle acque di falda",
+        "images": [
+            "./assets/img/antonini201.jpg",
+            "./assets/img/antonini202.jpg"
+        ],
+        "tags": [
+            "acque",
+            "caratterizzazione",
+            "analisi di rischio",
+            "monitoraggio"
+        ],
+        "desc": "<p>Il sito si trova in via Antonini 20 a Milano. Le indagini ambientali pregresse hanno individuato nei terreni superamenti riconducibili a diverse sorgenti di contaminazione (piombo e zinco, arsenico, idrocarburi pesanti e IPA), per le quali è stata sviluppata un'Analisi di Rischio sanitario-ambientale sito specifica. L'indagine integrativa è finalizzata a completare il quadro conoscitivo delle acque sotterranee mediante la realizzazione di due nuovi piezometri.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Indagine ambientale integrativa a supporto dell'Analisi di Rischio</li><li>Realizzazione di due piezometri per il monitoraggio delle acque di falda</li><li>Elaborazione dei risultati dell'Analisi di Rischio igienico-sanitaria per le diverse sorgenti</li><li>Valutazione dei rischi sanitari cumulativi del sito</li></ul>"
+    },
+    {
+        "title": "Ex Novaceta — Ingresso Sud, Magenta (MI)",
+        "client": "Namira SGR p.A.",
+        "period": "2020-2024",
+        "endYear": 2024,
+        "val": "ca. 1.650.000 €",
+        "type": "Progetto Operativo di Bonifica e opere di demolizione",
+        "cardSubtitle": "Progetto Operativo di Bonifica e demolizioni all'ingresso sud dell'ex stabilimento Novaceta",
+        "images": [
+            "./assets/img/cloudhq1.jpg",
+            "./assets/img/cloudhq2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "amianto",
+            "demolizione",
+            "direzione lavori"
+        ],
+        "desc": "<p>L'area denominata Ingresso Sud, di circa 2.600 m², si trova in parte all'interno e in parte all'esterno della recinzione dell'ex stabilimento industriale Novaceta, in viale Piemonte a Magenta (MI); risulta pavimentata e con alcuni edifici. Il sito ex Novaceta, in fase di riqualificazione secondo il PGT vigente, è destinato alla realizzazione di un centro servizi informatici. Un'indagine ambientale del 2023 ha rilevato superamenti dei limiti per la futura destinazione verde/residenziale di una porzione dell'area, da cedere al Comune, pur nel rispetto dei limiti per l'attuale destinazione commerciale e industriale. Nell'ambito della riqualificazione sono previste demolizioni di edifici e abbattimento di alberature.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Redazione del Progetto Operativo di Bonifica ex art. 242bis del D.Lgs. 152/06</li><li>Caratterizzazione dei terreni e definizione del modello concettuale del sito</li><li>Stima dei volumi di terreno da rimuovere e classificazione dei rifiuti da bonifica</li><li>Relazione SCIA per le opere di demolizione e l'abbattimento delle alberature</li><li>Gestione dei rapporti con la Soprintendenza per l'autorizzazione paesaggistica</li></ul>"
+    },
+    {
+        "title": "Area West Gate — MIND, ex Expo 2015 (MI)",
+        "client": "Arexpo S.p.A.",
+        "period": "2019-2024",
+        "endYear": 2024,
+        "val": "",
+        "type": "Progetto Operativo di Bonifica ex art. 242bis D.Lgs. 152/06",
+        "cardSubtitle": "Progetto Operativo di Bonifica dei materiali di riporto nell'area West Gate",
+        "images": [
+            "./assets/img/arexpoprincipia1.jpg",
+            "./assets/img/arexpoprincipia2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "rifiuti",
+            "caratterizzazione"
+        ],
+        "desc": "<p>Il sito è ubicato all'interno del Programma Integrato di Intervento MIND, nell'area West Gate, su una porzione dell'ex sito espositivo di Expo Milano 2015 tra Milano e Rho. In seguito al Provvedimento n. 5 del Commissario per Expo 2015, sull'area è stato mantenuto materiale di riporto conforme alla colonna B (industriale) della Tab. 1, Allegato 5, Titolo V, Parte IV del D.Lgs. 152/06. Con la trasformazione dell'area verso destinazioni verdi, residenziali e direzionali (stralci Molo, circa 1.700 m², e A04, circa 28.000 m²) tali riporti devono essere resi compatibili con le più restrittive CSC di colonna A.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Ricostruzione delle indagini di caratterizzazione ambientale condotte sull'area dal 2011</li><li>Redazione del Progetto Operativo di Bonifica ex art. 242bis del D.Lgs. 152/06 per gli stralci Molo e A04</li><li>Definizione del modello concettuale e dei percorsi di migrazione della contaminazione</li><li>Stima dei volumi di terreno da rimuovere e classificazione dei rifiuti da bonifica</li></ul>"
+    },
+    {
+        "title": "Ex Palazzetto dello Sport — San Siro, Milano",
+        "client": "Eurogeo S.r.l.",
+        "period": "2010-2024",
+        "endYear": 2024,
+        "val": "",
+        "type": "Ricostruzione storica e caratterizzazione preliminare",
+        "cardSubtitle": "Ricostruzione storica e caratterizzazione preliminare dell'area dell'ex Palazzetto dello Sport",
+        "images": [
+            "./assets/img/caaicon1.jpg"
+        ],
+        "tags": [
+            "caratterizzazione"
+        ],
+        "desc": "<p>Il sito corrisponde all'area dell'ex Palazzetto dello Sport di Milano, nei pressi dello stadio Meazza tra via Federico Tesio e via Patroclo. L'edificio, crollato nel 1985 a seguito di un'eccezionale nevicata, fu demolito nel 1988; l'area, rimasta a lungo depressa rispetto al piano campagna circostante, fu poi utilizzata tra il 2011 e il 2015 come campo base del cantiere della linea metropolitana M5 e infine ricolmata e sistemata a verde. Non essendo disponibile documentazione ufficiale sulla demolizione, sulla gestione dei rifiuti prodotti e su eventuali bonifiche pregresse, è stata condotta una ricostruzione storica dell'area tramite analisi di immagini satellitari e aerofotografiche.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Ricostruzione storica dell'evoluzione del sito tramite immagini satellitari e aerofotografiche</li><li>Individuazione delle possibili passività ambientali connesse alla demolizione del 1988</li><li>Programmazione di indagini georadar e geoelettriche di verifica</li><li>Redazione della relazione tecnica di caratterizzazione preliminare del sito</li></ul>"
+    },
+    {
+        "title": "Cava Fusi — Uboldo (VA)",
+        "client": "Cava Fusi S.r.l.",
+        "period": "1992-2024",
+        "endYear": 2024,
+        "val": "",
+        "type": "Bonifica dei terreni e autorizzazione impianto mobile di recupero rifiuti",
+        "cardSubtitle": "Bonifica dei terreni e impianto mobile per il recupero dei rifiuti da demolizione",
+        "images": [
+            "./assets/img/cavafusihepilko1.jpg",
+            "./assets/img/cavafusihepilko2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "rifiuti",
+            "caratterizzazione",
+            "collaudo"
+        ],
+        "desc": "<p>L'area di via IV Novembre 194 a Uboldo (VA), di proprietà di Cava Fusi S.r.l., è stata oggetto negli anni di due distinti interventi. Nel 2020 sono stati eseguiti la bonifica dei terreni e il collaudo degli scavi, con individuazione di più aree di contaminazione a profondità comprese tra 2,5 e 5 metri, e la verifica della qualità delle acque di falda. Nel 2021, a seguito dello stoccaggio temporaneo e della successiva demolizione di manufatti ed elementi prefabbricati in cemento armato depositati da Strabag nell'ambito dei lavori dell'Autostrada Pedemontana Lombarda, è stata predisposta la relazione tecnica per l'autorizzazione di una campagna di recupero in sito dei rifiuti inerti tramite impianto mobile.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Bonifica e collaudo dei terreni contaminati, con validazione ARPA</li><li>Caratterizzazione della qualità delle acque di falda</li><li>Relazione tecnica ex art. 208 c.15 del D.Lgs. 152/06 per l'autorizzazione dell'impianto mobile</li><li>Gestione della tracciabilità e dello smaltimento dei rifiuti da demolizione</li></ul>"
+    },
+    {
+        "title": "Via Robecco 41 — Cinisello Balsamo (MI)",
+        "client": "Carnovale Costruzioni",
+        "period": "2020-2024",
+        "endYear": 2024,
+        "val": "",
+        "type": "Progetto Operativo di Bonifica ex art. 242bis D.Lgs. 152/06",
+        "cardSubtitle": "Progetto Operativo di Bonifica ex art. 242bis di un'area dismessa con amianto nei terreni",
+        "images": [
+            "./assets/img/carnovalecostruzio1.jpg",
+            "./assets/img/carnovalecostruzio2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "amianto",
+            "rifiuti",
+            "caratterizzazione",
+            "analisi di rischio"
+        ],
+        "desc": "<p>L'area di via Robecco 41 a Cinisello Balsamo (MI), di circa 1.400 m², si presenta dismessa: in parte pavimentata e in parte ricoperta da vegetazione spontanea, senza edifici e con rifiuti di natura inerte abbandonati. Le indagini storiche mostrano la presenza di capannoni fino al 2007, poi demoliti. Un'indagine ambientale preliminare condotta nel 2023, in vista di una possibile acquisizione dell'area, ha rilevato superamenti dei limiti di legge per la destinazione d'uso verde pubblico/privato e residenziale, oltre alla presenza di frammenti di amianto nei terreni.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Caratterizzazione ambientale dei terreni e dei materiali di riporto</li><li>Definizione del modello concettuale del sito e dei percorsi di migrazione della contaminazione</li><li>Redazione del Progetto Operativo di Bonifica ex art. 242bis del D.Lgs. 152/06</li><li>Stima dei volumi di terreno da rimuovere e classificazione dei rifiuti da bonifica</li><li>Verifica della presenza di materiali contenenti amianto (MCA)</li></ul>"
+    },
+    {
+        "title": "Ex Industrie Chimiche Baslini",
+        "client": "Habita S.r.l., Trezzo d’Adda (Bg)",
+        "period": "2008-2023 (in corso)",
+        "endYear": 2023,
+        "val": "ca. 20.000.000 €",
+        "type": "Progetto Operativo di Bonifica e Direzione Lavori",
+        "cardSubtitle": "Progetto Operativo di Bonifica e Direzione Lavori.",
+        "images": [
+            "./assets/img/blaslini1.jpg",
+            "./assets/img/baslini2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "acque",
+            "demolizione"
+        ],
+        "desc": "<p>Il sito è totalmente dismesso e presenta contaminazioni da metalli, idrocarburi, solventi e pesticidi.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Direzione Lavori interventi di bonifica e demolizione</li><li>Direzione Lavori sbarramento idraulico</li><li>Redazione della Variante del Progetto Operativo di Bonifica con Analisi di Rischio</li><li>Implementazione di un modello matematico per la rimodulazione dello sbarramento idraulico</li></ul>"
+    },
+    {
+        "title": "Oasi Bovisa",
+        "client": "A2a Milano",
+        "period": "2022-2023 (in corso)",
+        "endYear": 2023,
+        "val": "ca. 5.000.000 €",
+        "type": "Progetto Operativo di Bonifica con Analisi di Rischio",
+        "cardSubtitle": "Progetto Operativo di Bonifica con Analisi di Rischio.",
+        "images": [
+            "./assets/img/bovisa1.jpg",
+            "./assets/img/bovisa2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "acque"
+        ],
+        "desc": "<p>L’area è oggetto di interventi di riqualificazione per integrarsi con quella adiacente di proprietà del Politecnico di Milano e del Comune di Milano.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di redigere un progetto di bonifica che si integrasse con quello architettonico, mediante:</strong></p><ul><li>Applicazione dell’Analisi di Rischio</li><li>Impiego di tecniche sperimentali di biocapping</li><li>Barrieramento idraulico con sfruttamento delle acque emunte a scopi paesaggistici e ricreativi</li><li>Minimizzazione della rimozione dei terreni contaminati</li></ul>"
+    },
+    {
+        "title": "Area Ex Reggiani",
+        "client": "Pessina Costruzioni SpA Milano",
+        "period": "2023",
+        "endYear": 2023,
+        "val": "ca. 3.000.000 €",
+        "type": "Caratterizzazione e Progetto Operativo di Bonifica",
+        "cardSubtitle": "Caratterizzazione e Progetto Operativo di Bonifica.",
+        "images": [
+            "./assets/img/reggiani1.jpg",
+            "./assets/img/reggiani2.jpg"
+        ],
+        "tags": [
+            "bonifica"
+        ],
+        "desc": "<p>L’area è oggetto di interventi di riqualificazione per lo sviluppo di un nuovo polo universitario e altre funzioni.</p><p>Tecnitalia Ingegneria ha ricevuto l’incarico di caratterizzare l’area e redigere il progetto di bonifica. Si è conclusa la fase di caratterizzazione e le attività sono sospese per il fallimento della Committente.</p>"
+    },
+    {
+        "title": "Ex Alemagna — Cornaredo (MI)",
+        "client": "",
+        "period": "2003-2023",
+        "endYear": 2023,
+        "val": "",
+        "type": "Environmental Due Diligence (Fase I e Fase II)",
+        "cardSubtitle": "Environmental Due Diligence di Fase I e II su un complesso industriale dismesso",
+        "images": [
+            "./assets/img/cornaredo1.jpg",
+            "./assets/img/cornaredo2.jpg"
+        ],
+        "tags": [
+            "amianto",
+            "acque",
+            "caratterizzazione",
+            "monitoraggio"
+        ],
+        "desc": "<p>Il sito è il complesso industriale dismesso dell'Area ex Alemagna, in via Monzoro 41 a Cornaredo (MI). Nel maggio 2024 Tecnitalia Ingegneria ha condotto una Environmental Due Diligence di Fase I e Fase II in vista di una possibile acquisizione dell'area, con l'obiettivo di verificare la conformità alla normativa ambientale e di individuare i rischi connessi alle attività industriali pregresse, alla presenza di materiali pericolosi e a potenziali sorgenti di contaminazione. L'indagine si è appoggiata anche alle campagne ambientali già svolte sul sito nel 2008 e nel 2019.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Due Diligence ambientale di Fase I e Fase II sul complesso dismesso</li><li>Ricostruzione della storia del sito e revisione delle indagini pregresse</li><li>Sopralluogo e indagine ambientale su terreni, materiali di riporto e acque sotterranee</li><li>Studio geologico, geotecnico e sismico dell'area</li><li>Redazione del Red Flag report a supporto della valutazione di acquisizione</li></ul>"
+    },
+    {
+        "title": "Ex Saponificio Sirio",
+        "client": "Euromilano S.p.A., Milano",
+        "period": "2003, 2013, 2020-2022",
+        "endYear": 2022,
+        "val": "ca. 500.000 €",
+        "type": "Piano di Caratterizzazione e Bonifica",
+        "cardSubtitle": "Progetto Operativo di Bonifica, Analisi Rischio e DL.",
+        "images": [
+            "./assets/img/sirio1.jpg",
+            "./assets/img/sirio2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "demolizione"
+        ],
+        "desc": "<p>Il sito era totalmente dismesso e presentava contaminazioni da metalli e idrocarburi.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Direzione Lavori interventi di demolizione</li><li>Redazione del Piano di Caratterizzazione e indagine Ambientale</li><li>Redazione del Progetto Operativo di Bonifica</li><li>Direzione Lavori di bonifica</li></ul>"
+    },
+    {
+        "title": "Ex Fratelli Feltrinelli",
+        "client": "Euromilano S.p.A., Milano",
+        "period": "2009-2013 e 2021-2022",
+        "endYear": 2022,
+        "val": "ca. 1.000.000 €",
+        "type": "Progetto Operativo di Bonifica e Piano Rimozione",
+        "cardSubtitle": "Bonifica con Analisi di Rischio e Piano Rimozione Rifiuti.",
+        "images": [
+            "./assets/img/feltrinelli1.jpg",
+            "./assets/img/feltrinelli2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "rifiuti"
+        ],
+        "desc": "<p>Il sito era totalmente dismesso e presentava contaminazioni da metalli e idrocarburi oltre a grandi quantità di rifiuti interrati. Nell’area è stata dapprima ubicata la sede temporanea della Triennale di Milano in Bovisa (TBVS) e successivamente uno studentato universitario.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione del Piano di Caratterizzazione e indagine Ambientale</li><li>Redazione del Progetto Operativo di Bonifica con Analisi di Rischio</li><li>Redazione del Piano di Rimozione Rifiuti</li><li>Direzione Lavori di rimozione dei rifiuti e di bonifica</li></ul>"
+    },
+    {
+        "title": "Ecogomma — Castelletto di Branduzzo (PV)",
+        "client": "Ecogomma",
+        "period": "2020-2022",
+        "endYear": 2022,
+        "val": "",
+        "type": "Rimozione serbatoio interrato e bonifica dei terreni",
+        "cardSubtitle": "Bonifica dei terreni e rimozione di un serbatoio interrato nell'ex sito industriale",
+        "images": [
+            "./assets/img/ecogomma1.jpg",
+            "./assets/img/ecogomma2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "rifiuti",
+            "caratterizzazione",
+            "monitoraggio",
+            "collaudo"
+        ],
+        "desc": "<p>L'area ex Ecogomma di Castelletto di Branduzzo (PV), di circa 100.000 m² di cui 47.000 pavimentati e 11.000 edificati, ha ospitato fino al 1997 una produzione di laterizi e, dal 2003 al 2009, un impianto di recupero di rifiuti speciali non pericolosi per la produzione di granuli e polverino di gomma. A seguito del fallimento della società, tra il 2013 e il 2017 sono state rimosse circa 39.000 tonnellate di pneumatici fuori uso abbandonati sul piazzale. Nel 2023-2024 è stata eseguita la dismissione di un serbatoio interrato e la rimozione del terreno circostante, risultato potenzialmente contaminato in un punto di indagine a nord del manufatto.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Bonifica e pulizia interna del serbatoio, con certificazione gas-free</li><li>Rimozione del serbatoio e del terreno circostante potenzialmente contaminato</li><li>Gestione dello smaltimento dei rottami ferrosi e dei rifiuti inerti prodotti</li><li>Collaudo di pareti e fondo scavo con prelievo di campioni di terreno</li><li>Redazione della relazione di fine lavori e dei formulari di identificazione dei rifiuti</li></ul>"
+    },
+    {
+        "title": "Ex Zincheria Origoni",
+        "client": "Euromilano S.p.A., Milano",
+        "period": "2004-2021",
+        "endYear": 2021,
+        "val": "ca. 500.000 €",
+        "type": "Progetto Definitivo di Bonifica con MISE",
+        "cardSubtitle": "MISE, Sbarramento Idraulico e Impianto TAF.",
+        "images": [
+            "./assets/img/origoni1.jpg",
+            "./assets/img/origoni2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "acque"
+        ],
+        "desc": "<p>Il sito era totalmente dismesso e presentava contaminazioni da metalli e idrocarburi. L’area è stata trasformata nella nuova sede del Politecnico di Milano.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione del Progetto Definitivo di Bonifica con Analisi di Rischio e Messa in Sicurezza Permanente (capping)</li><li>Direzione Lavori interventi di bonifica e demolizione</li><li>Progettazione Sbarramento Idraulico e impianto Trattamento Acque di Falda (TAF)</li><li>Direzione Lavori TAF</li></ul>"
+    },
+    {
+        "title": "Piazza Tirana — San Cristoforo, Milano",
+        "client": "",
+        "period": "2006-2021",
+        "endYear": 2021,
+        "val": "",
+        "type": "Progetto Operativo di Bonifica ex art. 242bis D.Lgs. 152/06",
+        "cardSubtitle": "Progetto Operativo di Bonifica ex art. 242bis a seguito dell'indagine preliminare",
+        "images": [
+            "./assets/img/tirana1.jpg",
+            "./assets/img/tirana2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "caratterizzazione",
+            "direzione lavori"
+        ],
+        "desc": "<p>L'immobile di piazza Tirana 24/2, nel quartiere San Cristoforo di Milano, occupa un'area di circa 1.000 m² già interessata nel 2005-2006 da un procedimento di bonifica ai sensi del D.M. 471/99, che aveva previsto la demolizione dei vecchi capannoni industriali e artigianali e si era concluso con la conformità alla sola destinazione commerciale e industriale. In vista del cambio d'uso a residenziale, tra dicembre 2018 e gennaio 2019 è stata eseguita una nuova Indagine Ambientale Preliminare, i cui risultati sono stati trasmessi al Comune di Milano; a seguito della richiesta comunale di un nuovo procedimento è stato redatto il Progetto Operativo di Bonifica ai sensi dell'art. 242bis. Le foto documentano le attività di scavo presso l'edificio.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Esecuzione dell'Indagine Ambientale Preliminare</li><li>Trasmissione al Comune di Milano dei risultati tramite dichiarazione sostitutiva</li><li>Redazione del Progetto Operativo di Bonifica ex art. 242bis per il cambio d'uso a residenziale</li><li>Definizione del modello concettuale e stima dei volumi di terreno da rimuovere</li><li>Gestione delle modalità di scavo, movimentazione e smaltimento dei rifiuti</li></ul>"
+    },
+    {
+        "title": "Area Ripa Porta Ticinese-Barsanti-Autari — Milano",
+        "client": "Solidarnosc Ripa Porta Ticinese soc. coop.",
+        "period": "2010-2019",
+        "endYear": 2019,
+        "val": "",
+        "type": "Rapporto Ambientale Preliminare per VAS",
+        "cardSubtitle": "Rapporto ambientale preliminare per la VAS del Programma Integrato d'Intervento",
+        "images": [
+            "./assets/img/sidis1.jpg",
+            "./assets/img/sidis2.jpg"
+        ],
+        "tags": [
+            "acque",
+            "rifiuti",
+            "caratterizzazione"
+        ],
+        "desc": "<p>L'area Ripa Porta Ticinese-Barsanti-Autari a Milano, oggetto del Programma Integrato di Intervento promosso dalla cooperativa Solidarnosc Ripa Porta Ticinese, comprende lotti oggi liberi e in stato di abbandono, con vegetazione infestante e recinzioni in legno lungo il perimetro degli edifici esistenti. Nel novembre 2011 Tecnitalia Ingegneria ha redatto il rapporto ambientale preliminare per la verifica di assoggettabilità a Valutazione Ambientale Strategica del PII, analizzando il contesto territoriale e le principali componenti ambientali dell'area.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Redazione del rapporto ambientale preliminare per la verifica di assoggettabilità a VAS</li><li>Analisi del contesto territoriale e delle criticità ambientali dell'area</li><li>Valutazione della qualità del suolo e delle risorse idriche</li><li>Analisi degli effetti attesi su aria, rumore e rifiuti e misure di mitigazione</li></ul>"
+    },
+    {
+        "title": "Via Vivarini 5 — Milano",
+        "client": "Rubatsch S.r.l.",
+        "period": "2008-2019",
+        "endYear": 2019,
+        "val": "",
+        "type": "Progetto Operativo di Bonifica",
+        "cardSubtitle": "Progetto Operativo di Bonifica dei terreni a seguito delle demolizioni",
+        "images": [
+            "./assets/img/rubatschviavivarin1.jpg",
+            "./assets/img/rubatschviavivarin2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "demolizione",
+            "caratterizzazione",
+            "sicurezza"
+        ],
+        "desc": "<p>L'area di via Vivarini 5 a Milano, riferibile alla Residence Giannino S.r.l., era occupata da un fabbricato poi demolito nell'ambito di un intervento di riqualificazione a destinazione residenziale. Le foto del sito mostrano un lotto libero, invaso da vegetazione spontanea e in parte ricoperto d'edera, in attesa degli interventi. Nell'aprile 2009 Tecnitalia Ingegneria, a firma dell'ing. Giorgio Bressi, ha redatto il Progetto Operativo di Bonifica a seguito del piano di caratterizzazione, che aveva rilevato superamenti nei terreni per diversi metalli e per idrocarburi e IPA, discussi in contraddittorio con ARPA.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Analisi dei risultati del piano di caratterizzazione dei terreni</li><li>Gestione del contraddittorio con ARPA sui dati analitici</li><li>Valutazione delle ipotesi progettuali e scelta della tecnologia di bonifica</li><li>Redazione del Progetto Operativo di Bonifica</li></ul>"
+    },
+    {
+        "title": "Ex Fonit Cetra — Via Meda 45, Milano",
+        "client": "Viameda Edizioni Musicali S.r.l.",
+        "period": "2001-2019",
+        "endYear": 2019,
+        "val": "",
+        "type": "Indagine Ambientale Preliminare",
+        "cardSubtitle": "Aggiornamento dell'indagine ambientale preliminare dell'ex sede Fonit Cetra",
+        "images": [
+            "./assets/img/ramazzotti1.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "caratterizzazione"
+        ],
+        "desc": "<p>L'edificio di via Meda 45 a Milano, un tempo sede della Fonit Cetra e successivamente occupato dagli uffici della Viameda Edizioni Musicali, ospitava in passato un'attività industriale classificata insalubre. Nel novembre 2015 Tecnitalia Ingegneria ha eseguito l'aggiornamento dell'Indagine Ambientale Preliminare sull'area, ricostruendo il profilo storico del sito e il layout del pregresso processo produttivo. Le foto documentano l'esecuzione di sondaggi geognostici nella corte interna tra i fabbricati.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Aggiornamento dell'Indagine Ambientale Preliminare</li><li>Ricostruzione del profilo storico e del layout produttivo dell'attività insalubre pregressa</li><li>Elaborazione del modello concettuale del sito e individuazione dei centri di pericolo</li><li>Pianificazione ed esecuzione del campionamento dei terreni e dei materiali di riporto</li><li>Analisi chimiche di laboratorio su metalli, idrocarburi e IPA</li></ul>"
+    },
+    {
+        "title": "Ex Caserma Cavalli — Novara",
+        "client": "Agenzia del Demanio",
+        "period": "2007-2018",
+        "endYear": 2018,
+        "val": "ca. 113.000 €",
+        "type": "Piano di Caratterizzazione ambientale e valutazione amianto",
+        "cardSubtitle": "Audit ambientale, caratterizzazione e valutazione amianto dell'ex complesso militare",
+        "images": [
+            "./assets/img/garacasermacavalli1.jpg",
+            "./assets/img/garacasermacavalli2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "amianto",
+            "caratterizzazione",
+            "sicurezza"
+        ],
+        "desc": "<p>L'ex Caserma Cavalli, a Novara, fa parte di un più ampio comparto militare dismesso (insieme alle ex caserme Passalacqua e Gherzi) oggetto di un accordo di programma tra Comune di Novara, Agenzia del Demanio e Ministero della Difesa per la sua rigenerazione urbana. L'edificio, riconosciuto di interesse culturale, presenta coperture in lastre di cemento-amianto da rimuovere, mentre i serbatoi interrati di gasolio sono già stati bonificati dal Ministero della Difesa. Prima della trasformazione urbanistica è necessario un audit ambientale per verificare l'eventuale presenza di matrici inquinanti nel suolo e nel sottosuolo.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Audit ambientale dei suoli e del sottosuolo dell'area</li><li>Esecuzione del piano di caratterizzazione ambientale del complesso</li><li>Valutazione dello stato delle coperture in cemento-amianto</li><li>Supporto tecnico nell'ambito della procedura di valorizzazione e gara pubblica</li></ul>"
+    },
+    {
+        "title": "Concilio Vaticano II e Galvanica Lorenzi — Milano",
+        "client": "Metropolitana Milanese S.p.A.",
+        "period": "1991-2016",
+        "endYear": 2016,
+        "val": "",
+        "type": "Monitoraggio ambientale e studio di fattibilità di bonifica",
+        "cardSubtitle": "Monitoraggio della barriera idraulica e studio di fattibilita per la bonifica delle acque",
+        "images": [
+            "./assets/img/mm1.jpg",
+            "./assets/img/mm2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "acque",
+            "monitoraggio"
+        ],
+        "desc": "<p>Per Metropolitana Milanese sono stati seguiti due siti a Milano: l'area Concilio Vaticano II di via Chiasserini, dove è stato verificato lo stato di funzionamento di una barriera idraulica a tre pozzi realizzata a margine di un pregresso scavo di bonifica, e l'area ex Galvanica Arturo Lorenzi di via Bazzi, contaminata da cromo VI nelle acque di falda, per la quale è stato condotto — in associazione temporanea con BAW S.r.l. — uno studio di fattibilità su tecnologie di bonifica dei terreni insaturi, alternative o complementari al sistema di pump&amp;treat già approvato.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Verifica del funzionamento della barriera idraulica a pozzi e delle relative parti elettriche e idrauliche</li><li>Esecuzione di prove di portata sui pozzi e sui piezometri di monitoraggio</li><li>Studio di fattibilità, in ATI con BAW S.r.l., per la bonifica dei terreni insaturi</li><li>Prove di laboratorio e prova pilota di campo per valutare l'efficacia del trattamento</li></ul>"
+    },
+    {
+        "title": "Via Ciro Menotti 14 — Milano",
+        "client": "Iniziativa Immobiliare Ciro Menotti",
+        "period": "2012-2015",
+        "endYear": 2015,
+        "val": "",
+        "type": "Indagine ambientale preliminare",
+        "cardSubtitle": "Indagine ambientale preliminare per il cambio di destinazione d'uso a residenziale",
+        "images": [
+            "./assets/img/iniziativaimmobili1.jpg",
+            "./assets/img/iniziativaimmobili2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "caratterizzazione",
+            "direzione lavori",
+            "collaudo"
+        ],
+        "desc": "<p>L'area di via Ciro Menotti 14, a Milano, è stata oggetto di un'indagine ambientale preliminare su incarico dei progettisti di un intervento di recupero dell'immobile, finalizzata a verificare l'eventuale presenza di passività ambientali in relazione a una richiesta di cambio di destinazione d'uso a residenziale. L'indagine ha incluso la ricostruzione del profilo storico del sito e l'analisi chimica dei terreni.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Ricostruzione del profilo storico e del pregresso ciclo produttivo del sito</li><li>Inquadramento geologico dell'area e individuazione dei centri di pericolo</li><li>Campagna di indagine ambientale preliminare con prelievo di campioni di terreno</li><li>Analisi chimiche di laboratorio e confronto con le CSC per uso residenziale</li></ul>"
+    },
+    {
+        "title": "Via Saccardo 11 — Milano",
+        "client": "BNP Paribas Real Estate",
+        "period": "2010-2015",
+        "endYear": 2015,
+        "val": "",
+        "type": "Progetto Operativo di Bonifica ex art. 249 e Direzione Lavori",
+        "cardSubtitle": "Progetto Operativo di Bonifica da IPA ex art. 249 e Direzione Lavori",
+        "images": [
+            "./assets/img/bnpparibas1.jpg",
+            "./assets/img/bnpparibas2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "caratterizzazione",
+            "direzione lavori",
+            "collaudo"
+        ],
+        "desc": "<p>Il sito si trova in via Saccardo 11 a Milano. Le indagini di caratterizzazione condotte nell'aprile 2014 tramite trincee esplorative hanno rilevato, in particolare nel punto S10, concentrazioni di Idrocarburi Policiclici Aromatici superiori alle Concentrazioni Soglia di Contaminazione per uso verde/residenziale (Tab. 1A del D.Lgs. 152/06), con una sommatoria IPA di 12,4 mg/kg a fronte di un limite di 10 mg/kg.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Redazione del Progetto Operativo di Bonifica in procedura semplificata ex art. 249 del D.Lgs. 152/06</li><li>Esecuzione delle indagini geognostiche e prelievo dei campioni di terreno</li><li>Elaborazione delle stratigrafie e delle analisi chimiche di caratterizzazione</li><li>Direzione Lavori delle attività di bonifica e collaudo finale dell'intervento</li></ul>"
+    },
+    {
+        "title": "Ex Saffa — Coperture in amianto, Pontenuovo di Magenta (MI)",
+        "client": "",
+        "period": "2006-2014",
+        "endYear": 2014,
+        "val": "",
+        "type": "Bonifica amianto e autorizzazione paesaggistica per rifacimento coperture",
+        "cardSubtitle": "Bonifica delle coperture in amianto e posa delle nuove, con autorizzazione paesaggistica",
+        "images": [
+            "./assets/img/alerion1.jpg",
+            "./assets/img/alerion2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "amianto"
+        ],
+        "desc": "<p>Il sito è costituito da due edifici storici (l'ex mensa operai e l'ex mensa impiegati/uffici CED) dell'insediamento industriale S.A.F.F.A. nella frazione di Pontenuovo, nel Comune di Magenta (MI), lungo il Naviglio Grande e in prossimità del Parco del Ticino. Le coperture dei due fabbricati sono in lastre di cemento-amianto, da rimuovere e sostituire con nuova copertura in Aluzinc, in un contesto di rilevanza storico-paesaggistica tutelata.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Redazione della relazione a supporto della richiesta di autorizzazione paesaggistica semplificata</li><li>Progettazione della rimozione delle coperture in cemento-amianto</li><li>Progettazione della fornitura e posa delle nuove coperture in Aluzinc</li><li>Valutazione degli aspetti di qualità, ambiente, salute e sicurezza del cantiere</li></ul>"
+    },
+    {
+        "title": "Via Italo Svevo 5 — Milano",
+        "client": "Liben S.r.l.",
+        "period": "2013-2014",
+        "endYear": 2014,
+        "val": "",
+        "type": "Monitoraggio delle acque sotterranee",
+        "cardSubtitle": "Realizzazione di piezometri e monitoraggio delle acque sotterranee",
+        "images": [
+            "./assets/img/liben1.jpg",
+            "./assets/img/liben2.jpg"
+        ],
+        "tags": [
+            "acque",
+            "caratterizzazione",
+            "monitoraggio"
+        ],
+        "desc": "<p>Presso l'area di via Italo Svevo 5, a Milano, sono stati realizzati tre piezometri di monitoraggio spinti fino a 15 m di profondità, in esecuzione del Piano di Caratterizzazione approvato dalla Conferenza dei Servizi del 22 maggio 2013 e autorizzato dal Comune di Milano. L'attività è finalizzata a verificare la piezometria locale, l'andamento della falda (da N-NO verso S-SE) e l'eventuale contaminazione delle acque sotterranee.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Realizzazione dei piezometri di monitoraggio in esecuzione del Piano di Caratterizzazione</li><li>Rilievo della piezometria locale e verifica dell'andamento della falda</li><li>Relazione tecnica per la richiesta dei codici SIF al Comune di Milano</li><li>Documentazione delle stratigrafie e delle caratteristiche costruttive dei piezometri</li></ul>"
+    },
+    {
+        "title": "Cascina Merlata",
+        "client": "Cascina Merlata S.p.A., Milano",
+        "period": "2012-2013",
+        "endYear": 2013,
+        "val": "ca. 2.000.000 €",
+        "type": "Progetto Operativo di Bonifica e Direzione Lavori",
+        "cardSubtitle": "Progetto Operativo di Bonifica e Direzione Lavori.",
+        "images": [
+            "./assets/img/merlata1.jpg",
+            "./assets/img/merlata2.jpg"
+        ],
+        "tags": [
+            "bonifica"
+        ],
+        "desc": "<p>Il sito era totalmente dismesso e presentava contaminazioni da idrocarburi e metalli. L’area verrà trasformata in un sistema di viabilità e urbanizzazioni necessarie per il collegamento tra il quartiere di Cascina Merlata e la zona EXPO2015.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione del Progetto Operativo di Bonifica</li><li>Direzione Lavori</li></ul>"
+    },
+    {
+        "title": "Ex Broggi – Politecnico di Milano",
+        "client": "Euromilano S.p.A. e Politecnico di Milano",
+        "period": "2008-2013",
+        "endYear": 2013,
+        "val": "ca. 1.300.000 €",
+        "type": "Progetto Operativo di Bonifica con Analisi di Rischio",
+        "cardSubtitle": "Analisi di Rischio, Capping e Soil Vapor Extraction.",
+        "images": [
+            "./assets/img/broggipoli1.jpg",
+            "./assets/img/broggipoli2.jpg",
+            "./assets/img/broggipoli3.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "acque"
+        ],
+        "desc": "<p>Il sito, già sede del Politecnico di Milano, è risultato contaminato in profondità da idrocarburi, IPA e solventi clorurati.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione dell’Integrazione del Piano di Caratterizzazione</li><li>Realizzazione indagine ambientale e monitoraggi soil gas</li><li>Redazione del Progetto di Sbarramento Idraulico</li><li>Realizzazione Messa in Sicurezza d’Emergenza/Permanente</li><li>Redazione della Variante Progetto Definitivo di Bonifica con Analisi di Rischio</li><li>Progettazione impianto Soil Vapor Extraction (SVE)</li><li>Direzione Lavori interventi di bonifica e sbarramento idraulico</li></ul>"
+    },
+    {
+        "title": "Cascina Basmetto",
+        "client": "Uniabita, già Corcab (MI) – CMB, Milano",
+        "period": "2009-2013",
+        "endYear": 2013,
+        "val": "ca. 60.000 €",
+        "type": "Piano di caratterizzazione ed indagine ambientale",
+        "cardSubtitle": "Piano di caratterizzazione ed indagine ambientale.",
+        "images": [
+            "./assets/img/basmetto1.jpg",
+            "./assets/img/basmetto2.jpg"
+        ],
+        "tags": [
+            "bonifica"
+        ],
+        "desc": "<p>Il sito è stato impiegato originariamente in usi agricoli e successivamente come area di deposito di automezzi da demolire. L’area deve cambiare destinazione d’uso e necessita di una bonifica dei suoli propedeutica alla integrale demolizione della vecchia cascina ed alla nuova urbanizzazione.</p><p>Tecnitalia Ingegneria è stata individuata come partner nel pool di progettazione sia per determinare i costi della futura bonifica sia per svolgere l’attività di caratterizzazione iniziale del sito.</p>"
+    },
+    {
+        "title": "Ceramica Ligure",
+        "client": "Lasselsberger GmbH, Pöchlarn",
+        "period": "2010-2013",
+        "endYear": 2013,
+        "val": "ca. 500.000 €",
+        "type": "Progetto di bonifica con Analisi di Rischio",
+        "cardSubtitle": "Progetto di bonifica con Analisi di Rischio.",
+        "images": [
+            "./assets/img/ceramica1.jpg",
+            "./assets/img/ceramica2.jpg"
+        ],
+        "tags": [
+            "bonifica"
+        ],
+        "desc": "<p>L’area è totalmente dismessa e presenta contaminazioni da idrocarburi e metalli, sia all’interno dell’ex stabilimento sia all’esterno.</p><p>Tecnitalia Ingegneria ha ricevuto l’incarico di redigere un progetto di bonifica dell’intera area con Analisi di rischio e di Direzione Lavori della prima fase (Area esterna) di bonifica.</p>"
+    },
+    {
+        "title": "CF Gomma – Pirelli Tyres",
+        "client": "Euromilano S.p.A.",
+        "period": "2009-2013",
+        "endYear": 2013,
+        "val": "ca. 600.000 €",
+        "type": "Caratterizzazione e Bonifica Amianto",
+        "cardSubtitle": "Caratterizzazione ambientale e Bonifica MCA e FAV.",
+        "images": [
+            "./assets/img/pirelli1.jpg",
+            "./assets/img/pirelli2.jpg"
+        ],
+        "tags": [
+            "amianto",
+            "bonifica"
+        ],
+        "desc": "<p>L’area deve cambiare destinazione d’uso e sarà totalmente demolita. È stata avviata dalla ex proprietà un’attività di caratterizzazione che è stata ripresa da Tecnitalia Ingegneria per giungere ad una progettazione con analisi di rischio degli interventi di bonifica.</p><p>Poiché l’area presentava un’ingente quantità di MCA, sia in forma friabile sia compatta, è stato necessario dapprima redigere una mappatura ed in seguito procedere alla bonifica anche delle fibre artificiali vetrose (FAV).</p>"
+    },
+    {
+        "title": "Ex Exide Technologies",
+        "client": "Exide Technologies S.r.l.",
+        "period": "2007-2013",
+        "endYear": 2013,
+        "val": "ca. 1.500.000 €",
+        "type": "Progetto Operativo di Bonifica e Direzione Lavori",
+        "cardSubtitle": "Progetto Operativo di Bonifica e Direzione Lavori.",
+        "images": [
+            "./assets/img/exide1.jpg",
+            "./assets/img/exide2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "acque"
+        ],
+        "desc": "<p>Il sito è totalmente dismesso e presenta contaminazioni da metalli, idrocarburi e pesticidi.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione del Progetto Operativo di Bonifica con Analisi di Rischio</li><li>Direzione Lavori interventi di bonifica</li><li>Direzione Lavori sbarramento idraulico e impianto Trattamento Acque di Falda (TAF)</li><li>Implementazione di un modello matematico per la rimodulazione dello sbarramento idraulico</li></ul>"
+    },
+    {
+        "title": "Stabilimento Industrie Chimiche Ingegner Bonelli",
+        "client": "Industrie chimiche ICIB S.P.A.",
+        "period": "2008-2013",
+        "endYear": 2013,
+        "val": "ca. 250.000 €",
+        "type": "Progetto Operativo di Bonifica e Direzione Lavori",
+        "cardSubtitle": "Progetto Operativo di Bonifica e Direzione Lavori.",
+        "images": [
+            "./assets/img/bonelli1.jpg",
+            "./assets/img/bonelli2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "acque"
+        ],
+        "desc": "<p>Il sito industriale è in attività e presenta contaminazioni da metalli, idrocarburi e fluoruri.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione del Piano di Caratterizzazione</li><li>Realizzazione dell’indagine ambientale</li><li>Progettazione e realizzazione della Messa in Sicurezza d’Emergenza (MISE) della falda mediante sbarramento idraulico</li><li>Direzione Lavori sbarramento idraulico</li><li>Redazione del Progetto Operativo di Bonifica con Analisi di Rischio</li></ul>"
+    },
+    {
+        "title": "Ex Nivea",
+        "client": "Uniabita, già Corcab (MI)",
+        "period": "2006-2013",
+        "endYear": 2013,
+        "val": "ca. 1.000.000 €",
+        "type": "Progetto Definitivo di Bonifica e Direzione Lavori",
+        "cardSubtitle": "Progetto Definitivo di Bonifica e Direzione Lavori.",
+        "images": [
+            "./assets/img/nivea1.jpg",
+            "./assets/img/nivea2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "amianto",
+            "acque",
+            "demolizione"
+        ],
+        "desc": "<p>L’area deve cambiare destinazione d’uso ed è stata totalmente demolita. È stata avviata dalla ex proprietà un’attività di caratterizzazione che è stata ripresa da Tecnitalia Ingegneria per giungere alla progettazione definitiva.</p><p>Poiché l’area presentava un’ingente quantità di MCA, sia in forma friabile sia compatta, è stato necessario dapprima redigere una mappatura ed in seguito procedere alla bonifica.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione del Progetto Definitivo di Bonifica</li><li>Direzione Lavori interventi di bonifica e demolizione</li><li>Progettazione di un sistema di aggottamento della falda</li></ul>"
+    },
+    {
+        "title": "Fondazione Prada",
+        "client": "Prada S.p.A., Milano",
+        "period": "2010-2013",
+        "endYear": 2013,
+        "val": "ca. 4.500.000 €",
+        "type": "Progetto Operativo di Bonifica e Direzione Lavori",
+        "cardSubtitle": "Progetto Operativo di Bonifica e Direzione Lavori.",
+        "images": [
+            "./assets/img/prada1.jpg",
+            "./assets/img/prada2.jpg"
+        ],
+        "tags": [
+            "bonifica"
+        ],
+        "desc": "<p>Le attività produttive sul sito erano completamente dismesse e l’area veniva utilizzata come deposito di opere d’arte e showroom. L’area presentava contaminazioni da metalli e idrocarburi e sarà sede di un Museo di Arte Contemporanea.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione del Piano di Caratterizzazione</li><li>Realizzazione indagine ambientale</li><li>Redazione del Progetto Operativo di Bonifica con Analisi di Rischio</li><li>Direzione Lavori</li></ul>"
+    },
+    {
+        "title": "Porto di Mare — Milano",
+        "client": "Politecnico di Milano / Italia Nostra",
+        "period": "2013",
+        "endYear": 2013,
+        "val": "",
+        "type": "Analisi di Rischio sanitario-ambientale",
+        "cardSubtitle": "Analisi di rischio ambientale sull'area Porto di Mare nell'ambito del progetto Open Ground",
+        "images": [
+            "./assets/img/italianostra1.jpg",
+            "./assets/img/italianostra2.jpg"
+        ],
+        "tags": [
+            "caratterizzazione",
+            "analisi di rischio",
+            "monitoraggio"
+        ],
+        "desc": "<p>L'area Porto di Mare, in via San Dionigi a Milano e in custodia di Italia Nostra, è stata oggetto di un'indagine ambientale preliminare e della relativa analisi di rischio sito specifica. Su cinque zone del sito sono stati riscontrati, nel suolo superficiale e profondo, rischi non accettabili per arsenico, piombo, rame, zinco e idrocarburi policiclici aromatici, con percorsi di esposizione legati a ingestione, contatto dermico e lisciviazione in falda. L'attività si è inserita nell'iniziativa di ricerca Open Ground: De-paving Urban Surfaces, promossa dal Politecnico di Milano con Italia Nostra sul tema del de-paving e del riuso dei materiali.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Predisposizione delle indicazioni per l'analisi di rischio sito specifica</li><li>Individuazione dei punti di indagine e caratterizzazione del suolo superficiale e profondo</li><li>Valutazione dei percorsi di esposizione per i contaminanti riscontrati</li><li>Supporto tecnico-scientifico all'iniziativa di ricerca universitaria sul de-paving</li></ul>"
+    },
+    {
+        "title": "Ex Riseria — Via Pienza, Milano",
+        "client": "Naviglio Chiesarossa S.r.l.",
+        "period": "2013",
+        "endYear": 2013,
+        "val": "",
+        "type": "Piano Preliminare di Indagine Ambientale",
+        "cardSubtitle": "Indagine ambientale preliminare su un ex complesso di riseria e filanda dismesse",
+        "images": [
+            "./assets/img/gariboldi1.jpg"
+        ],
+        "tags": [
+            "caratterizzazione"
+        ],
+        "desc": "<p>L'area di via Pienza 20, a Milano, di circa 18.300 m², ospitava fino agli anni Novanta un complesso industriale poi dismesso: una filanda attiva dall'inizio del secolo scorso, sostituita nel 1936 da una riseria. In vista di un cambio di destinazione d'uso da industriale a residenziale è stata condotta un'indagine ambientale preliminare per verificare l'eventuale presenza di passività ambientali nei terreni e stimare l'ordine di grandezza dei costi di un'eventuale bonifica.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Ricostruzione del profilo storico del sito e del pregresso ciclo produttivo</li><li>Individuazione dei centri di pericolo legati alle lavorazioni industriali dismesse</li><li>Esecuzione di sondaggi geognostici e prelievo di campioni di terreno</li><li>Analisi chimiche di laboratorio e confronto con le Concentrazioni Soglia di Contaminazione</li></ul>"
+    },
+    {
+        "title": "Ex Teatro Smeraldo",
+        "client": "Eataly Real Estate",
+        "period": "2012",
+        "endYear": 2012,
+        "val": "ca. 430.000 €",
+        "type": "Bonifica materiali contenenti amianto",
+        "cardSubtitle": "Bonifica materiali contenenti amianto (MCA) e FAV.",
+        "images": [
+            "./assets/img/smeraldo1.jpg",
+            "./assets/img/smeraldo2.jpg"
+        ],
+        "tags": [
+            "amianto"
+        ],
+        "desc": "<p>L’area ha cambiato destinazione ed è stata totalmente ristrutturata per essere adibita a negozio/ristorante. Presentava occultamente un’ingente quantità di MCA soprattutto in forma friabile. È stato necessario intervenire con diverse aree confinate.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redigere una mappatura dei MCA e delle FAV propedeutica alla loro bonifica</li><li>Direzione Lavori</li></ul>"
+    },
+    {
+        "title": "Ex Saffa Fabbriche Fiammiferi e Affini",
+        "client": "Red.Im. S.r.l.",
+        "period": "2006-2011",
+        "endYear": 2011,
+        "val": "ca. 110.000 €",
+        "type": "Caratterizzazione ambientale",
+        "cardSubtitle": "Caratterizzazione ambientale area dismessa.",
+        "images": [
+            "./assets/img/saffa1.jpg",
+            "./assets/img/saffa2.jpg"
+        ],
+        "tags": [
+            "bonifica"
+        ],
+        "desc": "<p>L’area deve cambiare destinazione d’uso e sarà totalmente demolita.</p><p>Tecnitalia Ingegneria è stata individuata come partner nel pool di progettazione sia per determinare i costi della futura bonifica sia per svolgere l’attività di caratterizzazione iniziale del sito.</p>"
+    },
+    {
+        "title": "Ex Termoraggi",
+        "client": "Sidis S.p.A., Milano",
+        "period": "2005-2011",
+        "endYear": 2011,
+        "val": "ca. 600.000 €",
+        "type": "Progetto Definitivo di Bonifica e Direzione Lavori",
+        "cardSubtitle": "Progetto Definitivo di Bonifica e Direzione Lavori.",
+        "images": [
+            "./assets/img/termoraggi1.jpg",
+            "./assets/img/termoraggi2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "demolizione"
+        ],
+        "desc": "<p>Il sito, già sede di un deposito di carburanti, deve cambiare destinazione d’uso ed è stato totalmente demolito. L’area era già in fase di caratterizzazione quando è stata coinvolta Tecnitalia Ingegneria per giungere alla progettazione definitiva degli interventi di bonifica.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione dell’integrazione del Progetto Definitivo di Bonifica</li><li>Direzione Lavori interventi di bonifica e demolizione</li></ul>"
+    },
+    {
+        "title": "Syndial — Porto Torres (SS)",
+        "client": "Syndial S.p.A. (Eni)",
+        "period": "2006-2011",
+        "endYear": 2011,
+        "val": "",
+        "type": "Supporto tecnico specialistico",
+        "cardSubtitle": "Supporto tecnico per la bonifica e messa in sicurezza permanente del sito industriale",
+        "images": [
+            "./assets/img/syndial1.jpg",
+            "./assets/img/syndial2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "acque",
+            "demolizione",
+            "rifiuti"
+        ],
+        "desc": "<p>Il sito Syndial (gruppo Eni) di Porto Torres (SS) comprende aree industriali dismesse quali Minciaredda, Palte Fosfatiche e Peci DMT, oltre alle aree interessate dalla demolizione dell'impianto Acido Fosforico. Le foto mostrano l'assetto tipico di un grande stabilimento petrolchimico, con serbatoi, tubazioni e ciminiere affacciati su un canale perimetrale. Il progetto definitivo prevede la bonifica e la messa in sicurezza permanente delle aree, con trattamento on site dei terreni (lavaggio, desorbimento termico, inertizzazione, pirolisi) e smaltimento dei rifiuti derivanti dalle demolizioni.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Supporto tecnico nella definizione degli interventi di bonifica e messa in sicurezza permanente</li><li>Valutazione delle modalità di trattamento on site dei terreni</li><li>Gestione dello smaltimento dei rifiuti da demolizione dell'impianto Acido Fosforico</li><li>Predisposizione della piattaforma di trattamento acque e terreni</li></ul>"
+    },
+    {
+        "title": "Ex Cartiere Binda",
+        "client": "Euromilano S.p.A., Milano",
+        "period": "2004-2007",
+        "endYear": 2007,
+        "val": "ca. 2.700.000 €",
+        "type": "Progetto Definitivo di Bonifica e Direzione Lavori",
+        "cardSubtitle": "Progetto Definitivo di Bonifica e Direzione Lavori.",
+        "images": [
+            "./assets/img/binda1.jpg",
+            "./assets/img/binda2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "amianto",
+            "demolizione"
+        ],
+        "desc": "<p>Il sito era totalmente dismesso e presentava contaminazioni da PCB, metalli e idrocarburi. L’area ha cambiato destinazione ed è stata trasformata in un quartiere residenziale.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione del Piano di Caratterizzazione</li><li>Realizzazione dell’Indagine Ambientale</li><li>Redazione del Progetto Definitivo di Bonifica</li><li>Direzione Lavori interventi di bonifica, rimozione MCA (materiale contenente amianto) e demolizione</li></ul>"
+    },
+    {
+        "title": "Ex Officine Metallurgiche Broggi",
+        "client": "Euromilano S.p.A., Milano",
+        "period": "2004-2007",
+        "endYear": 2007,
+        "val": "ca. 600.000 €",
+        "type": "Progetto Definitivo di Bonifica e Direzione Lavori",
+        "cardSubtitle": "Progetto Definitivo di Bonifica e Direzione Lavori.",
+        "images": [
+            "./assets/img/broggi1.jpg",
+            "./assets/img/broggi2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "acque",
+            "demolizione"
+        ],
+        "desc": "<p>Il sito era totalmente dismesso e presentava contaminazioni da metalli e idrocarburi. L’area è stata trasformata nella nuova sede del Politecnico di Milano.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di:</strong></p><ul><li>Redazione del Piano di Caratterizzazione</li><li>Realizzazione indagine ambientale</li><li>Redazione del Progetto Definitivo di Bonifica</li><li>Direzione Lavori interventi di bonifica e demolizione</li><li>Direzione Lavori sbarramento idraulico</li></ul>"
+    },
+    {
+        "title": "Officina del Gas – Bovisa Gasometri",
+        "client": "Metropolitana Milanese S.p.A. per il Comune di Milano",
+        "period": "2002-2006",
+        "endYear": 2006,
+        "val": "ca. 45.000.000 €",
+        "type": "Progetto Definitivo di Bonifica",
+        "cardSubtitle": "Progetto Definitivo di Bonifica Sito Interesse Nazionale.",
+        "images": [
+            "./assets/img/gasometri1.jpg",
+            "./assets/img/gasometri2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "acque",
+            "rifiuti"
+        ],
+        "desc": "<p>L’area all’epoca della redazione del progetto era inserita tra i Siti d’Interesse Nazionale previsti dal Decreto Ministeriale 18 settembre 2001, n. 468. Il sito è totalmente dismesso e presenta contaminazioni da idrocarburi e metalli.</p><p><strong>Tecnitalia Ingegneria ha ricevuto l’incarico di redigere un progetto di bonifica dell’intera area con utilizzo di diverse tecnologie:</strong></p><ul><li>Soil washing</li><li>Soil vapor extraction</li><li>Discarica di servizio</li><li>Sbarramento idraulico</li></ul><p>Per verificare la validità della scelta della tecnologie di bonifica ha anche effettuato delle prove pilota di laboratorio di soil washing.</p>"
+    },
+    {
+        "title": "Deposito Costiero GPL — Targia (SR)",
+        "client": "GM Gas S.r.l.",
+        "period": "1999-2005",
+        "endYear": 2005,
+        "val": "",
+        "type": "Coordinamento e Direzione Lavori",
+        "cardSubtitle": "Coordinamento e Direzione Lavori del terminale marino del deposito costiero",
+        "images": [
+            "./assets/img/gpl1.jpg",
+            "./assets/img/gpl2.jpg"
+        ],
+        "tags": [
+            "sicurezza",
+            "direzione lavori"
+        ],
+        "desc": "<p>Coordinamento e verifica dello stato di avanzamento del terminale marino del deposito costiero.</p><p>Sito: Targia (SR) – Deposito costiero</p><p><strong>Tecnitalia Ingegneria ha ricevuto l'incarico di:</strong></p><ul><li>Direzione Lavori</li></ul>"
+    },
+    {
+        "title": "Ex Deposito Carburanti Finalube",
+        "client": "Euromilano S.p.A., Milano",
+        "period": "1999-2002",
+        "endYear": 2002,
+        "val": "ca. 6.000.000 €",
+        "type": "Discarica di servizio e Direzione Lavori",
+        "cardSubtitle": "Progettazione discarica di servizio e Direzione Lavori.",
+        "images": [
+            "./assets/img/finalube1.jpg",
+            "./assets/img/finalube2.jpg"
+        ],
+        "tags": [
+            "bonifica",
+            "acque",
+            "rifiuti"
+        ],
+        "desc": "<p>Il sito era totalmente dismesso e presentava contaminazioni da idrocarburi, IPA, BTEX e metalli. L’area è stata trasformata in un quartiere residenziale con la creazione di un vastissimo parco pubblico.</p><p><strong>Gli interventi di bonifica si sono svolti sotto il controllo di Tecnitalia Ingegneria:</strong></p><ul><li>Demolizione degli edifici e dei serbatoi interrati e fuori terra</li><li>Sbarramento idraulico della falda e sbancamento di terreni contaminati</li><li>Trattamento on-site dei terreni mediante soil venting e biorisanamento (biopile)</li><li>Realizzazione di una discarica di servizio per i terreni non idonei al biorisanamento</li></ul>"
     }
 ]

@@ -224,10 +224,15 @@ function renderProjects(filterTag = 'tutti') {
 const workScrollerProjects = [
     { title: "Fondazione Prada" },
     { title: "Ex Novaceta" },
+    { title: "Ex SGL Carbon — Ascoli Piceno" },
     { title: "Area Ex Reggiani", imageIndex: 1 },
+    { title: "Ex Ospedali Riuniti — UMI 3, Bergamo" },
     { title: "Cascina Merlata" },
+    { title: "Ex Caserma Cavalli — Novara", imageIndex: 1 },
     { title: "Ex Cartiere Binda" },
-    { title: "Ex Stabilimento Prysmian Group" }
+    { title: "Ex Alemagna — Cornaredo (MI)" },
+    { title: "Ex Stabilimento Prysmian Group" },
+    { title: "Ex Riseria — Via Pienza, Milano" }
 ];
 
 function renderWorkScroller() {
@@ -252,15 +257,92 @@ function renderWorkScroller() {
                 </div>
             </div>`;
     });
+
+    setupWorkScroller();
+}
+
+// La rotella resta alla pagina: la striscia si muove con le frecce, col trascinamento
+// e avvicinando il puntatore ai bordi.
+function tweenScroll(el, delta, durata) {
+    const partenza = el.scrollLeft;
+    const arrivo = Math.max(0, Math.min(partenza + delta, el.scrollWidth - el.clientWidth));
+    const t0 = performance.now();
+    if (el._tween) cancelAnimationFrame(el._tween);
+    (function passo(t) {
+        const k = Math.min(1, (t - t0) / durata);
+        const e = 1 - Math.pow(1 - k, 3); // ease-out cubica
+        el.scrollLeft = partenza + (arrivo - partenza) * e;
+        if (k < 1) el._tween = requestAnimationFrame(passo); else el._tween = null;
+    })(t0);
 }
 
 window.scrollWorkScroller = function(direction) {
     const scroller = document.getElementById('work-scroller');
     if (!scroller) return;
     const card = scroller.querySelector('.work-card');
-    const step = card ? card.getBoundingClientRect().width + 30 : 400; // larghezza card + gap
-    scroller.scrollBy({ left: direction * step, behavior: 'instant' });
+    const step = card ? card.getBoundingClientRect().width + 24 : 300;
+    tweenScroll(scroller, direction * step * 2, 450);
 };
+
+function setupWorkScroller() {
+    const wrap = document.querySelector('.work-scroller-wrap');
+    const scroller = document.getElementById('work-scroller');
+    if (!wrap || !scroller || scroller.dataset.pronto) return;
+    scroller.dataset.pronto = '1';
+
+    // trascinamento col mouse
+    let giu = false, xPartenza = 0, scrollPartenza = 0, spostato = 0;
+    scroller.addEventListener('pointerdown', (e) => {
+        if (e.pointerType === 'touch') return; // su touch basta lo swipe nativo
+        giu = true; spostato = 0;
+        xPartenza = e.clientX; scrollPartenza = scroller.scrollLeft;
+    });
+    scroller.addEventListener('pointermove', (e) => {
+        if (!giu) return;
+        const d = e.clientX - xPartenza;
+        spostato = Math.max(spostato, Math.abs(d));
+        if (spostato > 4) {
+            scroller.classList.add('is-dragging');
+            scroller.scrollLeft = scrollPartenza - d;
+        }
+    });
+    const finiscoDrag = () => {
+        giu = false;
+        // un drag non deve aprire la scheda: il click parte subito dopo il pointerup
+        if (spostato > 4) setTimeout(() => scroller.classList.remove('is-dragging'), 0);
+        else scroller.classList.remove('is-dragging');
+    };
+    scroller.addEventListener('pointerup', finiscoDrag);
+    scroller.addEventListener('pointerleave', finiscoDrag);
+    scroller.addEventListener('click', (e) => {
+        if (spostato > 4) { e.preventDefault(); e.stopPropagation(); spostato = 0; }
+    }, true);
+
+    // avvicinando il mouse ai bordi la striscia scorre da sola
+    if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+        const ZONA = 0.12, VMAX = 11;
+        let velocita = 0, anim = null;
+        const passo = () => {
+            if (!velocita) { anim = null; return; }
+            scroller.scrollLeft += velocita;
+            anim = requestAnimationFrame(passo);
+        };
+        wrap.addEventListener('mousemove', (e) => {
+            if (giu) { velocita = 0; return; }
+            const b = scroller.getBoundingClientRect();
+            if (!b.width) return;
+            const x = (e.clientX - b.left) / b.width;
+            if (x > 1 - ZONA)  velocita =  VMAX * Math.min(1, (x - (1 - ZONA)) / ZONA);
+            else if (x < ZONA) velocita = -VMAX * Math.min(1, (ZONA - x) / ZONA);
+            else               velocita = 0;
+            if (velocita && !anim) anim = requestAnimationFrame(passo);
+        });
+        wrap.addEventListener('mouseleave', () => {
+            velocita = 0;
+            if (anim) { cancelAnimationFrame(anim); anim = null; }
+        });
+    }
+}
 
 window.filterProjects = function(tag, btnElement) {
     document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
@@ -279,11 +361,18 @@ window.openProject = function(index) {
     if(!modal) return;
     
     document.getElementById('m-title').innerHTML = p.title;
-    document.getElementById('m-client').innerHTML = p.client;
-    document.getElementById('m-period').innerHTML = p.period;
-    document.getElementById('m-val').innerHTML = p.val;
-    document.getElementById('m-type').innerHTML = p.type;
     document.getElementById('m-desc').innerHTML = p.desc;
+
+    // Non tutte le schede d'archivio hanno committente o importo documentati:
+    // la cella viene nascosta invece di lasciare l'etichetta vuota.
+    [['m-client', p.client], ['m-period', p.period], ['m-val', p.val], ['m-type', p.type]]
+        .forEach(([id, value]) => {
+            const span = document.getElementById(id);
+            if (!span) return;
+            span.innerHTML = value || '';
+            const cell = span.closest('div');
+            if (cell) cell.style.display = value ? '' : 'none';
+        });
     
     const wrapper = document.getElementById('m-slides-wrapper');
     wrapper.innerHTML = ''; 
@@ -342,8 +431,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+var lenis;
 if (typeof Lenis !== 'undefined') {
-    const lenis = new Lenis({ smooth: true, duration: 1.2 });
+    lenis = new Lenis({ smooth: true, duration: 1.2 });
     function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
     requestAnimationFrame(raf);
 }
@@ -400,9 +490,6 @@ function inizializzaEmailJS() {
 function initStatsCounters() {
     const statsSection = document.querySelector('.stats-row');
     if (!statsSection) return;
-
-    const projectCountEl = statsSection.querySelector('[data-count-projects]');
-    if (projectCountEl) projectCountEl.setAttribute('data-count', String(projectsData.length));
 
     const counters = statsSection.querySelectorAll('.stat-number[data-count]');
 

@@ -1,26 +1,26 @@
 [
     {
         "id": "news-001",
-        "data": "14 Maggio 2026",
-        "titolo": "Nuove direttive Terre e Rocce da Scavo",
-        "immagine": "./assets/img/news/terre-scavo.jpg",
-        "riassunto": "Aggiornamento sulle recenti modifiche normative per la gestione dei materiali da scavo nei cantieri urbani.",
-        "contenuto": "<p>Il recente aggiornamento normativo introduce criteri più restrittivi per la classificazione dei materiali di riporto. <strong>Tecnitalia Group</strong> ha già aggiornato le procedure operative di cantiere.</p><ul><li>Nuovi limiti per idrocarburi pesanti.</li><li>Tempi ridotti per la caratterizzazione in situ.</li></ul><p>Il nostro laboratorio è a disposizione per consulenze specifiche.</p>"
+        "data": "10 Giugno 2026",
+        "titolo": "End of Waste degli aggregati riciclati: il tavolo europeo",
+        "immagine": "./assets/img/ascolisglcarbon1.jpg",
+        "riassunto": "Prosegue il confronto tecnico fra ANPAR e il Joint Research Centre della Commissione Europea sui criteri di cessazione della qualifica di rifiuto per gli inerti da demolizione.",
+        "contenuto": "<p>Il percorso che porta un inerte da demolizione a cessare la qualifica di rifiuto e a rientrare in cantiere come aggregato riciclato è oggi al centro di un confronto tecnico fra <strong>ANPAR</strong> — l'Associazione Nazionale Produttori Aggregati Riciclati — e il <strong>Joint Research Centre</strong> della Commissione Europea.</p><p>L'<strong>Ing. Giorgio Bressi</strong>, Direttore Tecnico di Tecnitalia Ingegneria, segue il negoziato in qualità di Direttore Tecnico di ANPAR. Sullo stesso tema era già intervenuto in audizione parlamentare il 9 giugno 2021.</p><p>Non è una questione accademica: nei nostri cantieri di decommissioning la possibilità di trattare e reimpiegare gli inerti sul posto, invece di conferirli in discarica, incide direttamente sui volumi movimentati, sul traffico pesante generato e sul costo complessivo dell'intervento.</p>"
     },
     {
         "id": "news-002",
-        "data": "02 Aprile 2026",
-        "titolo": "Rinnovo Certificazioni ISO e Accreditamenti",
-        "immagine": "./assets/img/news/certificazioni.jpg",
-        "riassunto": "Il laboratorio ha superato con successo l'audit per il rinnovo delle certificazioni ambientali e di qualità.",
-        "contenuto": "<p>Con grande soddisfazione comunichiamo il mantenimento degli standard ISO 9001 e ISO 14001. Questo risultato conferma la solidità delle nostre metodologie ingegneristiche e analitiche.</p>"
+        "data": "12 Maggio 2026",
+        "titolo": "Ex SGL Carbon, Ascoli Piceno: la riprogettazione che taglia i costi",
+        "immagine": "./assets/img/scavo.jpg",
+        "riassunto": "Su un compendio industriale di circa 250.000 metri quadri, il subentro alla progettazione ha ridotto la stima di costo della bonifica da circa 34 a circa 10 milioni di euro.",
+        "contenuto": "<p>L'area dell'ex stabilimento <strong>SGL Carbon</strong> ad Ascoli Piceno è un compendio industriale di circa <strong>250.000 metri quadri</strong>, destinato alla produzione di elettrodi in grafite e oggi dismesso.</p><p>Subentrando al primo progettista nella redazione del Progetto Operativo di Bonifica, abbiamo rivisto l'impostazione dell'intervento: la stima del costo della bonifica è passata da circa <strong>34 milioni di euro a circa 10 milioni</strong>.</p><p>Il margine è venuto in larga parte dal decommissioning propedeutico: circa <strong>80.000 metri cubi</strong> di materiali da demolizione vengono trattati e recuperati direttamente in sito, anziché essere classificati come rifiuto e allontanati.</p>"
     },
     {
         "id": "news-003",
-        "data": "15 Marzo 2026",
-        "titolo": "Convegno: Bonifiche Sostenibili e Biocapping",
-        "immagine": "./assets/img/news/convegno.jpg",
-        "riassunto": "L'Ing. Bressi interverrà come relatore al Politecnico di Milano sul tema del biorisanamento in situ.",
-        "contenuto": "<p>Il seminario affronterà i casi studio pratici di Tecnitalia, con particolare riferimento all'area Oasi Bovisa. Verranno discussi i vantaggi del biocapping rispetto alle tecniche tradizionali di messa in sicurezza permanente.</p>"
+        "data": "18 Marzo 2026",
+        "titolo": "Cantieri di decommissioning: ex Novaceta ed ex Sofer",
+        "immagine": "./assets/img/novaceta1.jpg",
+        "riassunto": "Due interventi in corso in cui bonifica dei suoli, rimozione dell'amianto e demolizione procedono insieme sotto un'unica Direzione Lavori.",
+        "contenuto": "<p>A Magenta prosegue il recupero dell'ex stabilimento <strong>Novaceta</strong>: Direzione Lavori della bonifica dei materiali contenenti amianto e delle fibre artificiali vetrose, direzione delle demolizioni, bonifica bellica preventiva, Progetto Operativo di Bonifica e relativa Direzione Lavori. L'area è destinata a ospitare un centro servizi informatici.</p><p>Ad Arco Felice, in provincia di Napoli, seguiamo per <strong>Prysmian Power Link</strong> la Direzione Lavori della bonifica dei suoli dell'ex stabilimento <strong>Sofer</strong>.</p><p>Sono cantieri in cui le tre attività — bonifica del suolo, rimozione dell'amianto, demolizione delle strutture — non possono essere trattate come fasi separate: devono essere sequenziate in un unico programma, ed è questo il lavoro della Direzione Lavori.</p>"
     }
 ]
