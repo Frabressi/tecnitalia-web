@@ -76,11 +76,11 @@ nav.scrolled .nav-links a:hover { color: var(--blue); }
 nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
 
 /* --- 3. LAYOUT PAGINE SINGOLE --- */
-.page-header { 
-    background: var(--blue); 
-    color: white; 
-    margin-top: 0; 
-    padding: 150px 10% 80px 10%; 
+.page-header {
+    background: var(--navy-deep);
+    color: white;
+    margin-top: 0;
+    padding: 140px 10% 70px;
     text-align: center; 
     width: 100vw;
     margin-left: calc(-50vw + 50%);
