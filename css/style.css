@@ -77,16 +77,17 @@ nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
 
 /* --- 3. LAYOUT PAGINE SINGOLE --- */
 .page-header {
-    background: var(--paper);
+    background: linear-gradient(180deg, #eef2f5 0%, var(--paper) 100%);
     color: var(--ink);
     margin-top: 0;
-    padding: 150px 10% 60px;
+    padding: 150px 10% 80px;
     text-align: center;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     box-sizing: border-box;
     border-bottom: 1px solid #e5e5e0;
 }
+.page-header .eyebrow { justify-content: center; display: flex; }
 .page-header h1 { font-size: 3.5rem; margin-bottom: 20px; color: var(--ink); }
 .page-header p { color: #555; }
 .page-content { max-width: 900px; margin: 0 auto; padding: 60px 20px; }
