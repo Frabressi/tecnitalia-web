@@ -77,17 +77,18 @@ nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
 
 /* --- 3. LAYOUT PAGINE SINGOLE --- */
 .page-header {
-    background: var(--navy-deep);
-    color: white;
+    background: var(--paper);
+    color: var(--ink);
     margin-top: 0;
-    padding: 140px 10% 70px;
-    text-align: center; 
+    padding: 150px 10% 60px;
+    text-align: center;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     box-sizing: border-box;
+    border-bottom: 1px solid #e5e5e0;
 }
-.page-header h1 { font-size: 3.5rem; margin-bottom: 20px; color: #ffffff; }
-.page-header p { color: rgba(255, 255, 255, 0.9); }
+.page-header h1 { font-size: 3.5rem; margin-bottom: 20px; color: var(--ink); }
+.page-header p { color: #555; }
 .page-content { max-width: 900px; margin: 0 auto; padding: 60px 20px; }
 
 /* --- 4. HERO (Home) --- */

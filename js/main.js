@@ -59,18 +59,28 @@ function initNavbar() {
     const nav = document.querySelector('nav');
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
-    
+
     if (!nav) return;
-    
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            nav.classList.add('scrolled');
-            if(navLinks && !navLinks.classList.contains('active') && hamburger) hamburger.style.color = "#1d1d1f";
-        } else {
-            nav.classList.remove('scrolled');
-            if(navLinks && !navLinks.classList.contains('active') && hamburger) hamburger.style.color = "white";
-        }
-    });
+
+    // Le pagine senza .hero (tutte tranne la home) non hanno nulla di scuro
+    // dietro la nav fissa: la nav deve partire già nello stato "scrolled"
+    // (sfondo opaco, testo scuro) e restarci sempre.
+    const hasHero = !!document.querySelector('.hero');
+    const isNavSolid = () => hasHero ? window.scrollY > 50 : true;
+
+    if (!hasHero) {
+        nav.classList.add('scrolled');
+    } else {
+        window.addEventListener('scroll', () => {
+            if (isNavSolid()) {
+                nav.classList.add('scrolled');
+                if(navLinks && !navLinks.classList.contains('active') && hamburger) hamburger.style.color = "#1d1d1f";
+            } else {
+                nav.classList.remove('scrolled');
+                if(navLinks && !navLinks.classList.contains('active') && hamburger) hamburger.style.color = "white";
+            }
+        });
+    }
 
     if(hamburger && navLinks) {
         hamburger.addEventListener('click', () => {
@@ -83,7 +93,7 @@ function initNavbar() {
                 hamburger.style.color = "#1d1d1f";
             } else {
                 hamburger.innerHTML = "☰";
-                hamburger.style.color = (window.scrollY > 50) ? "#1d1d1f" : "white";
+                hamburger.style.color = isNavSolid() ? "#1d1d1f" : "white";
             }
         });
     }
@@ -96,7 +106,7 @@ function initNavbar() {
                     hamburger.setAttribute('aria-expanded', 'false');
                     hamburger.setAttribute('aria-label', 'Apri menu di navigazione');
                     hamburger.innerHTML = "☰";
-                    hamburger.style.color = (window.scrollY > 50) ? "#1d1d1f" : "white";
+                    hamburger.style.color = isNavSolid() ? "#1d1d1f" : "white";
                 }
             });
         });
@@ -109,7 +119,7 @@ function initNavbar() {
                 hamburger.setAttribute('aria-expanded', 'false');
                 hamburger.setAttribute('aria-label', 'Apri menu di navigazione');
                 hamburger.innerHTML = "☰";
-                hamburger.style.color = (window.scrollY > 50) ? "#1d1d1f" : "white";
+                hamburger.style.color = isNavSolid() ? "#1d1d1f" : "white";
             }
         }
     });
