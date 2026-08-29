@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         renderNews();
         renderProjects('tutti');
+        renderWorkScroller();
 
         initNavbar();
         initStatsCounters();
@@ -207,6 +208,42 @@ function renderProjects(filterTag = 'tutti') {
     }
 }
 
+// Selezione curata per la striscia "I Nostri Progetti" della home, stile Arup "Our Work".
+// Per ogni voce si può specificare quale immagine dell'array `images` usare (default: la prima)
+// quando la prima foto disponibile per quel progetto non è adatta a una card full-bleed.
+const workScrollerProjects = [
+    { title: "Fondazione Prada" },
+    { title: "Ex Novaceta" },
+    { title: "Area Ex Reggiani", imageIndex: 1 },
+    { title: "Cascina Merlata" },
+    { title: "Ex Cartiere Binda" },
+    { title: "Ex Stabilimento Prysmian Group" }
+];
+
+function renderWorkScroller() {
+    const scroller = document.getElementById('work-scroller');
+    if (!scroller) return;
+    scroller.innerHTML = '';
+
+    workScrollerProjects.forEach(entry => {
+        const p = projectsData.find(proj => proj.title === entry.title);
+        if (!p || !p.images || p.images.length === 0) return;
+        const imgSrc = p.images[entry.imageIndex || 0] || p.images[0];
+        const safeTitle = p.title.replace(/'/g, "\\'");
+
+        scroller.innerHTML += `
+            <div class="work-card" onclick="openProjectByTitle('${safeTitle}')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openProjectByTitle('${safeTitle}')">
+                <div class="work-card-img">
+                    <img src="${imgSrc}" alt="${p.title}" loading="lazy" decoding="async" onerror="this.style.display='none'">
+                    <div class="work-card-overlay">
+                        <h3>${p.title}</h3>
+                        <p>${p.cardSubtitle}</p>
+                    </div>
+                </div>
+            </div>`;
+    });
+}
+
 window.filterProjects = function(tag, btnElement) {
     document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
     if(btnElement) btnElement.classList.add('active');
@@ -270,8 +307,8 @@ window.closeProject = function() {
     if (typeof lenis !== 'undefined') lenis.start();
 };
 
-window.openFeaturedProject = function() {
-    const idx = projectsData.findIndex(p => p.title === "Nuova Scuola Politecnica");
+window.openProjectByTitle = function(title) {
+    const idx = projectsData.findIndex(p => p.title === title);
     if (idx !== -1) window.openProject(idx);
 };
 
