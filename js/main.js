@@ -267,7 +267,12 @@ window.changeModalImg = function(direction) {
 window.closeProject = function() {
     const modal = document.getElementById('projectModal');
     if(modal) modal.classList.remove('active');
-    if (typeof lenis !== 'undefined') lenis.start(); 
+    if (typeof lenis !== 'undefined') lenis.start();
+};
+
+window.openFeaturedProject = function() {
+    const idx = projectsData.findIndex(p => p.title === "Nuova Scuola Politecnica");
+    if (idx !== -1) window.openProject(idx);
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -411,3 +416,4 @@ function initScrollReveals() {
             scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
         });
     }
+}
