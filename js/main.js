@@ -380,7 +380,7 @@ function inizializzaEmailJS() {
 }
 
 function initStatsCounters() {
-    const statsSection = document.querySelector('.stats-band');
+    const statsSection = document.querySelector('.stats-row');
     if (!statsSection) return;
 
     const projectCountEl = statsSection.querySelector('[data-count-projects]');
