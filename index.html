@@ -172,7 +172,11 @@
             <h2 class="display-serif" style="font-size:3rem; margin-bottom:10px;">I Nostri Progetti</h2>
         </div>
 
-        <div class="work-scroller fade-element" id="work-scroller"></div>
+        <div class="work-scroller-wrap fade-element">
+            <button type="button" class="work-scroller-btn prev" aria-label="Progetto precedente" onclick="scrollWorkScroller(-1)">&#10094;</button>
+            <div class="work-scroller" id="work-scroller"></div>
+            <button type="button" class="work-scroller-btn next" aria-label="Progetto successivo" onclick="scrollWorkScroller(1)">&#10095;</button>
+        </div>
 
         <div class="fade-element" style="text-align: center; margin-top: 40px; width: 100%;">
             <a href="elenco-progetti.html" class="text-link">Visualizza Archivio Progetti Completo ➔</a>

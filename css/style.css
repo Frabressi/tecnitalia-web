@@ -162,12 +162,24 @@ nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
 }
 .p-img-box:hover .hover-reveal { opacity: 1; }
 
+.work-scroller-wrap { position: relative; }
 .work-scroller {
     display: flex; gap: 30px; overflow-x: auto; scroll-snap-type: x mandatory;
     padding-bottom: 10px; -webkit-overflow-scrolling: touch;
     scrollbar-width: none; -ms-overflow-style: none;
 }
 .work-scroller::-webkit-scrollbar { display: none; }
+.work-scroller-btn {
+    position: absolute; top: 50%; transform: translateY(-50%); z-index: 5;
+    width: 44px; height: 44px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--paper); border: 1px solid #e5e5e0; color: var(--ink);
+    font-size: 1rem; cursor: pointer; box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+.work-scroller-btn:hover { border-color: var(--blue); color: var(--blue); }
+.work-scroller-btn.prev { left: -10px; }
+.work-scroller-btn.next { right: -10px; }
 .work-card { flex: 0 0 400px; scroll-snap-align: start; cursor: pointer; }
 .work-card-img { position: relative; width: 100%; height: 520px; border-radius: 12px; overflow: hidden; }
 .work-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
@@ -181,6 +193,7 @@ nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
 @media (max-width: 900px) {
     .work-card { flex: 0 0 300px; }
     .work-card-img { height: 400px; }
+    .work-scroller-btn { display: none; }
 }
 
 /* --- 8. MODALE PROGETTI --- */

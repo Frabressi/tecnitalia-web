@@ -244,6 +244,14 @@ function renderWorkScroller() {
     });
 }
 
+window.scrollWorkScroller = function(direction) {
+    const scroller = document.getElementById('work-scroller');
+    if (!scroller) return;
+    const card = scroller.querySelector('.work-card');
+    const step = card ? card.getBoundingClientRect().width + 30 : 400; // larghezza card + gap
+    scroller.scrollBy({ left: direction * step, behavior: 'instant' });
+};
+
 window.filterProjects = function(tag, btnElement) {
     document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
     if(btnElement) btnElement.classList.add('active');
