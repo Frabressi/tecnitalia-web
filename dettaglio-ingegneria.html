@@ -16,14 +16,60 @@
     <link rel="icon" type="image/png" href="./assets/img/favicon-32.png">
     <link rel="icon" href="./assets/img/favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
-    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script defer src="./assets/vendor/gsap.min.js"></script>
+    <script defer src="./assets/vendor/lenis.min.js"></script>
+    <script defer type="text/javascript" src="./assets/vendor/emailjs.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Fraunces:opsz,wght@9..144,300..700&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.emailjs.com https://cloudflareinsights.com; frame-src https://maps.google.com https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://www.tecnitaliagroup.it/#organization",
+          "name": "Tecnitalia Group",
+          "url": "https://www.tecnitaliagroup.it/",
+          "logo": "https://www.tecnitaliagroup.it/assets/img/logo.png",
+          "telephone": "+390276000206",
+          "email": "info@tecnitaliagroup.it",
+          "foundingDate": "1986",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Via Pastorelli 4E",
+            "postalCode": "20143",
+            "addressLocality": "Milano",
+            "addressRegion": "MI",
+            "addressCountry": "IT"
+          },
+          "areaServed": { "@type": "Country", "name": "Italia" }
+        },
+        {
+          "@type": "CollectionPage",
+          "name": "Tecnitalia Ingegneria",
+          "url": "https://www.tecnitaliagroup.it/dettaglio-ingegneria.html",
+          "about": { "@id": "https://www.tecnitaliagroup.it/#organization" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tecnitaliagroup.it/" },
+            { "@type": "ListItem", "position": 2, "name": "Tecnitalia Ingegneria", "item": "https://www.tecnitaliagroup.it/dettaglio-ingegneria.html" }
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
-    <div id="nav-placeholder"></div>
+    <div id="nav-placeholder">
+        <noscript style="display:block"></noscript>
+        <nav><a href="index.html">Home</a> <a href="chi-siamo.html">Chi Siamo</a> <a href="archivio-news.html">News</a> <a href="dettaglio-ingegneria.html">Tecnitalia Ingegneria</a> <a href="bonifica-amianto.html">Bonifica Amianto</a> <a href="bonifica-siti-contaminati.html">Bonifica Siti Contaminati</a> <a href="caratterizzazione-analisi-rischio.html">Caratterizzazione e Analisi di Rischio</a> <a href="demolizioni-decommissioning.html">Demolizioni e Decommissioning</a> <a href="dettaglio-servizi.html">Tecnitalia Servizi</a> <a href="elenco-progetti.html">Progetti</a></nav>
+    </div>
 
     <header class="page-header">
         <span class="eyebrow">Tecnitalia Ingegneria</span>
@@ -38,33 +84,72 @@
         <h2 style="margin-bottom: 20px;">Il nostro approccio tecnico</h2>
         <p>Grazie a un'esperienza che supera i quarant'anni, supportata da studio e ricerca costanti, Tecnitalia Group offre un servizio ingegneristico completo e multidisciplinare. Dalla fine degli anni '90 abbiamo focalizzato le nostre risorse sul recupero delle aree industriali dismesse, affrontando le problematiche di contaminazione con approcci tecnologici all'avanguardia.</p>
         
-        <h3 style="margin-top: 40px; margin-bottom: 15px;">Aree di Intervento e Tematiche Ambientali</h3>
-        <p>Progettiamo e supervisioniamo interventi operativi complessi, assumendo ruoli di Direzione Lavori e Coordinamento Sicurezza. I nostri campi di applicazione includono:</p>
-        <ul>
-            <li><strong>Iter di bonifica:</strong> Piani di Caratterizzazione, Analisi di Rischio sanitario-ambientale e Progetti Operativi di Bonifica, anche nelle procedure semplificate ex art. 242-bis e 249 del D.Lgs. 152/06. Messa in Sicurezza Operativa e Permanente dove la bonifica integrale non è praticabile.</li>
-            <li><strong>Bonifiche:</strong> Recupero integrale delle aree dismesse e bonifica di siti contaminati (suolo, sottosuolo e falda), con modellazione matematica del comportamento della falda a supporto della progettazione.</li>
-            <li><strong>Amianto e FAV:</strong> Mappatura e bonifica di Materiali Contenenti Amianto e Fibre Artificiali Vetrose, dalle coperture alle tubazioni fino all'amianto friabile e al terreno contaminato.</li>
-            <li><strong>Demolizioni e decommissioning:</strong> Demolizioni e strip-out di compendi industriali, comprese le strutture interrate, con recupero on-site dei materiali inerti. Bonifica bellica preventiva dove il sito lo richiede.</li>
-            <li><strong>Acque e Reflui:</strong> Trattamenti di acque di approvvigionamento, rifiuto e reflui particolari (percolato, acque di vegetazione, ecc.).</li>
-            <li><strong>Emissioni:</strong> Progettazione di sistemi di trattamento delle emissioni gassose in ambito industriale.</li>
-            <li><strong>Waste Management:</strong> Gestione di rifiuti speciali (pericolosi e non), urbani (raccolta, separazione, recupero, smaltimento) e flussi particolari (demolizioni, pneumatici, oli esausti), terre e rocce da scavo.</li>
-            <li><strong>Due Diligence:</strong> Supporto tecnico-ingegneristico nella compravendita di siti industriali per la valutazione precisa delle passività ambientali.</li>
-            <li><strong>Perizie e incarichi peritali:</strong> Perizie tecnico-economiche e attività di consulenza tecnica di parte e d'ufficio in ambito ambientale.</li>
-        </ul>
+        <h3 style="margin-top: 40px; margin-bottom: 15px;">Aree di intervento</h3>
+        <p>Progettiamo e supervisioniamo interventi operativi complessi, assumendo ruoli di Direzione Lavori, Coordinamento della Sicurezza e Responsabile Ambientale. Le quattro competenze che seguono raccolgono la parte prevalente della nostra attività: ciascuna ha una pagina dedicata, con il quadro normativo di riferimento e gli interventi realizzati.</p>
 
-        <h3 style="margin-top: 40px; margin-bottom: 15px;">Tecnologie Applicate</h3>
-        <p>Nei nostri progetti applichiamo tecnologie on-site e in-situ, tra cui:</p>
+        <div class="projects-full-grid" style="margin-top: 40px;">
+            <a href="bonifica-amianto.html" class="project-card" style="text-decoration:none; color:inherit; min-width:unset; display:block;">
+                <div class="p-img-box">
+                    <img src="./assets/img/genova1.jpg" alt="Cantiere di bonifica per la Nuova Scuola Politecnica dell'Università di Genova" loading="lazy" decoding="async" onerror="this.style.display='none'">
+                    <div class="hover-reveal">APRI SCHEDA</div>
+                </div>
+                <div class="p-content">
+                    <h4 style="margin: 5px 0 10px 0;">Bonifica Amianto</h4>
+                    <p style="margin:0; font-size:0.95rem;">Censimento e mappatura dei materiali contenenti amianto, valutazione dello stato di degrado, progettazione e Direzione Lavori della rimozione. Amianto friabile e compatto, coperture in fibrocemento, FAV e amianto nel terreno.</p>
+                </div>
+            </a>
+            <a href="bonifica-siti-contaminati.html" class="project-card" style="text-decoration:none; color:inherit; min-width:unset; display:block;">
+                <div class="p-img-box">
+                    <img src="./assets/img/gasometri1.jpg" alt="Bonifica dei Gasometri della Bovisa, Milano" loading="lazy" decoding="async" onerror="this.style.display='none'">
+                    <div class="hover-reveal">APRI SCHEDA</div>
+                </div>
+                <div class="p-content">
+                    <h4 style="margin: 5px 0 10px 0;">Bonifica Siti Contaminati</h4>
+                    <p style="margin:0; font-size:0.95rem;">Bonifica di suolo, sottosuolo e acque di falda ai sensi del Titolo V della Parte IV del D.Lgs. 152/2006. Dall'iter autorizzativo alla certificazione di avvenuta bonifica, con messa in sicurezza operativa e permanente dove serve.</p>
+                </div>
+            </a>
+            <a href="caratterizzazione-analisi-rischio.html" class="project-card" style="text-decoration:none; color:inherit; min-width:unset; display:block;">
+                <div class="p-img-box">
+                    <img src="./assets/img/italianostra1.jpg" alt="Indagini ambientali nell'area di Porto di Mare, Milano" loading="lazy" decoding="async" onerror="this.style.display='none'">
+                    <div class="hover-reveal">APRI SCHEDA</div>
+                </div>
+                <div class="p-content">
+                    <h4 style="margin: 5px 0 10px 0;">Caratterizzazione e Analisi di Rischio</h4>
+                    <p style="margin:0; font-size:0.95rem;">Piani di caratterizzazione, analisi di rischio sanitario-ambientale sito-specifica, due diligence nelle compravendite industriali, perizie e consulenza tecnica di parte e d'ufficio.</p>
+                </div>
+            </a>
+            <a href="demolizioni-decommissioning.html" class="project-card" style="text-decoration:none; color:inherit; min-width:unset; display:block;">
+                <div class="p-img-box">
+                    <img src="./assets/img/novaceta1.jpg" alt="Decommissioning dell'ex stabilimento Novaceta di Magenta" loading="lazy" decoding="async" onerror="this.style.display='none'">
+                    <div class="hover-reveal">APRI SCHEDA</div>
+                </div>
+                <div class="p-content">
+                    <h4 style="margin: 5px 0 10px 0;">Demolizioni e Decommissioning</h4>
+                    <p style="margin:0; font-size:0.95rem;">Smantellamento controllato di compendi industriali sotto un'unica Direzione Lavori, strip-out, demolizione di strutture interrate e recupero degli inerti in cantiere con impianti mobili autorizzati ex art. 208.</p>
+                </div>
+            </a>
+        </div>
+
+        <h3 style="margin-top: 60px; margin-bottom: 15px;">Le altre competenze</h3>
+        <p>Accanto alle quattro aree principali seguiamo alcuni ambiti tecnici specifici, spesso come componente di un intervento più ampio:</p>
         <ul>
-            <li>Sbarramenti idraulici (Pump & Treat) con impianti TAF (Trattamento Acque di Falda).</li>
-            <li>Sistemi di Soil Vapor Extraction (SVE) e Bioventing.</li>
-            <li>Soil washing e biorisanamento (biopile).</li>
-            <li>Messa in Sicurezza Permanente (Capping e Biocapping).</li>
+            <li><strong>Acque e reflui:</strong> trattamento di acque di approvvigionamento, acque rifiuto e reflui particolari come percolato di discarica e acque di vegetazione.</li>
+            <li><strong>Emissioni in atmosfera:</strong> progettazione di sistemi di trattamento delle emissioni gassose in ambito industriale.</li>
+            <li><strong>Gestione dei rifiuti:</strong> rifiuti speciali pericolosi e non pericolosi, rifiuti urbani nelle fasi di raccolta, separazione, recupero e smaltimento, e flussi particolari come pneumatici fuori uso e oli esausti.</li>
+            <li><strong>Sicurezza e analisi del rischio industriale:</strong> antincendio e analisi del rischio per gli stabilimenti soggetti alla Direttiva Seveso, il primo settore di attività dello studio dal 1986.</li>
         </ul>
 
         <a href="index.html" class="text-link" style="margin-top: 40px;">⬅ Torna alla Home</a>
     </main>
 
-    <div id="footer-placeholder"></div>
+    <div id="footer-placeholder">
+        <address><strong>Tecnitalia Group</strong><br>Via Pastorelli 4E, 20143 Milano (MI)<br>Tel: <a href="tel:+390276000206">02 76000206</a><br>Email: <a href="mailto:info@tecnitaliagroup.it">info@tecnitaliagroup.it</a></address>
+        <p><a href="privacy.html">Informativa privacy</a></p>
+    </div>
     <script defer src="./js/main.js"></script>
+
+    <!-- Cloudflare Web Analytics -->
+    <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "b1b41ac259974446a2f3e3f691c122ee"}'></script>
+    <!-- End Cloudflare Web Analytics -->
 </body>
 </html>

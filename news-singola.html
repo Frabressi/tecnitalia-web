@@ -13,18 +13,71 @@
     <link rel="icon" type="image/png" href="./assets/img/favicon-32.png">
     <link rel="icon" href="./assets/img/favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
-    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script defer src="./assets/vendor/gsap.min.js"></script>
+    <script defer src="./assets/vendor/ScrollTrigger.min.js"></script>
+    <script defer src="./assets/vendor/lenis.min.js"></script>
+    <script defer type="text/javascript" src="./assets/vendor/emailjs.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Fraunces:opsz,wght@9..144,300..700&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.emailjs.com https://cloudflareinsights.com; frame-src https://maps.google.com https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://www.tecnitaliagroup.it/#organization",
+          "name": "Tecnitalia Group",
+          "url": "https://www.tecnitaliagroup.it/",
+          "logo": "https://www.tecnitaliagroup.it/assets/img/logo.png",
+          "image": "https://www.tecnitaliagroup.it/assets/img/logo.png",
+          "description": "Tecnitalia Group: ingegneria ambientale, bonifica di siti contaminati e amianto, caratterizzazione e analisi di rischio, demolizioni e decommissioning dal 1986.",
+          "telephone": "+390276000206",
+          "email": "info@tecnitaliagroup.it",
+          "foundingDate": "1986",
+          "areaServed": {
+            "@type": "Country",
+            "name": "Italia"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Via Pastorelli 4E",
+            "postalCode": "20143",
+            "addressLocality": "Milano",
+            "addressRegion": "MI",
+            "addressCountry": "IT"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.tecnitaliagroup.it/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Archivio News",
+              "item": "https://www.tecnitaliagroup.it/archivio-news.html"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
-    <div id="nav-placeholder"></div>
+    <div id="nav-placeholder">
+        <noscript style="display:block"></noscript>
+        <nav><a href="index.html">Home</a> <a href="chi-siamo.html">Chi Siamo</a> <a href="archivio-news.html">News</a> <a href="dettaglio-ingegneria.html">Tecnitalia Ingegneria</a> <a href="bonifica-amianto.html">Bonifica Amianto</a> <a href="bonifica-siti-contaminati.html">Bonifica Siti Contaminati</a> <a href="caratterizzazione-analisi-rischio.html">Caratterizzazione e Analisi di Rischio</a> <a href="demolizioni-decommissioning.html">Demolizioni e Decommissioning</a> <a href="dettaglio-servizi.html">Tecnitalia Servizi</a> <a href="elenco-progetti.html">Progetti</a></nav>
+    </div>
 
     <div id="dettaglio-news-container">
         <header class="page-header">
@@ -43,8 +96,15 @@
         </main>
     </div>
 
-    <div id="footer-placeholder"></div>
+    <div id="footer-placeholder">
+        <address><strong>Tecnitalia Group</strong><br>Via Pastorelli 4E, 20143 Milano (MI)<br>Tel: <a href="tel:+390276000206">02 76000206</a><br>Email: <a href="mailto:info@tecnitaliagroup.it">info@tecnitaliagroup.it</a></address>
+        <p><a href="privacy.html">Informativa privacy</a></p>
+    </div>
 
     <script defer src="./js/main.js"></script>
+
+    <!-- Cloudflare Web Analytics -->
+    <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "b1b41ac259974446a2f3e3f691c122ee"}'></script>
+    <!-- End Cloudflare Web Analytics -->
 </body>
 </html>

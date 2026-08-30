@@ -347,3 +347,148 @@ nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
 .timeline-item::before { content: ''; position: absolute; left: -46px; top: 4px; width: 12px; height: 12px; border-radius: 50%; background: var(--blue); border: 3px solid var(--paper); box-shadow: 0 0 0 2px var(--blue); }
 .timeline-year { display: block; color: var(--blue); font-family: 'Bricolage Grotesque', 'Manrope', sans-serif; font-weight: 800; font-size: 1.5rem; margin-bottom: 8px; }
 .timeline-item h3 { margin-top: 0; margin-bottom: 15px; }
+
+/* ==========================================================================
+   15. DROPDOWN NAV "TECNITALIA INGEGNERIA" + COLONNA SERVIZI NEL FOOTER
+   ========================================================================== */
+
+/* --- Dropdown di navigazione (desktop: hover/focus, mobile: tap) --- */
+.nav-item-dropdown { position: relative; display: flex; align-items: center; }
+.nav-dropdown-head { display: flex; align-items: center; }
+.nav-dropdown-toggle { display: flex; align-items: center; gap: 5px; }
+.nav-caret { display: inline-block; font-size: 0.7em; line-height: 1; transition: transform 0.25s ease; }
+.nav-dropdown-btn { display: none; } /* il tasto freccia serve solo nel menu mobile */
+
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 300px;
+    margin: 0;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #e5e5e0;
+    border-radius: 10px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.14);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(6px);
+    /* piccolo ritardo in chiusura: attraversare i 10px di spazio verso il menu
+       non deve far sparire il dropdown mentre il mouse è ancora in transito */
+    transition: opacity 0.15s ease 0.15s, visibility 0.15s ease 0.15s, transform 0.15s ease 0.15s;
+    z-index: 10000;
+}
+
+/* Buffer trasparente sopra il menu: allarga l'area "calda" del hover in verticale
+   cosi il cursore non perde mai il contatto passando dalla voce di menu al dropdown. */
+.nav-dropdown-menu::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    height: 10px;
+}
+
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu,
+.nav-item-dropdown.open .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition-delay: 0s;
+}
+
+.nav-item-dropdown:hover .nav-caret,
+.nav-item-dropdown:focus-within .nav-caret,
+.nav-item-dropdown.open .nav-caret {
+    transform: rotate(180deg);
+}
+
+/* I link dentro il dropdown non devono ereditare lo stile "pillola" tutto
+   maiuscolo dei link di primo livello: restano leggibili sia sopra l'hero
+   trasparente sia con la nav a sfondo bianco, perché il menu ha sempre sfondo bianco. */
+.nav-links .nav-dropdown-menu a {
+    display: block;
+    color: var(--text) !important;
+    text-shadow: none !important;
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: 600;
+    font-size: 0.92rem;
+    margin-left: 0;
+    padding: 11px 14px;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.nav-links .nav-dropdown-menu a:hover,
+.nav-links .nav-dropdown-menu a:focus-visible {
+    background: var(--gray);
+    color: var(--blue) !important;
+}
+
+@media (max-width: 900px) {
+    .nav-item-dropdown { flex-direction: column; width: 100%; }
+    .nav-dropdown-head { justify-content: center; gap: 8px; }
+    .nav-dropdown-toggle .nav-caret { display: none; } /* sul mobile l'apertura passa dal pulsante dedicato */
+    .nav-dropdown-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        background: none;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        color: var(--text);
+        cursor: pointer;
+        padding: 0;
+        font-family: inherit;
+        font-size: 1rem; /* la freccia eredita da qui: a 0.7em del default risultava troppo piccola/poco leggibile nel cerchio */
+    }
+    .nav-dropdown-menu {
+        position: static;
+        min-width: unset;
+        width: 100%;
+        margin-top: 10px;
+        padding: 0;
+        text-align: center;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+    .nav-dropdown-menu::before { display: none; }
+    .nav-item-dropdown.open .nav-dropdown-menu { max-height: 320px; }
+    .nav-links .nav-dropdown-menu a { padding: 10px 0; font-size: 1rem; }
+}
+
+/* --- Colonna "Servizi" nel footer: da 3 a 4 colonne, sempre responsive ---
+   Le regole di larghezza sono chiuse in media query con min-width: sotto i
+   900px deve restare valida la regola di impilamento a 1 colonna già presente
+   nel blocco "11. MEDIA QUERIES (Mobile)" più sopra (stessa specificità, ma
+   dichiarata prima nel file: una regola incondizionata qui la sovrascriverebbe
+   anche sotto i 900px, rompendo lo stack mobile). */
+.footer-services-col { display: flex; flex-direction: column; }
+.footer-link {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    display: inline-block;
+    transition: color 0.2s ease-in-out;
+}
+.footer-link:hover { color: #ffffff; }
+
+@media (min-width: 1101px) {
+    .footer-grid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (min-width: 901px) and (max-width: 1100px) {
+    .footer-grid { grid-template-columns: repeat(2, 1fr); }
+}

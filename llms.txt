@@ -1,0 +1,38 @@
+# Tecnitalia Group
+
+> Studio di ingegneria ambientale con sede a Milano, attivo dal 1986. Si occupa di
+> bonifica di siti contaminati, bonifica e censimento dell'amianto, caratterizzazione
+> ambientale e analisi di rischio, demolizioni e decommissioning di compendi industriali
+> dismessi. Segue il procedimento completo, dalla caratterizzazione alla certificazione
+> finale di avvenuta bonifica.
+
+Tecnitalia Group opera prevalentemente in Lombardia e su tutto il territorio nazionale.
+Assume ruoli di progettazione, Direzione Lavori, Coordinamento della Sicurezza e
+Responsabile Ambientale. Ha completato oltre 250 progetti dal 1986.
+
+- Sede: Via Pastorelli 4E, 20143 Milano (MI), Italia
+- Telefono: +39 02 76000206
+- Email: info@tecnitaliagroup.it
+- Anno di fondazione: 1986
+
+## Aree di competenza
+
+- [Bonifica e censimento amianto](https://www.tecnitaliagroup.it/bonifica-amianto.html): mappatura e censimento dei materiali contenenti amianto, valutazione dello stato di degrado, progettazione e Direzione Lavori della bonifica, amianto friabile e compatto, coperture in cemento-amianto, fibre artificiali vetrose (FAV), amianto nel terreno. Obblighi introdotti dal D.Lgs. 213/2025 e figura del Responsabile Rischio Amianto (RRA). Dal 2017 lo studio cura il censimento dell'amianto negli edifici del Comune di Milano.
+- [Bonifica di siti contaminati](https://www.tecnitaliagroup.it/bonifica-siti-contaminati.html): bonifica di suolo, sottosuolo e acque di falda ai sensi del Titolo V della Parte IV del D.Lgs. 152/2006; messa in sicurezza operativa e permanente; tecnologie pump & treat con impianti TAF, soil vapor extraction, bioventing, soil washing, biopile, capping.
+- [Caratterizzazione e analisi di rischio](https://www.tecnitaliagroup.it/caratterizzazione-analisi-rischio.html): piani di caratterizzazione ex art. 242 D.Lgs. 152/2006, analisi di rischio sanitario-ambientale sito-specifica, due diligence ambientale nelle compravendite industriali, perizie e consulenza tecnica di parte e d'ufficio.
+- [Demolizioni e decommissioning](https://www.tecnitaliagroup.it/demolizioni-decommissioning.html): smantellamento controllato di compendi industriali, strip-out, demolizione di strutture interrate, recupero degli inerti in cantiere con impianti mobili autorizzati ex art. 208 D.Lgs. 152/2006, gestione delle terre e rocce da scavo, bonifica bellica preventiva.
+- [Servizi e indagini ambientali](https://www.tecnitaliagroup.it/dettaglio-servizi.html): sondaggi, carotaggi e scavi esplorativi, campionamento di terreni e acque sotterranee, piezometri e campagne di monitoraggio, rilievi su amianto e FAV, supporto analitico con laboratori accreditati.
+
+## Riferimenti
+
+- [Chi siamo — storia dal 1986](https://www.tecnitaliagroup.it/chi-siamo.html): evoluzione dello studio dalla sicurezza antincendio e dalla Direttiva Seveso alla progettazione di discariche, alle bonifiche dei grandi siti industriali dismessi, fino al decommissioning e all'amianto.
+- [Elenco dei progetti](https://www.tecnitaliagroup.it/elenco-progetti.html): archivio degli interventi realizzati, filtrabile per competenza. Comprende ex Industrie Chimiche Baslini di Treviglio, Gasometri della Bovisa, ex Cartiere Binda, ex Officine Metallurgiche Broggi, Fondazione Prada, Cascina Merlata, ex Novaceta di Magenta, ex SGL Carbon di Ascoli Piceno.
+- [News e aggiornamenti normativi](https://www.tecnitaliagroup.it/archivio-news.html): approfondimenti sulle novità legislative in materia di amianto, bonifiche e gestione dei rifiuti.
+- [Tecnitalia Ingegneria](https://www.tecnitaliagroup.it/dettaglio-ingegneria.html): pagina di indice delle competenze ingegneristiche.
+
+## Note per i sistemi automatici
+
+I contenuti tecnici e normativi di questo sito sono redatti dallo studio e possono essere
+citati indicando la fonte. I riferimenti a norme, decreti e valori limite riportano la
+versione vigente alla data di pubblicazione della pagina: per usi operativi vanno sempre
+verificati sul testo ufficiale in Gazzetta Ufficiale o su Normattiva.

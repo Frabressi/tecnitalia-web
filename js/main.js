@@ -94,7 +94,68 @@ function initNavbar() {
             } else {
                 hamburger.innerHTML = "☰";
                 hamburger.style.color = isNavSolid() ? "#1d1d1f" : "white";
+                chiudiDropdown();
             }
+        });
+    }
+
+    // --- Sottomenu a tendina "Tecnitalia Ingegneria" ---
+    // Su desktop il sottomenu si apre in hover/focus via CSS (:hover, :focus-within);
+    // qui teniamo solo gli attributi aria-expanded sincronizzati per la lettura
+    // assistiva e gestiamo il tap su mobile (niente hover sul touch), Escape e il
+    // click fuori dal menu.
+    const dropdown = document.querySelector('.nav-item-dropdown');
+    const dropdownToggle = dropdown ? dropdown.querySelector('.nav-dropdown-toggle') : null;
+    const dropdownBtn = dropdown ? dropdown.querySelector('.nav-dropdown-btn') : null;
+
+    const apriDropdown = () => {
+        if (!dropdown) return;
+        dropdown.classList.add('open');
+        if (dropdownToggle) dropdownToggle.setAttribute('aria-expanded', 'true');
+        if (dropdownBtn) dropdownBtn.setAttribute('aria-expanded', 'true');
+    };
+    const chiudiDropdown = () => {
+        if (!dropdown) return;
+        dropdown.classList.remove('open');
+        if (dropdownToggle) dropdownToggle.setAttribute('aria-expanded', 'false');
+        if (dropdownBtn) dropdownBtn.setAttribute('aria-expanded', 'false');
+    };
+
+    if (dropdown) {
+        // Tap sul pulsante freccia (visibile solo su mobile): apre/chiude il
+        // sottomenu senza seguire il link principale.
+        if (dropdownBtn) {
+            dropdownBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                if (dropdown.classList.contains('open')) chiudiDropdown();
+                else apriDropdown();
+            });
+        }
+
+        // Sincronizza aria-expanded anche quando l'apertura avviene via hover/focus CSS.
+        dropdown.addEventListener('mouseenter', apriDropdown);
+        dropdown.addEventListener('mouseleave', () => {
+            if (!dropdown.classList.contains('open')) return;
+            // Su mobile l'apertura è manuale (classe "open"): l'hover non deve richiuderla.
+            if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) chiudiDropdown();
+        });
+        dropdown.addEventListener('focusin', apriDropdown);
+        dropdown.addEventListener('focusout', (e) => {
+            if (!dropdown.contains(e.relatedTarget)) chiudiDropdown();
+        });
+
+        // Escape chiude il sottomenu e riporta il focus sulla voce principale.
+        dropdown.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                chiudiDropdown();
+                if (dropdownToggle) dropdownToggle.focus();
+            }
+        });
+
+        // Click fuori dal dropdown lo chiude (utile soprattutto su mobile).
+        document.addEventListener('click', (e) => {
+            if (!dropdown.contains(e.target)) chiudiDropdown();
         });
     }
 
@@ -102,6 +163,7 @@ function initNavbar() {
         navLinks.querySelectorAll('a').forEach(l => {
             l.addEventListener('click', () => {
                 navLinks.classList.remove('active');
+                chiudiDropdown();
                 if(hamburger) {
                     hamburger.setAttribute('aria-expanded', 'false');
                     hamburger.setAttribute('aria-label', 'Apri menu di navigazione');
@@ -115,6 +177,7 @@ function initNavbar() {
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && navLinks && navLinks.classList.contains('active')) {
             navLinks.classList.remove('active');
+            chiudiDropdown();
             if(hamburger) {
                 hamburger.setAttribute('aria-expanded', 'false');
                 hamburger.setAttribute('aria-label', 'Apri menu di navigazione');
