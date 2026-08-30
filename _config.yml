@@ -1,0 +1,18 @@
+# Configurazione GitHub Pages.
+#
+# I file elencati qui restano nel repository ma NON vengono pubblicati sul sito:
+# sono documentazione interna e non hanno ragione di essere serviti ai visitatori.
+#
+# ATTENZIONE: questa esclusione riguarda solo la pubblicazione via GitHub Pages.
+# Il repository e' PUBBLICO, quindi questi file restano comunque leggibili su
+# github.com. Non scrivere qui dentro nulla che non possa essere letto da chiunque.
+#
+# Nota: NON aggiungere un file .nojekyll, disattiverebbe Jekyll e con esso
+# questa esclusione, ripubblicando tutto.
+
+exclude:
+  - docs/
+  - README.md
+  - "Istruzioni dns.md"
+  - .gitignore
+  - _config.yml

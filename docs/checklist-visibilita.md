@@ -7,30 +7,28 @@ il codice rende il sito *indicizzabile*, queste lo rendono *trovato*.
 
 | | Voce | Stato |
 |---|---|---|
-| 1 | Google Business Profile | **da fare — priorità massima** |
+| 1 | Google Business Profile | ✅ fatto |
 | 2 | Google Search Console | ✅ verificata via CNAME su OVH |
 | 3 | Bing Webmaster Tools | ✅ fatto |
-| 4 | Cloudflare Web Analytics | ✅ token inserito nel sito |
-| 5 | EmailJS: allow-list del dominio | ✅ fatto |
-| 6 | HTTPS obbligatorio su GitHub Pages | da verificare |
-| 7 | Partita IVA | opzionale — informativa già valida senza |
-| 8 | Pagina LinkedIn | prompt pronti in `docs/linkedin-prompts.md` |
-| 9 | Secondo proprietario aziendale su Search Console e Bing | consigliato |
+| 4 | Cloudflare Web Analytics | ✅ attivo in produzione |
+| 5 | EmailJS: protezione della chiave | **non risolvibile nel piano free** — vedi `sicurezza.md` |
+| 6 | Pubblicazione del sito | ✅ online dal 30 agosto 2026 |
+| 7 | News pubblicate | ✅ fatto |
+| 8 | Invio sitemap in Search Console | da fare |
+| 9 | Secondo proprietario aziendale su Search Console e Bing | da fare |
+| 10 | Verifica "Enforce HTTPS" e 2FA su GitHub | da fare |
+| 11 | Partita IVA nell'informativa | facoltativa |
+| 12 | Pagina LinkedIn | prompt pronti in `linkedin-prompts.md` |
 
-> **Prossimo passo bloccante: pubblicare il sito** (commit e push su GitHub). Finché le modifiche
-> restano in locale, Search Console non vede le 4 pagine nuove e Cloudflare non riceve dati.
-> Subito dopo la pubblicazione: invio della sitemap in Search Console e richiesta di
-> indicizzazione delle pagine nuove.
+**Le voci di questa lista riguardano gli account esterni.** Per lo stato del sito e degli
+interventi tecnici aperti vedi `stato-progetto.md`; per la postura di sicurezza `sicurezza.md`.
 
-> **Effetto collaterale dell'allow-list EmailJS:** il form di contatto ora funziona solo dal
-> dominio autorizzato. Se in futuro si prova il sito in locale (`localhost`), l'invio fallirà:
-> è il comportamento voluto, non un guasto.
 
-## 1. Google Business Profile — priorità massima
+## 1. Google Business Profile — ✅ attiva, ora è manutenzione
 
-Per una ricerca come *bonifica amianto Milano*, il blocco con la mappa in cima ai risultati
-è alimentato dalle schede Google, non dai siti web. Senza scheda non si compare lì, per
-quanto buono sia il sito. È gratuita.
+La scheda è stata aperta. Da qui in avanti il lavoro è tenerla viva: le schede aggiornate
+di recente vengono mostrate più spesso di quelle ferme. Il resto di questa sezione resta come
+riferimento per completare i campi e per la manutenzione periodica.
 
 **Come si apre:** https://business.google.com → "Gestisci ora" → cerca prima
 "Tecnitalia" per verificare che non esista già una scheda non rivendicata (capita che
@@ -149,9 +147,11 @@ vostra quota**, e il campo trappola antispam già presente non basta da solo.
 
 Nel pannello https://dashboard.emailjs.com:
 
-- **Account → Security**: attiva l'allow-list dei domini e inserisci **solo**
-  `tecnitaliagroup.it` (e `www.tecnitaliagroup.it`). È l'intervento decisivo: blocca l'uso
-  della chiave da qualunque altro sito.
+- **L'allow-list dei domini richiede un piano a pagamento** (verificato: il free dà l'errore
+  "Subscription Limitation" già al primo dominio). Alternative: attivare la verifica reCAPTCHA v2
+  nelle impostazioni del template EmailJS, oppure passare al piano Personal (9 $/mese).
+  Se l'allow-list verrà attivata, il valore da inserire è `https://www.tecnitaliagroup.it`, non
+  l'apex, che reindirizza a `www` e non è mai l'origine reale del form.
 - Attiva il **rate limit** se disponibile nel piano.
 - Valuta l'aggiunta di un CAPTCHA sul template.
 

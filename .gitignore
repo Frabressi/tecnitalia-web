@@ -1,0 +1,60 @@
+# ---------------------------------------------------------------------------
+# ATTENZIONE: questo repository e' PUBBLICO su GitHub e la cartella di lavoro
+# si trova dentro il OneDrive aziendale, insieme ai documenti di studio.
+# Tutto cio' che viene committato diventa pubblico in modo IRREVERSIBILE:
+# cancellare un file in seguito non lo rimuove dalla storia git.
+#
+# Prima di committare, controlla sempre l'elenco con "git status".
+# Evita "git add -A" alla cieca: preferisci aggiungere i file per nome.
+# ---------------------------------------------------------------------------
+
+# Documenti di lavoro: relazioni, offerte, computi, corrispondenza.
+# Non devono MAI finire nel sito.
+*.pdf
+*.doc
+*.docx
+*.dot
+*.dotx
+*.xls
+*.xlsx
+*.xlsm
+*.ppt
+*.pptx
+*.odt
+*.ods
+*.msg
+*.eml
+*.dwg
+*.dxf
+*.zip
+*.rar
+*.7z
+
+# Credenziali e configurazioni di ambiente
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+credentials*
+secrets*
+
+# Configurazioni locali, non condivisibili
+*.local.json
+.claude/settings.local.json
+
+# File temporanei e di conflitto di OneDrive e Office
+~$*
+*conflitto*
+*conflicted copy*
+*.tmp
+
+# Artefatti di sistema
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+
+# Dipendenze (non usate oggi: le librerie sono in assets/vendor/, tracciate)
+node_modules/
