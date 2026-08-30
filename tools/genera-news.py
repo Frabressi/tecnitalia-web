@@ -14,9 +14,9 @@ Uso:  python tools/genera-news.py
 Va rieseguito ogni volta che si aggiunge o si modifica un articolo in
 data/news.json, e il risultato va committato.
 
-Le pagine sono generate PIATTE nella root, non in una sottocartella: js/main.js
-usa percorsi relativi (fetch('./header.html')), che in una sottocartella
-darebbero 404.
+Le pagine sono generate nella cartella news/. Perche' funzionino da li', js/main.js
+carica header, footer e JSON con percorsi assoluti (fetch('/header.html')), e le
+pagine generate usano percorsi assoluti per asset e link interni.
 """
 import json, io, os, re, html, datetime, sys
 
@@ -61,26 +61,44 @@ def taglia(testo, n=157):
     return t[:n].rsplit(" ", 1)[0].rstrip(" ,;:.") + "…"
 
 
+PAGINE_ROOT = ["index", "chi-siamo", "archivio-news", "dettaglio-ingegneria", "bonifica-amianto",
+               "bonifica-siti-contaminati", "caratterizzazione-analisi-rischio",
+               "demolizioni-decommissioning", "dettaglio-servizi", "elenco-progetti", "privacy"]
+
+
+def assolutizza_link(frammento):
+    """I link relativi scritti negli articoli puntano a pagine della root.
+
+    Le pagine generate stanno in /news/, quindi un href="bonifica-amianto.html"
+    si risolverebbe in /news/bonifica-amianto.html. Li si porta a percorso assoluto."""
+    frammento = frammento.replace('src="./assets/', 'src="/assets/')
+    frammento = frammento.replace('href="./assets/', 'href="/assets/')
+    for pagina in PAGINE_ROOT:
+        frammento = frammento.replace('href="%s.html"' % pagina, 'href="/%s.html"' % pagina)
+        frammento = frammento.replace('href="%s.html#' % pagina, 'href="/%s.html#' % pagina)
+    return frammento
+
+
 def solo_testo(frammento):
     t = re.sub(r"<[^>]+>", " ", frammento)
     return re.sub(r"\s+", " ", html.unescape(t)).strip()
 
 
 NAV_FALLBACK = (
-    '<nav><a href="index.html">Home</a> <a href="chi-siamo.html">Chi Siamo</a> '
-    '<a href="archivio-news.html">News</a> <a href="dettaglio-ingegneria.html">Tecnitalia Ingegneria</a> '
-    '<a href="bonifica-amianto.html">Bonifica Amianto</a> '
-    '<a href="bonifica-siti-contaminati.html">Bonifica Siti Contaminati</a> '
-    '<a href="caratterizzazione-analisi-rischio.html">Caratterizzazione e Analisi di Rischio</a> '
-    '<a href="demolizioni-decommissioning.html">Demolizioni e Decommissioning</a> '
-    '<a href="dettaglio-servizi.html">Tecnitalia Servizi</a> '
-    '<a href="elenco-progetti.html">Progetti</a></nav>')
+    '<nav><a href="/index.html">Home</a> <a href="/chi-siamo.html">Chi Siamo</a> '
+    '<a href="/archivio-news.html">News</a> <a href="/dettaglio-ingegneria.html">Tecnitalia Ingegneria</a> '
+    '<a href="/bonifica-amianto.html">Bonifica Amianto</a> '
+    '<a href="/bonifica-siti-contaminati.html">Bonifica Siti Contaminati</a> '
+    '<a href="/caratterizzazione-analisi-rischio.html">Caratterizzazione e Analisi di Rischio</a> '
+    '<a href="/demolizioni-decommissioning.html">Demolizioni e Decommissioning</a> '
+    '<a href="/dettaglio-servizi.html">Tecnitalia Servizi</a> '
+    '<a href="/elenco-progetti.html">Progetti</a></nav>')
 
 FOOTER_FALLBACK = (
     '<address><strong>Tecnitalia Group</strong><br>Via Pastorelli 4E, 20143 Milano (MI)'
     '<br>Tel: <a href="tel:+390276000206">02 76000206</a>'
     '<br>Email: <a href="mailto:info@tecnitaliagroup.it">info@tecnitaliagroup.it</a></address>\n'
-    '        <p><a href="privacy.html">Informativa privacy</a></p>')
+    '        <p><a href="/privacy.html">Informativa privacy</a></p>')
 
 CSP = ("default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; "
        "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
@@ -120,17 +138,17 @@ TEMPLATE = """<!DOCTYPE html>
     <meta property="og:image" content="{immagine_assoluta}">
     <meta property="article:published_time" content="{iso}">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" type="image/png" href="./assets/img/favicon-32.png">
-    <link rel="icon" href="./assets/img/favicon.ico" sizes="any">
-    <link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png">
-    <script defer src="./assets/vendor/gsap.min.js"></script>
-    <script defer src="./assets/vendor/ScrollTrigger.min.js"></script>
-    <script defer src="./assets/vendor/lenis.min.js"></script>
-    <script defer type="text/javascript" src="./assets/vendor/emailjs.min.js"></script>
+    <link rel="icon" type="image/png" href="/assets/img/favicon-32.png">
+    <link rel="icon" href="/assets/img/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+    <script defer src="/assets/vendor/gsap.min.js"></script>
+    <script defer src="/assets/vendor/ScrollTrigger.min.js"></script>
+    <script defer src="/assets/vendor/lenis.min.js"></script>
+    <script defer type="text/javascript" src="/assets/vendor/emailjs.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Fraunces:opsz,wght@9..144,300..700&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta http-equiv="Content-Security-Policy" content="{csp}">
     <script type="application/ld+json">
@@ -150,14 +168,14 @@ TEMPLATE = """<!DOCTYPE html>
     </header>
 
     <main class="page-content">
-        <img src="{immagine}" alt="{alt}" loading="lazy" decoding="async" onerror="this.style.display='none'" style="width: 100%; border-radius: 10px; margin-bottom: 30px; object-fit: cover; max-height: 450px; display: block;">
+        <img src="{immagine}" alt="{alt}" loading="eager" fetchpriority="high" decoding="async" onerror="this.style.display='none'" style="width: 100%; border-radius: 10px; margin-bottom: 30px; object-fit: cover; max-height: 450px; display: block;">
 
         <div style="color:#333; line-height: 1.8;">
 {contenuto}
         </div>
 
         <div style="margin-top: 50px; border-top: 1px solid #eee; padding-top: 30px;">
-            <a href="archivio-news.html" class="text-link">&#11013; Torna all'Archivio News</a>
+            <a href="/archivio-news.html" class="text-link">&#11013; Torna all'Archivio News</a>
         </div>
     </main>
 
@@ -165,7 +183,7 @@ TEMPLATE = """<!DOCTYPE html>
         {footer}
     </div>
 
-    <script defer src="./js/main.js"></script>
+    <script defer src="/js/main.js"></script>
 
     <!-- Cloudflare Web Analytics -->
     <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{{"token": "{token}"}}'></script>
@@ -191,9 +209,9 @@ def genera():
         visti.add(n["slug"])
 
         iso = data_iso(n["data"])
-        nome = "news-%s.html" % n["slug"]
+        nome = "news/%s.html" % n["slug"]
         url = "%s/%s" % (BASE, nome)
-        img_rel = n["immagine"]
+        img_rel = "/" + n["immagine"].lstrip("./")
         img_abs = BASE + "/" + img_rel.lstrip("./")
 
         immagine_su_disco = os.path.join(RADICE, img_rel.lstrip("./").replace("/", os.sep))
@@ -240,10 +258,12 @@ def genera():
             footer=FOOTER_FALLBACK,
             titolo_html=html.escape(n["titolo"]),
             data=html.escape(n["data"]),
-            contenuto=n["contenuto"],
+            contenuto=assolutizza_link(n["contenuto"]),
             token=TOKEN_CF)
 
-        with io.open(os.path.join(RADICE, nome), "w", encoding="utf-8") as f:
+        destinazione = os.path.join(RADICE, "news", "%s.html" % n["slug"])
+        os.makedirs(os.path.dirname(destinazione), exist_ok=True)
+        with io.open(destinazione, "w", encoding="utf-8") as f:
             f.write(pagina)
 
         parole = len(solo_testo(n["contenuto"]).split())

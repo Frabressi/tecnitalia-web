@@ -4,16 +4,16 @@ let projectsData = [];
 document.addEventListener("DOMContentLoaded", () => {
     // Pipeline asincrona parallela per il caricamento delle risorse
     Promise.all([
-        fetch('./header.html').then(res => {
+        fetch('/header.html').then(res => {
             if (!res.ok) throw new Error(`HTTP error header! status: ${res.status}`);
             return res.text();
         }),
-        fetch('./footer.html').then(res => {
+        fetch('/footer.html').then(res => {
             if (!res.ok) throw new Error(`HTTP error footer! status: ${res.status}`);
             return res.text();
         }),
-        fetch('./data/news.json').then(res => res.ok ? res.json() : []).catch(() => []),
-        fetch('./data/projects.json').then(res => res.ok ? res.json() : []).catch(() => [])
+        fetch('/data/news.json').then(res => res.ok ? res.json() : []).catch(() => []),
+        fetch('/data/projects.json').then(res => res.ok ? res.json() : []).catch(() => [])
     ]).then(([headerData, footerData, newsJson, projectsJson]) => {
         const navPlaceholder = document.getElementById('nav-placeholder');
         const footerPlaceholder = document.getElementById('footer-placeholder');
@@ -206,32 +206,27 @@ function renderNews() {
                         <span style="font-size: 0.8rem; color: #888; font-weight: 600;">${news.data}</span>
                         <h4 style="margin: 10px 0 15px 0; font-size: 1.3rem;">${news.titolo}</h4>
                         <p style="font-size:0.95rem; margin-bottom: 0;">${news.riassunto}</p>
-                        <a href="news-${news.slug}.html" class="news-link-stretched">Leggi l'articolo ➔</a>
+                        <a href="/news/${news.slug}.html" class="news-link-stretched">Leggi l'articolo ➔</a>
                     </div>
                 </div>`;
         });
     }
 
     if (paginaDettaglio) {
+        // news-singola.html?id=N e' l'indirizzo storico: ogni articolo ha ora una pagina
+        // propria in /news/<slug>.html. Reindirizziamo, cosi' i vecchi link e i preferiti
+        // continuano a portare all'articolo giusto invece che a una pagina duplicata.
         const urlParams = new URLSearchParams(window.location.search);
         const newsId = urlParams.get('id');
         const articolo = newsDati.find(n => n.id === newsId);
 
-        if (articolo) {
-            document.title = `${articolo.titolo} | Tecnitalia Group`;
-            const metaDesc = document.querySelector('meta[name="description"]');
-            if (metaDesc) metaDesc.setAttribute('content', articolo.riassunto);
-            document.getElementById('n-titolo').innerText = articolo.titolo;
-            document.getElementById('n-data').innerText = articolo.data;
-            document.getElementById('n-contenuto').innerHTML = articolo.contenuto;
-            const img = document.getElementById('n-img');
-            if (img) {
-                img.src = articolo.immagine;
-                img.onerror = () => img.style.display = 'none';
-            }
-        } else {
-            paginaDettaglio.innerHTML = "<h2 style='color:var(--blue);'>Articolo non trovato.</h2><p>La news richiesta non esiste.</p>";
+        if (articolo && articolo.slug) {
+            window.location.replace('/news/' + articolo.slug + '.html');
+            return;
         }
+
+        paginaDettaglio.innerHTML = "<h2 style='color:var(--blue);'>Articolo non trovato.</h2>" +
+            "<p>La news richiesta non esiste. <a href='/archivio-news.html'>Vai all'archivio</a>.</p>";
     }
 }
 

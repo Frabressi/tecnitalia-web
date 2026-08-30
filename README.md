@@ -88,6 +88,8 @@ Il codice segue una suddivisione rigorosa e modulare per separare la logica comp
 │   ├── linkedin-specialties.txt
 │   ├── linkedin-tagline.txt
 │   └── superpowers/                      # Piani e specifiche del redesign (plans/, specs/)
+├── news/                       # Pagine articolo GENERATE da tools/genera-news.py
+│   └── <slug>.html             #   (non modificare a mano: si rigenerano)
 ├── js/
 │   └── main.js                           # Controller logico globale del sito (Core Engine)
 ├── archivio-news.html                    # Pagina contenente l'elenco completo degli articoli
@@ -102,7 +104,6 @@ Il codice segue una suddivisione rigorosa e modulare per separare la logica comp
 ├── footer.html                           # Componente parziale del Piè di pagina (Senza HEAD/BODY)
 ├── header.html                           # Componente parziale della Barra di Navigazione (Senza HEAD/BODY)
 ├── index.html                            # Landing page principale (Home Page)
-├── news-<slug>.html            # Pagine articolo GENERATE (non modificare a mano)
 ├── news-singola.html                     # Template matrice per il dettaglio del singolo articolo
 ├── privacy.html                          # Informativa privacy GDPR (`noindex`)
 ├── CNAME                                 # Dominio custom per GitHub Pages (tracciato in git)
@@ -202,12 +203,17 @@ invecchierebbe a ogni pubblicazione.
 python tools/genera-news.py
 ```
 
-Va rieseguito dopo ogni modifica a `data/news.json`, e il risultato va committato. Le pagine sono
-generate piatte nella root e non in una sottocartella, perché `js/main.js` usa percorsi relativi
-(`fetch('./header.html')`) che in una sottocartella darebbero 404.
+Va rieseguito dopo ogni modifica a `data/news.json`, e il risultato va committato.
 
-`news-singola.html` resta pubblicata per i vecchi link `?id=N`, ma è marcata `noindex` per non
-competere con le pagine generate.
+Le pagine vivono in `news/`. Perché funzionino da lì, `js/main.js` carica header, footer e JSON
+con **percorsi assoluti** (`fetch('/header.html')`), e anche `header.html`, `footer.html` e le
+pagine generate usano link assoluti: un link relativo iniettato in una pagina sotto `/news/`
+punterebbe a `/news/index.html`. Il generatore riscrive di conseguenza anche i link presenti nel
+corpo degli articoli.
+
+`news-singola.html` resta in root come **ponte**: è marcata `noindex` e, se riceve un vecchio
+`?id=N`, reindirizza alla pagina corrispondente in `/news/`. Così i link salvati o pubblicati
+altrove continuano a funzionare.
 
 - **JSON-LD:** 11 delle 12 pagine HTML del sito (tutte tranne `privacy.html`) includono blocchi `<script type="application/ld+json">` nel `<head>` con schema.org — `ProfessionalService`, `Service`, `FAQPage` e `BreadcrumbList` a seconda della pagina — per favorire i rich result nei motori di ricerca.
 - **Sitemap e canonical:** `sitemap.xml` elenca gli 11 URL indicizzabili con `<lastmod>`. La home usa un canonical su `/` (non su `/index.html`).

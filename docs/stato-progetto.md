@@ -76,7 +76,8 @@ Fotografia al 30 agosto 2026, da rileggere fra sei mesi per sapere a che punto s
    `data` (formato `30 Agosto 2026`), `titolo`, `immagine`, `riassunto`, `contenuto`.
    Lo `slug` diventa l'URL: sceglierlo corto e con le parole chiave del tema.
 2. Eseguire `python tools/genera-news.py` dalla radice del repository.
-3. Committare i file generati insieme al JSON: `news-*.html`, `sitemap.xml` e `index.html`.
+   Le pagine finiscono in `news/<slug>.html`.
+3. Committare i file generati insieme al JSON: `news/`, `sitemap.xml` e `index.html`.
 4. Dopo la pubblicazione, richiedere l'indicizzazione del nuovo URL in Google Search Console.
 
 Lo script è idempotente: rieseguirlo non duplica nulla. Verifica l'esistenza delle immagini
@@ -84,6 +85,16 @@ referenziate e segnala slug duplicati o date non interpretabili.
 
 
 ## Decisioni prese
+
+- **Percorsi assoluti e news in una sottocartella** *(30 agosto 2026)*. Gli articoli stanno in
+  `news/<slug>.html` perché sono destinati a diventare decine e in root sarebbero ingestibili.
+  Per farlo funzionare, `js/main.js`, `header.html`, `footer.html` e le pagine generate usano
+  percorsi assoluti: un link relativo iniettato sotto `/news/` punterebbe a `/news/index.html`.
+  **Conseguenza da conoscere:** il sito deve essere servito dalla radice di un dominio. In locale
+  va aperto con un server sulla root (`python -m http.server`), non da sottocartella e non con
+  `file://`.
+  **Le pagine servizio restano invece piatte in root**, perché i loro URL sono gia' pubblicati e
+  spostarli produrrebbe 404 senza possibilita' di redirect lato server su GitHub Pages.
 
 - **Protezione del form EmailJS: rischio accettato, nessun intervento** *(30 agosto 2026)*.
   L'allow-list dei domini richiede un piano a pagamento; sono state valutate e scartate la
