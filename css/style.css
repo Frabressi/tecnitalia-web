@@ -396,6 +396,11 @@ nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+    /* In apertura niente dissolvenza percepibile: lo sfondo bianco pieno del
+       box deve apparire netto da subito, altrimenti per una manciata di
+       frame si vede a bassa opacità sovrapposto al contenuto sottostante
+       (effetto "fantasma"/glitch). Lo slide resta morbido sul transform. */
+    transition: opacity 0.05s ease, visibility 0.05s ease, transform 0.2s ease;
     transition-delay: 0s;
 }
 
