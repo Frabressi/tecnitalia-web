@@ -58,3 +58,7 @@ desktop.ini
 
 # Dipendenze (non usate oggi: le librerie sono in assets/vendor/, tracciate)
 node_modules/
+
+# Artefatti di sessioni di lavoro precedenti
+.superpowers/
+docs/superpowers/

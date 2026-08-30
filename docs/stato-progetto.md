@@ -33,15 +33,13 @@ Fotografia al 30 agosto 2026, da rileggere fra sei mesi per sapere a che punto s
 
 ## Aperto, in ordine di rendimento
 
-1. **News non indicizzabili singolarmente.** È la lacuna più costosa rimasta, e pesa di più ora
-   che si pubblicano articoli con regolarità. Tutti gli articoli vivono su
-   `news-singola.html?id=N`: un solo URL fisico per l'intero archivio, che cambia contenuto in
-   base al parametro. Un articolo come quello sul D.Lgs. 213/2025 è esattamente il tipo di
-   contenuto che si posizionerebbe su ricerche normative specifiche e che gli assistenti AI
-   citano volentieri, ma per Google e per i crawler AI non esiste come pagina propria — non ha un
-   URL indicizzabile, un `datePublished` proprio né un canonical dedicato. Servirebbe un
-   generatore statico che produca un file HTML per articolo a partire da `data/news.json`, con
-   JSON-LD `NewsArticle`, `datePublished` e canonical propri per ciascuno.
+1. ~~News non indicizzabili singolarmente~~ — **RISOLTO il 30 agosto 2026.** Ogni articolo ha
+   ora una pagina statica propria (`news-<slug>.html`), generata da `tools/genera-news.py` a
+   partire da `data/news.json`, con JSON-LD `NewsArticle`, `datePublished` e canonical propri.
+   Lo script rigenera anche `sitemap.xml` (16 URL) e il blocco statico delle ultime news in
+   `index.html`, che altrimenti invecchiava a ogni pubblicazione. `news-singola.html` resta in
+   servizio per i vecchi link `?id=N` ma è passata a `noindex`, per non competere con le pagine
+   nuove.
 
 2. **`sameAs` assente.** Verificato nel codice: nessuna delle pagine con JSON-LD espone la
    proprietà `sameAs` nel blocco `ProfessionalService` (`grep -c "sameAs" *.html` restituisce 0
@@ -71,6 +69,19 @@ Fotografia al 30 agosto 2026, da rileggere fra sei mesi per sapere a che punto s
      identificato da denominazione, sede e recapiti.
    - `lastmod` della sitemap aggiornato manualmente, non generato.
    - Da confermare l'opzione "Enforce HTTPS" nelle impostazioni di GitHub Pages.
+
+## Pubblicare un nuovo articolo
+
+1. Aggiungere l'oggetto **in testa** all'array di `data/news.json`, con i campi `id`, `slug`,
+   `data` (formato `30 Agosto 2026`), `titolo`, `immagine`, `riassunto`, `contenuto`.
+   Lo `slug` diventa l'URL: sceglierlo corto e con le parole chiave del tema.
+2. Eseguire `python tools/genera-news.py` dalla radice del repository.
+3. Committare i file generati insieme al JSON: `news-*.html`, `sitemap.xml` e `index.html`.
+4. Dopo la pubblicazione, richiedere l'indicizzazione del nuovo URL in Google Search Console.
+
+Lo script è idempotente: rieseguirlo non duplica nulla. Verifica l'esistenza delle immagini
+referenziate e segnala slug duplicati o date non interpretabili.
+
 
 ## Decisioni prese
 

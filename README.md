@@ -74,6 +74,8 @@ Il codice segue una suddivisione rigorosa e modulare per separare la logica comp
 │       └── emailjs.min.js                # @emailjs/browser v4 (da jsdelivr)
 ├── css/
 │   └── style.css                         # Foglio di stile globale (Layout, Variabili e Responsive)
+├── tools/
+│   └── genera-news.py           # Genera le pagine news statiche e la sitemap
 ├── data/                                 # I "Database" JSON del sito
 │   ├── news.json                         # Archivio dati degli articoli e aggiornamenti
 │   └── projects.json                     # Archivio dati di tutti i progetti eseguiti
@@ -100,6 +102,7 @@ Il codice segue una suddivisione rigorosa e modulare per separare la logica comp
 ├── footer.html                           # Componente parziale del Piè di pagina (Senza HEAD/BODY)
 ├── header.html                           # Componente parziale della Barra di Navigazione (Senza HEAD/BODY)
 ├── index.html                            # Landing page principale (Home Page)
+├── news-<slug>.html            # Pagine articolo GENERATE (non modificare a mano)
 ├── news-singola.html                     # Template matrice per il dettaglio del singolo articolo
 ├── privacy.html                          # Informativa privacy GDPR (`noindex`)
 ├── CNAME                                 # Dominio custom per GitHub Pages (tracciato in git)
@@ -181,6 +184,30 @@ Per aggiungere, rimuovere o modificare elementi all'interno del sito, non serve 
 ---
 
 ## 🔎 SEO e Dati Strutturati
+
+### Pagine news generate
+
+Gli articoli vivono in `data/news.json`. Poiché il sito li caricava via JavaScript su
+`news-singola.html?id=N`, tutti condividevano un solo URL e nessuno poteva essere indicizzato
+singolarmente. Lo script `tools/genera-news.py` risolve il problema producendo una pagina statica
+per articolo, con il contenuto già presente nell'HTML servito, JSON-LD `NewsArticle`,
+`datePublished` e canonical propri.
+
+Lo stesso script riscrive `sitemap.xml` e rigenera il blocco delle ultime news in `index.html`,
+delimitato dai marcatori `<!-- NEWS-HOME:INIZIO -->` e `<!-- NEWS-HOME:FINE -->`: è contenuto di
+ripiego che il JavaScript sostituisce, ma che i crawler leggono, e senza rigenerazione automatica
+invecchierebbe a ogni pubblicazione.
+
+```bash
+python tools/genera-news.py
+```
+
+Va rieseguito dopo ogni modifica a `data/news.json`, e il risultato va committato. Le pagine sono
+generate piatte nella root e non in una sottocartella, perché `js/main.js` usa percorsi relativi
+(`fetch('./header.html')`) che in una sottocartella darebbero 404.
+
+`news-singola.html` resta pubblicata per i vecchi link `?id=N`, ma è marcata `noindex` per non
+competere con le pagine generate.
 
 - **JSON-LD:** 11 delle 12 pagine HTML del sito (tutte tranne `privacy.html`) includono blocchi `<script type="application/ld+json">` nel `<head>` con schema.org — `ProfessionalService`, `Service`, `FAQPage` e `BreadcrumbList` a seconda della pagina — per favorire i rich result nei motori di ricerca.
 - **Sitemap e canonical:** `sitemap.xml` elenca gli 11 URL indicizzabili con `<lastmod>`. La home usa un canonical su `/` (non su `/index.html`).

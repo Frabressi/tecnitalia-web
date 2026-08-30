@@ -14,7 +14,7 @@ il codice rende il sito *indicizzabile*, queste lo rendono *trovato*.
 | 5 | EmailJS: protezione della chiave | **non risolvibile nel piano free** — vedi `sicurezza.md` |
 | 6 | Pubblicazione del sito | ✅ online dal 30 agosto 2026 |
 | 7 | News pubblicate | ✅ fatto |
-| 8 | Invio sitemap in Search Console | da fare |
+| 8 | Invio sitemap in Search Console (ora 16 URL) | da fare |
 | 9 | Secondo proprietario aziendale su Search Console e Bing | da fare |
 | 10 | Verifica "Enforce HTTPS" e 2FA su GitHub | da fare |
 | 11 | Partita IVA nell'informativa | facoltativa |
