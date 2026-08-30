@@ -106,7 +106,35 @@
 <body>
 
     <div id="nav-placeholder">
-        <nav><a href="/index.html">Home</a> <a href="/chi-siamo.html">Chi Siamo</a> <a href="/archivio-news.html">News</a> <a href="/dettaglio-ingegneria.html">Tecnitalia Ingegneria</a> <a href="/bonifica-amianto.html">Bonifica Amianto</a> <a href="/bonifica-siti-contaminati.html">Bonifica Siti Contaminati</a> <a href="/caratterizzazione-analisi-rischio.html">Caratterizzazione e Analisi di Rischio</a> <a href="/demolizioni-decommissioning.html">Demolizioni e Decommissioning</a> <a href="/dettaglio-servizi.html">Tecnitalia Servizi</a> <a href="/elenco-progetti.html">Progetti</a></nav>
+        <nav>
+            <a href="/index.html" class="logo-container">
+                <img src="/assets/img/logo-white.png" alt="Tecnitalia Group" class="logo-img logo-img-white">
+                <img src="/assets/img/logo.png" alt="Tecnitalia Group" class="logo-img logo-img-color">
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="/index.html">Home</a> <a href="/chi-siamo.html">Chi Siamo</a>
+                <a href="/archivio-news.html">News</a>
+                <div class="nav-item-dropdown">
+                    <div class="nav-dropdown-head">
+                        <a href="/dettaglio-ingegneria.html" class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="nav-dropdown-menu-ingegneria">Tecnitalia Ingegneria <span class="nav-caret" aria-hidden="true">&#9662;</span></a>
+                        <button type="button" class="nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" aria-controls="nav-dropdown-menu-ingegneria" aria-label="Mostra il sottomenu di Tecnitalia Ingegneria">
+                            <span class="nav-caret" aria-hidden="true">&#9662;</span>
+                        </button>
+                    </div>
+                    <div class="nav-dropdown-menu" id="nav-dropdown-menu-ingegneria">
+                        <a href="/dettaglio-ingegneria.html">Tecnitalia Ingegneria</a>
+                        <a href="/bonifica-amianto.html">Bonifica Amianto</a>
+                        <a href="/bonifica-siti-contaminati.html">Bonifica Siti Contaminati</a>
+                        <a href="/caratterizzazione-analisi-rischio.html">Caratterizzazione e Analisi di Rischio</a>
+                        <a href="/demolizioni-decommissioning.html">Demolizioni e Decommissioning</a>
+                    </div>
+                </div>
+                <a href="/dettaglio-servizi.html">Tecnitalia Servizi</a>
+                <a href="/elenco-progetti.html">Progetti</a>
+                <a href="/index.html#team">Team</a>
+            </div>
+            <button type="button" class="hamburger" aria-label="Apri menu di navigazione" aria-expanded="false" aria-controls="nav-links">☰</button>
+        </nav>
     </div>
 
     <header class="page-header">
@@ -152,8 +180,55 @@
     </main>
 
     <div id="footer-placeholder">
-        <address><strong>Tecnitalia Group</strong><br>Via Pastorelli 4E, 20143 Milano (MI)<br>Tel: <a href="tel:+390276000206">02 76000206</a><br>Email: <a href="mailto:info@tecnitaliagroup.it">info@tecnitaliagroup.it</a></address>
-        <p><a href="/privacy.html">Informativa privacy</a></p>
+        <footer id="contatti" class="footer-sec">
+            <div class="footer-grid">
+                <div>
+                    <h3 style="color:white; margin-bottom:20px;">Contattaci</h3>
+                    <p><strong>Tecnitalia Group</strong><br>Via Pastorelli 4E, 20143 Milano</p>
+                    <p>Tel: 02 76000206<br>Email: info@tecnitaliagroup.it</p>
+                    <a href="/privacy.html" class="footer-link">Informativa privacy</a>
+                </div>
+                <div class="footer-services-col">
+                    <h3 style="color:white; margin-bottom:20px;">Servizi</h3>
+                    <a href="/dettaglio-ingegneria.html" class="footer-link">Tecnitalia Ingegneria</a>
+                    <a href="/bonifica-amianto.html" class="footer-link">Bonifica Amianto</a>
+                    <a href="/bonifica-siti-contaminati.html" class="footer-link">Bonifica Siti Contaminati</a>
+                    <a href="/caratterizzazione-analisi-rischio.html" class="footer-link">Caratterizzazione e Analisi di Rischio</a>
+                    <a href="/demolizioni-decommissioning.html" class="footer-link">Demolizioni e Decommissioning</a>
+                    <a href="/dettaglio-servizi.html" class="footer-link">Tecnitalia Servizi</a>
+                </div>
+                <div class="form-box">
+                    <form id="contact-form">
+                        <input type="text" name="name" placeholder="Nome" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" rows="3" placeholder="Messaggio" required></textarea>
+                        <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+                        <button type="submit" class="submit-btn" id="submit-btn">Invia Messaggio</button>
+                    </form>
+                    <div id="form-status" style="display:none; color:white; margin-top:15px; text-align:center; font-weight:bold; font-size:0.9rem;"></div>
+                </div>
+                <div class="footer-map-box">
+                    <h3 style="color:white; margin-bottom:20px;">La Nostra Sede</h3>
+                    <div class="map-container" style="width:100%; border-radius:6px; overflow:hidden; background:#222;">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Via%20Pastorelli%204E,%2020143%20Milano&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="140" 
+                            style="border:0; display:block;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <a href="https://maps.google.com/maps?q=Via%20Pastorelli%204E,%2020143%20Milano" target="_blank" class="map-link" style="color:#aaa; text-decoration:none; font-size:0.85rem; margin-top:10px; display:inline-block; font-weight:600;">
+                        Apri in Google Maps ➔
+                    </a>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:50px; border-top:1px solid #333; padding-top:20px;">
+                © 2026 Tecnitalia Group. Tutti i diritti riservati.
+            </div>
+        </footer>
     </div>
 
     <script defer src="/js/main.js"></script>
