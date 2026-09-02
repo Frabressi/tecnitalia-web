@@ -102,8 +102,8 @@ nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
 .hero-cta { color: #ffffff !important; }
 .hero-cta:hover { color: #ffffff !important; border-color: #ffffff !important; }
 
-.statement-block { padding: 100px 10% 60px; max-width: 900px; margin: 0 auto; text-align: center; }
-.statement-block p { font-size: clamp(1.6rem, 3.2vw, 2.6rem); line-height: 1.3; color: var(--ink); margin: 0; }
+.statement-block { padding: 100px 10% 60px; max-width: 900px; margin: 0 auto; text-align: left; }
+.statement-block p { font-size: 1.3rem; line-height: 1.6; color: var(--ink); margin: 0; }
 .statement-block p::first-letter { color: var(--blue); }
 
 /* --- 5. SEZIONI E GRIGLIE --- */
