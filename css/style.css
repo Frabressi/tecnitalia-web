@@ -103,7 +103,7 @@ nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
 .hero-cta:hover { color: #ffffff !important; border-color: #ffffff !important; }
 
 .statement-block { padding: 100px 10% 60px; max-width: 900px; margin: 0 auto; text-align: left; }
-.statement-block p { font-size: 1.3rem; line-height: 1.6; color: var(--ink); margin: 0; }
+.statement-block p { font-size: 1.45rem; line-height: 1.6; color: var(--ink); margin: 0; }
 .statement-block p::first-letter { color: var(--blue); }
 
 /* --- 5. SEZIONI E GRIGLIE --- */
@@ -318,12 +318,13 @@ nav.scrolled .hamburger { color: var(--text); text-shadow: none; }
 
 /* --- 12. FASCIA STATISTICHE --- */
 .stats-row { padding: 70px 10% 90px; width: 100vw; margin-left: calc(-50vw + 50%); box-sizing: border-box; background: var(--paper); border-bottom: 1px solid #e5e5e0; }
-.stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; max-width: 960px; margin: 0 auto; text-align: center; }
+.stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; max-width: 900px; margin: 0 auto; text-align: left; }
 .stats-grid .stat-item:not(:last-child) { border-right: 1px solid #e5e5e0; }
 /* Colonna flex: cosi le tre voci partono tutte dalla stessa quota, e numero e
-   suffisso "+" restano affiancati sulla stessa riga di base anche a 375px. */
-.stat-item { text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; }
-.stat-value { display: flex; align-items: baseline; justify-content: center; white-space: nowrap; }
+   suffisso "+" restano affiancati sulla stessa riga di base anche a 375px.
+   Allineamento a sinistra cosi il primo numero cade sotto il testo dello statement. */
+.stat-item { text-align: left; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; }
+.stat-value { display: flex; align-items: baseline; justify-content: flex-start; white-space: nowrap; }
 .stat-number, .stat-suffix { font-family: 'Bricolage Grotesque', 'Manrope', sans-serif; font-weight: 800; font-size: clamp(2.2rem, 4vw, 3.2rem); color: var(--blue); line-height: 1; letter-spacing: -0.02em; }
 .stat-label { color: #777; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-top: 8px; }
 
