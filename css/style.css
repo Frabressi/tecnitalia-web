@@ -49,8 +49,8 @@ nav.scrolled {
 }
 
 .logo-container { text-decoration: none; display: block; z-index: 1002; position: relative;}
-.logo-img { height: 70px; width: auto; display: block; transition: height 0.3s ease; }
-nav.scrolled .logo-img { height: 50px; }
+.logo-img { height: 96px; width: auto; display: block; transition: height 0.3s ease; }
+nav.scrolled .logo-img { height: 64px; }
 .logo-container { display: flex; align-items: center; }
 .logo-img-color { display: none; }
 nav.scrolled .logo-img-white { display: none; }
