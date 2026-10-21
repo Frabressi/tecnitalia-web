@@ -8,6 +8,7 @@ La sitemap viene ricostruita ogni volta scansionando le pagine fisse, news/ e
 progetti/: qualunque generatore la scriva, non perde mai gli URL dell'altro.
 """
 import json, io, os, re, html, datetime, subprocess
+from pathlib import Path
 
 RADICE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://www.tecnitaliagroup.it"
@@ -96,57 +97,14 @@ NAV_FALLBACK = (
     '            <button type="button" class="hamburger" aria-label="Apri menu di navigazione" aria-expanded="false" aria-controls="nav-links">☰</button>\n'
     '        </nav>')
 
-FOOTER_FALLBACK = (
-    '<footer id="contatti" class="footer-sec">\n'
-    '            <div class="footer-grid">\n'
-    '                <div>\n'
-    '                    <h3 style="color:white; margin-bottom:20px;">Contattaci</h3>\n'
-    '                    <p><strong>Tecnitalia Group</strong><br>Via Pastorelli 4E, 20143 Milano</p>\n'
-    '                    <p>Tel: 02 76000206<br>Email: info@tecnitaliagroup.it</p>\n'
-    '                    <a href="/privacy.html" class="footer-link">Informativa privacy</a>\n'
-    '                </div>\n'
-    '                <div class="footer-services-col">\n'
-    '                    <h3 style="color:white; margin-bottom:20px;">Servizi</h3>\n'
-    '                    <a href="/dettaglio-ingegneria.html" class="footer-link">Tecnitalia Ingegneria</a>\n'
-    '                    <a href="/bonifica-amianto.html" class="footer-link">Bonifica Amianto</a>\n'
-    '                    <a href="/bonifica-siti-contaminati.html" class="footer-link">Bonifica Siti Contaminati</a>\n'
-    '                    <a href="/caratterizzazione-analisi-rischio.html" class="footer-link">Caratterizzazione e Analisi di Rischio</a>\n'
-    '                    <a href="/demolizioni-decommissioning.html" class="footer-link">Demolizioni e Decommissioning</a>\n'
-    '                    <a href="/dettaglio-servizi.html" class="footer-link">Tecnitalia Servizi</a>\n'
-    '                </div>\n'
-    '                <div class="form-box">\n'
-    '                    <form id="contact-form">\n'
-    '                        <input type="text" name="name" placeholder="Nome" required>\n'
-    '                        <input type="email" name="email" placeholder="Email" required>\n'
-    '                        <textarea name="message" rows="3" placeholder="Messaggio" required></textarea>\n'
-    '                        <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">\n'
-    '                        <button type="submit" class="submit-btn" id="submit-btn">Invia Messaggio</button>\n'
-    '                    </form>\n'
-    '                    <div id="form-status" style="display:none; color:white; margin-top:15px; text-align:center; font-weight:bold; font-size:0.9rem;"></div>\n'
-    '                </div>\n'
-    '                <div class="footer-map-box">\n'
-    '                    <h3 style="color:white; margin-bottom:20px;">La Nostra Sede</h3>\n'
-    '                    <div class="map-container" style="width:100%; border-radius:6px; overflow:hidden; background:#222;">\n'
-    '                        <iframe \n'
-    '                            src="https://maps.google.com/maps?q=Via%20Pastorelli%204E,%2020143%20Milano&t=&z=15&ie=UTF8&iwloc=&output=embed" \n'
-    '                            width="100%" \n'
-    '                            height="140" \n'
-    '                            style="border:0; display:block;" \n'
-    '                            allowfullscreen="" \n'
-    '                            loading="lazy" \n'
-    '                            referrerpolicy="no-referrer-when-downgrade">\n'
-    '                        </iframe>\n'
-    '                    </div>\n'
-    '                    <a href="https://maps.google.com/maps?q=Via%20Pastorelli%204E,%2020143%20Milano" target="_blank" class="map-link" style="color:#aaa; text-decoration:none; font-size:0.85rem; margin-top:10px; display:inline-block; font-weight:600;">\n'
-    '                        Apri in Google Maps ➔\n'
-    '                    </a>\n'
-    '                </div>\n'
-    '            </div>\n'
-    '            <div style="text-align:center; margin-top:50px; border-top:1px solid #333; padding-top:20px;">\n'
-    '                © 2026 Tecnitalia Group. Tutti i diritti riservati.\n'
-    '                <p class="footer-legal">Tecnitalia Ingegneria Studio Associato di Bressi e Micco · C.F./P.IVA 06874430967<br>Tecnitalia Servizi S.r.l. · C.F./P.IVA 03923790962 · REA MI-1712643 · Cap. soc. € 10.000,00<br>Sede legale: Via Pastorelli 4E, 20143 Milano</p>\n'
-    '            </div>\n'
-    '        </footer>')
+def _footer_fallback(rientro=' ' * 8):
+    """Markup di footer.html (fonte unica), rientrato per l'inserimento nei
+    template: la prima riga segue il segnaposto, le altre ricevono il rientro."""
+    righe = (Path(__file__).resolve().parent.parent / 'footer.html').read_text(encoding='utf-8').strip().splitlines()
+    return '\n'.join([righe[0]] + [(rientro + r) if r.strip() else '' for r in righe[1:]])
+
+
+FOOTER_FALLBACK = _footer_fallback()
 
 CSP = ("default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; "
        "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
