@@ -1,5 +1,4 @@
 let newsDati = [];
-let projectsData = [];
 
 document.addEventListener("DOMContentLoaded", () => {
     // Pipeline asincrona parallela per il caricamento delle risorse
@@ -12,9 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!res.ok) throw new Error(`HTTP error footer! status: ${res.status}`);
             return res.text();
         }),
-        fetch('/data/news.json').then(res => res.ok ? res.json() : []).catch(() => []),
-        fetch('/data/projects.json').then(res => res.ok ? res.json() : []).catch(() => [])
-    ]).then(([headerData, footerData, newsJson, projectsJson]) => {
+        fetch('/data/news.json').then(res => res.ok ? res.json() : []).catch(() => [])
+    ]).then(([headerData, footerData, newsJson]) => {
         const navPlaceholder = document.getElementById('nav-placeholder');
         const footerPlaceholder = document.getElementById('footer-placeholder');
         
@@ -28,16 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
         // -----------------------------
         
         newsDati = newsJson;
-        projectsData = projectsJson;
-        
-        // Ordina i progetti dal più recente al più vecchio
-        if(projectsData.length > 0) {
-            projectsData.sort((a, b) => b.endYear - a.endYear);
-        }
-        
+
+        // Le card dei progetti (archivio e home) sono HTML statico generato da
+        // tools/genera-progetti.py: qui non si renderizzano, si attivano solo i comportamenti.
         renderNews();
-        renderProjects('tutti');
-        renderWorkScroller();
+        setupWorkScroller();
 
         initNavbar();
         initStatsCounters();
@@ -230,95 +223,6 @@ function renderNews() {
     }
 }
 
-function renderProjects(filterTag = 'tutti') {
-    const editorialGrid = document.getElementById('projects-editorial-grid');
-    const gridContainer = document.getElementById('projects-grid-full');
-
-    if (editorialGrid) {
-        editorialGrid.innerHTML = '';
-        const featured = projectsData.slice(0, 5);
-
-        featured.forEach(p => {
-            const originalIndex = projectsData.indexOf(p);
-            editorialGrid.innerHTML += `
-                <div class="project-card" onclick="openProject(${originalIndex})">
-                    <div class="p-img-box">
-                        <img src="${p.images[0]}" alt="${p.title}" loading="lazy" decoding="async" onerror="this.style.display='none'">
-                        <div class="hover-reveal">APRI SCHEDA</div>
-                    </div>
-                    <div class="p-content">
-                        <span style="font-size: 0.8rem; color: #888; font-weight: 600;">Anno: ${p.endYear}</span>
-                        <h4 style="margin: 5px 0 5px 0;">${p.title}</h4>
-                        <p style="margin:0; font-size:0.9rem">${p.cardSubtitle}</p>
-                    </div>
-                </div>`;
-        });
-    }
-
-    if (gridContainer) {
-        gridContainer.innerHTML = ''; 
-        projectsData.forEach((p, index) => {
-            if (filterTag === 'tutti' || (p.tags && p.tags.includes(filterTag))) {
-                gridContainer.innerHTML += `
-                    <div class="project-card" onclick="openProject(${index})">
-                        <div class="p-img-box">
-                            <img src="${p.images[0]}" alt="${p.title}" loading="lazy" decoding="async" onerror="this.style.display='none'">
-                            <div class="hover-reveal">APRI SCHEDA</div>
-                        </div>
-                        <div class="p-content">
-                            <span style="font-size: 0.8rem; color: #888; font-weight: 600;">Anno: ${p.endYear}</span>
-                            <h4 style="margin: 5px 0 5px 0;">${p.title}</h4>
-                            <p style="margin:0; font-size:0.9rem">${p.cardSubtitle}</p>
-                        </div>
-                    </div>`;
-            }
-        });
-    }
-}
-
-// Selezione curata per la striscia "I Nostri Progetti" della home, stile Arup "Our Work".
-// Per ogni voce si può specificare quale immagine dell'array `images` usare (default: la prima)
-// quando la prima foto disponibile per quel progetto non è adatta a una card full-bleed.
-const workScrollerProjects = [
-    { title: "Fondazione Prada" },
-    { title: "Ex Novaceta" },
-    { title: "Ex SGL Carbon — Ascoli Piceno" },
-    { title: "Area Ex Reggiani", imageIndex: 1 },
-    { title: "Ex Ospedali Riuniti — UMI 3, Bergamo" },
-    { title: "Cascina Merlata" },
-    { title: "Ex Caserma Cavalli — Novara", imageIndex: 1 },
-    { title: "Ex Cartiere Binda" },
-    { title: "Ex Alemagna — Cornaredo (MI)" },
-    { title: "Ex Stabilimento Prysmian Group" },
-    { title: "Ex Riseria — Via Pienza, Milano" }
-];
-
-function renderWorkScroller() {
-    const scroller = document.getElementById('work-scroller');
-    if (!scroller) return;
-    scroller.innerHTML = '';
-
-    workScrollerProjects.forEach(entry => {
-        const p = projectsData.find(proj => proj.title === entry.title);
-        if (!p || !p.images || p.images.length === 0) return;
-        const imgSrc = p.images[entry.imageIndex || 0] || p.images[0];
-        const safeTitle = p.title.replace(/'/g, "\\'");
-
-        scroller.innerHTML += `
-            <div class="work-card" onclick="openProjectByTitle('${safeTitle}')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openProjectByTitle('${safeTitle}')">
-                <div class="work-card-img">
-                    <img src="${imgSrc}" alt="${p.title}" loading="lazy" decoding="async" onerror="this.style.display='none'">
-                    <div class="work-card-overlay">
-                        <h3>${p.title}</h3>
-                        <p>${p.cardSubtitle}</p>
-                    </div>
-                </div>
-            </div>`;
-    });
-
-    setupWorkScroller();
-}
-
 // La rotella resta alla pagina: la striscia si muove con le frecce, col trascinamento
 // e avvicinando il puntatore ai bordi.
 function tweenScroll(el, delta, durata) {
@@ -347,6 +251,9 @@ function setupWorkScroller() {
     const scroller = document.getElementById('work-scroller');
     if (!wrap || !scroller || scroller.dataset.pronto) return;
     scroller.dataset.pronto = '1';
+
+    // le card sono link: senza questo il browser avvia il drag nativo di link/immagini
+    scroller.addEventListener('dragstart', (e) => e.preventDefault());
 
     // trascinamento col mouse
     let giu = false, xPartenza = 0, scrollPartenza = 0, spostato = 0;
@@ -402,92 +309,15 @@ function setupWorkScroller() {
     }
 }
 
+// Filtro dell'archivio: lavora sulle card statiche (data-tags, separati da "|").
 window.filterProjects = function(tag, btnElement) {
     document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
     if(btnElement) btnElement.classList.add('active');
-    renderProjects(tag);
-};
-
-let currentProjectIndex = 0;
-let currentImageIndex = 0;
-
-window.openProject = function(index) {
-    currentProjectIndex = index;
-    currentImageIndex = 0;
-    const p = projectsData[index];
-    const modal = document.getElementById('projectModal');
-    if(!modal) return;
-    
-    document.getElementById('m-title').innerHTML = p.title;
-    document.getElementById('m-desc').innerHTML = p.desc;
-
-    // Non tutte le schede d'archivio hanno committente o importo documentati:
-    // la cella viene nascosta invece di lasciare l'etichetta vuota.
-    [['m-client', p.client], ['m-period', p.period], ['m-val', p.val], ['m-type', p.type]]
-        .forEach(([id, value]) => {
-            const span = document.getElementById(id);
-            if (!span) return;
-            span.innerHTML = value || '';
-            const cell = span.closest('div');
-            if (cell) cell.style.display = value ? '' : 'none';
-        });
-    
-    const wrapper = document.getElementById('m-slides-wrapper');
-    wrapper.innerHTML = ''; 
-    p.images.forEach((imgSrc, i) => {
-        const img = document.createElement('img');
-        img.src = imgSrc;
-        img.onerror = function() { this.style.display = 'none' };
-        img.className = 'm-slide' + (i === 0 ? ' active' : '');
-        wrapper.appendChild(img);
+    document.querySelectorAll('#projects-grid-full .project-card').forEach(card => {
+        const tags = (card.dataset.tags || '').split('|');
+        card.style.display = (tag === 'tutti' || tags.includes(tag)) ? '' : 'none';
     });
-
-    const showArrows = p.images.length > 1 ? 'block' : 'none';
-    const btnPrev = document.getElementById('m-btn-prev');
-    const btnNext = document.getElementById('m-btn-next');
-    if(btnPrev) btnPrev.style.display = showArrows;
-    if(btnNext) btnNext.style.display = showArrows;
-
-    modal.classList.add('active');
-    if (typeof lenis !== 'undefined') lenis.stop();
-    const closeBtn = modal.querySelector('.close-modal');
-    if (closeBtn) closeBtn.focus();
 };
-
-window.changeModalImg = function(direction) {
-    const p = projectsData[currentProjectIndex];
-    const slides = document.querySelectorAll('.m-slide');
-    if(slides.length === 0) return;
-    
-    slides[currentImageIndex].classList.remove('active');
-    currentImageIndex += direction;
-    if (currentImageIndex < 0) currentImageIndex = p.images.length - 1;
-    if (currentImageIndex >= p.images.length) currentImageIndex = 0;
-    slides[currentImageIndex].classList.add('active');
-};
-
-window.closeProject = function() {
-    const modal = document.getElementById('projectModal');
-    if(modal) modal.classList.remove('active');
-    if (typeof lenis !== 'undefined') lenis.start();
-};
-
-window.openProjectByTitle = function(title) {
-    const idx = projectsData.findIndex(p => p.title === title);
-    if (idx !== -1) window.openProject(idx);
-};
-
-document.addEventListener("DOMContentLoaded", () => {
-    const modal = document.getElementById('projectModal');
-    if (modal) {
-        modal.addEventListener('click', (e) => {
-            if(e.target === modal) closeProject();
-        });
-    }
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal && modal.classList.contains('active')) closeProject();
-    });
-});
 
 var lenis;
 if (typeof Lenis !== 'undefined') {
@@ -550,6 +380,15 @@ function initStatsCounters() {
     if (!statsSection) return;
 
     const counters = statsSection.querySelectorAll('.stat-number[data-count]');
+
+    // L'HTML contiene già i valori finali (crawler e utenti senza JS). Chi non chiede
+    // meno animazioni li vede ripartire da 0 solo quando la sezione entra in vista:
+    // l'azzeramento avviene qui, prima che la sezione sia visibile.
+    if (!('IntersectionObserver' in window) ||
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    counters.forEach(el => {
+        if (el.getAttribute('data-format') !== 'year') el.textContent = '0';
+    });
 
     const animateCounter = (el) => {
         if (el.getAttribute('data-format') === 'year') return;

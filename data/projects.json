@@ -1,6 +1,7 @@
 [
     {
         "title": "Nuova Scuola Politecnica",
+        "slug": "nuova-scuola-politecnica",
         "client": "Università di Genova",
         "period": "2025-2026 (in corso)",
         "endYear": 2026,
@@ -19,6 +20,7 @@
     },
     {
         "title": "Area ex IBM",
+        "slug": "area-ex-ibm",
         "client": "Lombardini 22 - CAP DC Italia Srl",
         "period": "2024-2026 (in corso)",
         "endYear": 2026,
@@ -37,6 +39,7 @@
     },
     {
         "title": "Area Via San Gottardo",
+        "slug": "area-via-san-gottardo",
         "client": "Lombardini 22 - CAP DC Italia Srl",
         "period": "2025-2026 (in corso)",
         "endYear": 2026,
@@ -55,6 +58,7 @@
     },
     {
         "title": "Ex Novaceta",
+        "slug": "ex-novaceta",
         "client": "Namira SGRpA, Milano",
         "period": "2021-2025 (in corso)",
         "endYear": 2025,
@@ -74,6 +78,7 @@
     },
     {
         "title": "Ex Stabilimento Prysmian Group",
+        "slug": "ex-stabilimento-prysmian-group",
         "client": "FIBRE OTTICHE SUD - F.O.S. srl",
         "period": "2024-2025 (in corso)",
         "endYear": 2025,
@@ -91,6 +96,7 @@
     },
     {
         "title": "Ex Sofer",
+        "slug": "ex-sofer",
         "client": "Prysmian Power Link",
         "period": "2024-2025",
         "endYear": 2025,
@@ -109,6 +115,7 @@
     },
     {
         "title": "Ex Stabilimento Bunge — Ancona",
+        "slug": "ex-stabilimento-bunge-ancona",
         "client": "ECO:LOGICA S.r.l.",
         "period": "2016-2025",
         "endYear": 2025,
@@ -128,6 +135,7 @@
     },
     {
         "title": "Ex SGL Carbon — Ascoli Piceno",
+        "slug": "ex-sgl-carbon-ascoli-piceno",
         "client": "Gruppo Iren / RTI BSA – HEXA GREEN",
         "period": "2000-2025",
         "endYear": 2025,
@@ -148,6 +156,7 @@
     },
     {
         "title": "Ex Ospedali Riuniti — UMI 3, Bergamo",
+        "slug": "ex-ospedali-riuniti-umi-3-bergamo",
         "client": "Covedil",
         "period": "2019-2025",
         "endYear": 2025,
@@ -165,6 +174,7 @@
     },
     {
         "title": "Centro Parco Lotto 5 — Segrate (MI)",
+        "slug": "centro-parco-lotto-5-segrate-mi",
         "client": "East Park S.r.l.",
         "period": "2008-2025",
         "endYear": 2025,
@@ -184,6 +194,7 @@
     },
     {
         "title": "Via Molossi — Casalmaggiore (CR)",
+        "slug": "via-molossi-casalmaggiore-cr",
         "client": "Consorzio Agrario Cremona S.c.r.l.",
         "period": "2014-2025",
         "endYear": 2025,
@@ -206,6 +217,7 @@
     },
     {
         "title": "Ex Stabilimento Aromi — Gessate (MI)",
+        "slug": "ex-stabilimento-aromi-gessate-mi",
         "client": "Nactarome S.r.l.",
         "period": "2013-2025",
         "endYear": 2025,
@@ -224,6 +236,7 @@
     },
     {
         "title": "Parete rocciosa — Belgirate (VB)",
+        "slug": "parete-rocciosa-belgirate-vb",
         "client": "",
         "period": "2021-2025",
         "endYear": 2025,
@@ -242,6 +255,7 @@
     },
     {
         "title": "Via Antonini 20 — Milano",
+        "slug": "via-antonini-20-milano",
         "client": "",
         "period": "2006-2025",
         "endYear": 2025,
@@ -262,6 +276,7 @@
     },
     {
         "title": "Ex Novaceta — Ingresso Sud, Magenta (MI)",
+        "slug": "ex-novaceta-ingresso-sud-magenta-mi",
         "client": "Namira SGR p.A.",
         "period": "2020-2024",
         "endYear": 2024,
@@ -282,6 +297,7 @@
     },
     {
         "title": "Area West Gate — MIND, ex Expo 2015 (MI)",
+        "slug": "area-west-gate-mind-ex-expo-2015-mi",
         "client": "Arexpo S.p.A.",
         "period": "2019-2024",
         "endYear": 2024,
@@ -301,6 +317,7 @@
     },
     {
         "title": "Ex Palazzetto dello Sport — San Siro, Milano",
+        "slug": "ex-palazzetto-dello-sport-san-siro-milano",
         "client": "Eurogeo S.r.l.",
         "period": "2010-2024",
         "endYear": 2024,
@@ -317,6 +334,7 @@
     },
     {
         "title": "Cava Fusi — Uboldo (VA)",
+        "slug": "cava-fusi-uboldo-va",
         "client": "Cava Fusi S.r.l.",
         "period": "1992-2024",
         "endYear": 2024,
@@ -337,6 +355,7 @@
     },
     {
         "title": "Via Robecco 41 — Cinisello Balsamo (MI)",
+        "slug": "via-robecco-41-cinisello-balsamo-mi",
         "client": "Carnovale Costruzioni",
         "period": "2020-2024",
         "endYear": 2024,
@@ -358,6 +377,7 @@
     },
     {
         "title": "Ex Industrie Chimiche Baslini",
+        "slug": "ex-industrie-chimiche-baslini",
         "client": "Habita S.r.l., Trezzo d’Adda (Bg)",
         "period": "2008-2023 (in corso)",
         "endYear": 2023,
@@ -377,6 +397,7 @@
     },
     {
         "title": "Oasi Bovisa",
+        "slug": "oasi-bovisa",
         "client": "A2a Milano",
         "period": "2022-2023 (in corso)",
         "endYear": 2023,
@@ -395,6 +416,7 @@
     },
     {
         "title": "Area Ex Reggiani",
+        "slug": "area-ex-reggiani",
         "client": "Pessina Costruzioni SpA Milano",
         "period": "2023",
         "endYear": 2023,
@@ -412,6 +434,7 @@
     },
     {
         "title": "Ex Alemagna — Cornaredo (MI)",
+        "slug": "ex-alemagna-cornaredo-mi",
         "client": "",
         "period": "2003-2023",
         "endYear": 2023,
@@ -432,6 +455,7 @@
     },
     {
         "title": "Ex Saponificio Sirio",
+        "slug": "ex-saponificio-sirio",
         "client": "Euromilano S.p.A., Milano",
         "period": "2003, 2013, 2020-2022",
         "endYear": 2022,
@@ -450,6 +474,7 @@
     },
     {
         "title": "Ex Fratelli Feltrinelli",
+        "slug": "ex-fratelli-feltrinelli",
         "client": "Euromilano S.p.A., Milano",
         "period": "2009-2013 e 2021-2022",
         "endYear": 2022,
@@ -468,6 +493,7 @@
     },
     {
         "title": "Ecogomma — Castelletto di Branduzzo (PV)",
+        "slug": "ecogomma-castelletto-di-branduzzo-pv",
         "client": "Ecogomma",
         "period": "2020-2022",
         "endYear": 2022,
@@ -489,6 +515,7 @@
     },
     {
         "title": "Ex Zincheria Origoni",
+        "slug": "ex-zincheria-origoni",
         "client": "Euromilano S.p.A., Milano",
         "period": "2004-2021",
         "endYear": 2021,
@@ -507,6 +534,7 @@
     },
     {
         "title": "Piazza Tirana — San Cristoforo, Milano",
+        "slug": "piazza-tirana-san-cristoforo-milano",
         "client": "",
         "period": "2006-2021",
         "endYear": 2021,
@@ -526,6 +554,7 @@
     },
     {
         "title": "Area Ripa Porta Ticinese-Barsanti-Autari — Milano",
+        "slug": "area-ripa-porta-ticinese-barsanti-autari-milano",
         "client": "Solidarnosc Ripa Porta Ticinese soc. coop.",
         "period": "2010-2019",
         "endYear": 2019,
@@ -545,6 +574,7 @@
     },
     {
         "title": "Via Vivarini 5 — Milano",
+        "slug": "via-vivarini-5-milano",
         "client": "Rubatsch S.r.l.",
         "period": "2008-2019",
         "endYear": 2019,
@@ -565,6 +595,7 @@
     },
     {
         "title": "Ex Fonit Cetra — Via Meda 45, Milano",
+        "slug": "ex-fonit-cetra-via-meda-45-milano",
         "client": "Viameda Edizioni Musicali S.r.l.",
         "period": "2001-2019",
         "endYear": 2019,
@@ -582,6 +613,7 @@
     },
     {
         "title": "Ex Caserma Cavalli — Novara",
+        "slug": "ex-caserma-cavalli-novara",
         "client": "Agenzia del Demanio",
         "period": "2007-2018",
         "endYear": 2018,
@@ -602,6 +634,7 @@
     },
     {
         "title": "Concilio Vaticano II e Galvanica Lorenzi — Milano",
+        "slug": "concilio-vaticano-ii-e-galvanica-lorenzi-milano",
         "client": "Metropolitana Milanese S.p.A.",
         "period": "1991-2016",
         "endYear": 2016,
@@ -621,6 +654,7 @@
     },
     {
         "title": "Via Ciro Menotti 14 — Milano",
+        "slug": "via-ciro-menotti-14-milano",
         "client": "Iniziativa Immobiliare Ciro Menotti",
         "period": "2012-2015",
         "endYear": 2015,
@@ -641,6 +675,7 @@
     },
     {
         "title": "Via Saccardo 11 — Milano",
+        "slug": "via-saccardo-11-milano",
         "client": "BNP Paribas Real Estate",
         "period": "2010-2015",
         "endYear": 2015,
@@ -661,6 +696,7 @@
     },
     {
         "title": "Ex Saffa — Coperture in amianto, Pontenuovo di Magenta (MI)",
+        "slug": "ex-saffa-coperture-in-amianto-pontenuovo-di-magenta-mi",
         "client": "",
         "period": "2006-2014",
         "endYear": 2014,
@@ -679,6 +715,7 @@
     },
     {
         "title": "Via Italo Svevo 5 — Milano",
+        "slug": "via-italo-svevo-5-milano",
         "client": "Liben S.r.l.",
         "period": "2013-2014",
         "endYear": 2014,
@@ -698,6 +735,7 @@
     },
     {
         "title": "Cascina Merlata",
+        "slug": "cascina-merlata",
         "client": "Cascina Merlata S.p.A., Milano",
         "period": "2012-2013",
         "endYear": 2013,
@@ -715,6 +753,7 @@
     },
     {
         "title": "Ex Broggi – Politecnico di Milano",
+        "slug": "ex-broggi-politecnico-di-milano",
         "client": "Euromilano S.p.A. e Politecnico di Milano",
         "period": "2008-2013",
         "endYear": 2013,
@@ -734,6 +773,7 @@
     },
     {
         "title": "Cascina Basmetto",
+        "slug": "cascina-basmetto",
         "client": "Uniabita, già Corcab (MI) – CMB, Milano",
         "period": "2009-2013",
         "endYear": 2013,
@@ -751,6 +791,7 @@
     },
     {
         "title": "Ceramica Ligure",
+        "slug": "ceramica-ligure",
         "client": "Lasselsberger GmbH, Pöchlarn",
         "period": "2010-2013",
         "endYear": 2013,
@@ -768,6 +809,7 @@
     },
     {
         "title": "CF Gomma – Pirelli Tyres",
+        "slug": "cf-gomma-pirelli-tyres",
         "client": "Euromilano S.p.A.",
         "period": "2009-2013",
         "endYear": 2013,
@@ -786,6 +828,7 @@
     },
     {
         "title": "Ex Exide Technologies",
+        "slug": "ex-exide-technologies",
         "client": "Exide Technologies S.r.l.",
         "period": "2007-2013",
         "endYear": 2013,
@@ -804,6 +847,7 @@
     },
     {
         "title": "Stabilimento Industrie Chimiche Ingegner Bonelli",
+        "slug": "stabilimento-industrie-chimiche-ingegner-bonelli",
         "client": "Industrie chimiche ICIB S.P.A.",
         "period": "2008-2013",
         "endYear": 2013,
@@ -822,6 +866,7 @@
     },
     {
         "title": "Ex Nivea",
+        "slug": "ex-nivea",
         "client": "Uniabita, già Corcab (MI)",
         "period": "2006-2013",
         "endYear": 2013,
@@ -842,6 +887,7 @@
     },
     {
         "title": "Fondazione Prada",
+        "slug": "fondazione-prada",
         "client": "Prada S.p.A., Milano",
         "period": "2010-2013",
         "endYear": 2013,
@@ -859,6 +905,7 @@
     },
     {
         "title": "Porto di Mare — Milano",
+        "slug": "porto-di-mare-milano",
         "client": "Politecnico di Milano / Italia Nostra",
         "period": "2013",
         "endYear": 2013,
@@ -878,6 +925,7 @@
     },
     {
         "title": "Ex Riseria — Via Pienza, Milano",
+        "slug": "ex-riseria-via-pienza-milano",
         "client": "Naviglio Chiesarossa S.r.l.",
         "period": "2013",
         "endYear": 2013,
@@ -894,6 +942,7 @@
     },
     {
         "title": "Ex Teatro Smeraldo",
+        "slug": "ex-teatro-smeraldo",
         "client": "Eataly Real Estate",
         "period": "2012",
         "endYear": 2012,
@@ -911,6 +960,7 @@
     },
     {
         "title": "Ex Saffa Fabbriche Fiammiferi e Affini",
+        "slug": "ex-saffa-fabbriche-fiammiferi-e-affini",
         "client": "Red.Im. S.r.l.",
         "period": "2006-2011",
         "endYear": 2011,
@@ -928,6 +978,7 @@
     },
     {
         "title": "Ex Termoraggi",
+        "slug": "ex-termoraggi",
         "client": "Sidis S.p.A., Milano",
         "period": "2005-2011",
         "endYear": 2011,
@@ -946,6 +997,7 @@
     },
     {
         "title": "Syndial — Porto Torres (SS)",
+        "slug": "syndial-porto-torres-ss",
         "client": "Syndial S.p.A. (Eni)",
         "period": "2006-2011",
         "endYear": 2011,
@@ -966,6 +1018,7 @@
     },
     {
         "title": "Ex Cartiere Binda",
+        "slug": "ex-cartiere-binda",
         "client": "Euromilano S.p.A., Milano",
         "period": "2004-2007",
         "endYear": 2007,
@@ -985,6 +1038,7 @@
     },
     {
         "title": "Ex Officine Metallurgiche Broggi",
+        "slug": "ex-officine-metallurgiche-broggi",
         "client": "Euromilano S.p.A., Milano",
         "period": "2004-2007",
         "endYear": 2007,
@@ -1004,6 +1058,7 @@
     },
     {
         "title": "Officina del Gas – Bovisa Gasometri",
+        "slug": "officina-del-gas-bovisa-gasometri",
         "client": "Metropolitana Milanese S.p.A. per il Comune di Milano",
         "period": "2002-2006",
         "endYear": 2006,
@@ -1023,6 +1078,7 @@
     },
     {
         "title": "Deposito Costiero GPL — Targia (SR)",
+        "slug": "deposito-costiero-gpl-targia-sr",
         "client": "GM Gas S.r.l.",
         "period": "1999-2005",
         "endYear": 2005,
@@ -1041,6 +1097,7 @@
     },
     {
         "title": "Ex Deposito Carburanti Finalube",
+        "slug": "ex-deposito-carburanti-finalube",
         "client": "Euromilano S.p.A., Milano",
         "period": "1999-2002",
         "endYear": 2002,
