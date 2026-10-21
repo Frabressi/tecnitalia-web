@@ -183,6 +183,7 @@ ORGANIZZAZIONE = {
     "@id": BASE + "/#organization",
     "name": "Tecnitalia Group",
     "url": BASE + "/",
+    "sameAs": ["https://www.linkedin.com/company/71564171/"],
     "logo": BASE + "/assets/img/logo.png",
     "telephone": "+390276000206",
     "email": "info@tecnitaliagroup.it",
