@@ -238,6 +238,7 @@ a.project-card:focus-visible, a.work-card:focus-visible { outline: 3px solid var
 /* --- 10. FOOTER (Aggiornato a 3 colonne responsive con mappa) --- */
 .footer-sec { background: var(--navy-deep); color: #888; padding: 60px 10%; }
 .footer-sec p, .footer-sec strong { color: #cccccc; }
+.footer-sec p.footer-legal { color: #8a8f99; font-size: 0.75rem; line-height: 1.7; margin: 12px auto 0; max-width: 72ch; }
 
 .footer-grid { 
     display: grid; 
@@ -494,6 +495,8 @@ a.project-card:focus-visible, a.work-card:focus-visible { outline: 3px solid var
     transition: color 0.2s ease-in-out;
 }
 .footer-link:hover { color: #ffffff; }
+.footer-link + .footer-link { margin-left: 18px; }
+.footer-services-col .footer-link + .footer-link { margin-left: 0; }
 
 @media (min-width: 1101px) {
     .footer-grid { grid-template-columns: repeat(4, 1fr); }

@@ -144,6 +144,7 @@ FOOTER_FALLBACK = (
     '            </div>\n'
     '            <div style="text-align:center; margin-top:50px; border-top:1px solid #333; padding-top:20px;">\n'
     '                © 2026 Tecnitalia Group. Tutti i diritti riservati.\n'
+    '                <p class="footer-legal">Tecnitalia Ingegneria Studio Associato di Bressi e Micco · C.F./P.IVA 06874430967<br>Tecnitalia Servizi S.r.l. · C.F./P.IVA 03923790962 · REA MI-1712643 · Cap. soc. € 10.000,00<br>Sede legale: Via Pastorelli 4E, 20143 Milano</p>\n'
     '            </div>\n'
     '        </footer>')
 
@@ -154,12 +155,17 @@ CSP = ("default-src 'self'; script-src 'self' 'unsafe-inline' https://static.clo
        "frame-src https://maps.google.com https://www.google.com; "
        "object-src 'none'; base-uri 'self'; form-action 'self'")
 
+_INDIRIZZO = {'@type': 'PostalAddress', 'streetAddress': 'Via Pastorelli 4E', 'postalCode': '20143', 'addressLocality': 'Milano', 'addressRegion': 'MI', 'addressCountry': 'IT'}
+
+SUB_ORGANIZZAZIONI = [{'@type': 'Organization', '@id': 'https://www.tecnitaliagroup.it/#tecnitalia-ingegneria', 'name': 'Tecnitalia Ingegneria', 'legalName': 'Tecnitalia Ingegneria Studio Associato di Bressi e Micco', 'vatID': 'IT06874430967', 'taxID': '06874430967', 'address': _INDIRIZZO, 'url': 'https://www.tecnitaliagroup.it/dettaglio-ingegneria.html'}, {'@type': 'Organization', '@id': 'https://www.tecnitaliagroup.it/#tecnitalia-servizi', 'name': 'Tecnitalia Servizi', 'legalName': 'Tecnitalia Servizi S.r.l.', 'vatID': 'IT03923790962', 'taxID': '03923790962', 'address': _INDIRIZZO, 'url': 'https://www.tecnitaliagroup.it/dettaglio-servizi.html'}]
+
 ORGANIZZAZIONE = {
     "@type": "ProfessionalService",
     "@id": BASE + "/#organization",
     "name": "Tecnitalia Group",
     "url": BASE + "/",
     "sameAs": ["https://www.linkedin.com/company/71564171/"],
+    "subOrganization": SUB_ORGANIZZAZIONI,
     "logo": BASE + "/assets/img/logo.png",
     "telephone": "+390276000206",
     "email": "info@tecnitaliagroup.it",
