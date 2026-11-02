@@ -126,7 +126,7 @@ ORGANIZZAZIONE = {
     "subOrganization": SUB_ORGANIZZAZIONI,
     "logo": BASE + "/assets/img/logo.png",
     "telephone": "+390276000206",
-    "email": "info@tecnitaliagroup.it",
+    "email": "segreteria@tecnitaliagroup.it",
     "foundingDate": "1986",
     "address": {"@type": "PostalAddress", "streetAddress": "Via Pastorelli 4E",
                 "postalCode": "20143", "addressLocality": "Milano",
